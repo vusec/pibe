@@ -1,0 +1,10 @@
+--- llvm/lib/Target/X86/X86TargetMachine.cpp
++++ llvm/lib/Target/X86/X86TargetMachine.cpp
+@@ -83,6 +83,7 @@
+   initializeX86SpeculativeLoadHardeningPassPass(PR);
+   initializeX86FlagsCopyLoweringPassPass(PR);
+   initializeX86CondBrFoldingPassPass(PR);
++  initializeX86LoadValueInjectionRetHardeningPassPass(PR);
+   initializeX86OptimizeLEAPassPass(PR);
+   initializeX86PartialReductionPass(PR);
+ }

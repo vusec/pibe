@@ -1,0 +1,10 @@
+--- llvm/lib/Target/X86/CMakeLists.txt
++++ llvm/lib/Target/X86/CMakeLists.txt
+@@ -52,6 +52,7 @@
+   X86InstrInfo.cpp
+   X86EvexToVex.cpp
+   X86LegalizerInfo.cpp
++  X86LoadValueInjectionRetHardening.cpp
+   X86MCInstLower.cpp
+   X86MachineFunctionInfo.cpp
+   X86MacroFusion.cpp

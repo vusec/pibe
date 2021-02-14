@@ -1,0 +1,112 @@
+\documentclass{article}
+    % General document formatting
+    \usepackage[margin=0.7in]{geometry}
+    \usepackage[parfill]{parskip}
+    \usepackage[utf8]{inputenc}
+    \usepackage{bashful}
+    \usepackage{adjustbox,booktabs,multirow}
+    % Related to math
+    \usepackage{amsmath,amssymb,amsfonts,amsthm}
+    \usepackage{caption}
+     \usepackage{float}
+     \usepackage{hyperref}
+\begin{document}
+
+
+\section{Table description}
+
+\subsection{With all defenses enabled: Table~\ref{testall} and Table~\ref{tab:all}}
+Table~\ref{testall} and Table~\ref{tab:all} show the LMBench overhead when all transient execution defenses are enabled
+in the kernel (with/without optimizations). Table~\ref{testall} overheads are taken from the main paper while Table~\ref{tab:all}
+overheads are obtained on your machine. The results refer primarily to \textbf{Table 5 of the main paper}.
+Column \textbf{'nooptimization'} (column 2), from Table~\ref{testall}~\ref{tab:all} traces back to Table 5, column 2 of the main paper (the \textbf{'regular LTO'} column). 
+Column \textbf{'99.9999(\%) LMBench work.'} (column 3) traces back to Table 5, column 6 of the main paper (the \textbf{'99.9999\%'} column). 
+The last column (not included directly in the main paper) refers to the overheads of a kernel image (enforced with all transient execution defenses) 
+but optimized using an Apache workload. The geometric overhead reported for this image, 22.5\%, 
+is discussed in \textbf{Section 8.4. Performance Robustness to Workload Profiles} of the main paper.
+
+\begin{table}[H]
+\begin{center}
+\begin{adjustbox}{width=0.5\textwidth}
+\large
+\input{tables/test-eval-lmbench-all}
+\end{adjustbox}
+\end{center}
+\captionof{table}{LMBench overheads for kernels that enforce all transient mitigations with/without optimizations (\textbf{from the main paper}).}
+\label{testall} 
+\end{table}
+\begin{table}[H]
+\begin{center}
+\begin{adjustbox}{width=0.5\textwidth}
+\large
+\input{tables/eval-lmbench-all}
+\end{adjustbox}
+\end{center}
+\captionof{table}{LMBench overheads for kernels that enforce all transient mitigations with/without optimizations (\textbf{obtained while running the artifact on your machine}).}
+\label{tab:all} 
+\end{table}
+
+\newpage
+\subsection{Table~\ref{tab:testretpolines} and Table~\ref{tab:retpolines}}
+
+Table~\ref{tab:testretpolines} and Table~\ref{tab:retpolines} show LMBench overheads when only the \emph{retpolines} defense is
+enabled in the kernel (with/without optimizations). Table~\ref{tab:testretpolines} overheads are taken from the main paper while
+Table~\ref{tab:retpolines} overheads are obtained on your machine. The numbers refer to some results presented in \textbf{Table 3 of the main
+paper}. Column \textbf{'nooptimization'} (column 2), traces back to Table 3, column 2 of the main paper (the \textbf{'regular LTO'} column).
+Column \textbf{'+icp (99.999\%)'} (column 3), traces back to Table 3, column 5 of the main paper (same column name in the main paper).
+
+\begin{table}[H]
+\begin{center}
+\begin{adjustbox}{width=0.5\textwidth}
+\large
+\input{tables/test-eval-retpolines}
+\end{adjustbox}
+\end{center}
+\captionof{table}{LMBench overheads when only retpolines is enabled in the kernel, with/without optimizations (\textbf{from the main paper}). }
+\label{tab:testretpolines} 
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{adjustbox}{width=0.5\textwidth}
+\large
+\input{tables/eval-retpolines}
+\end{adjustbox}
+\end{center}
+\captionof{table}{LMBench overheads when only retpolines is enabled in the kernel, with/without optimizations (\textbf{obtained while running the artifact on your machine}).}
+\label{tab:retpolines} 
+\end{table}
+
+\newpage
+\subsection{Table~\ref{tab:lmbenchtestresultsgeomeans} and Table~\ref{tab:lmbenchresultsgeomeans}}
+Table~\ref{tab:lmbenchtestresultsgeomeans} and Table~\ref{tab:lmbenchresultsgeomeans} show the LMBench 
+geometric mean overhead per each kernel transient defense and for the combination of all transient defenses,
+with/without optimizations. 
+Table~\ref{tab:lmbenchtestresultsgeomeans} overheads are taken from the main paper while Table~\ref{tab:lmbenchresultsgeomeans}
+are obtained on your machine. 
+The \textbf{'LTO'} column depicts unoptimized images while the \textbf{'PIBE'}
+column shows results for images that also apply optimizations.
+The numbers refer to results presented in \textbf{Table 6 of the main paper}.
+Note that, for Table~\ref{tab:lmbenchtestresultsgeomeans}, the overhead in the last line, 3rd column (all defenses + optimizations) differs from the overhead reported
+ in Table 6 of the main paper (as in Table 6 of the main paper we present the geometric 
+overhead of a kernel configuration that applies optimizations but also disables some heuristics, as described in 
+Section 8.3 of the main paper, while in Table~\ref{tab:lmbenchtestresultsgeomeans} we essentially plot the geometric
+overheads presented in Table~\ref{testall} ).
+
+\begin{table}[H]
+\begin{center}
+\input{tables/test-eval-lmbench-geomeans}
+\end{center}
+\captionof{table}{LMBench geometric mean overhead per defense and for all defenses (\textbf{from the main paper}).}
+\label{tab:lmbenchtestresultsgeomeans} 
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\input{tables/eval-lmbench-geomeans}
+\end{center}
+\captionof{table}{LMBench geometric mean overhead per defense and for all defenses (\textbf{obtained while running the artifact on your machine}).}
+\label{tab:lmbenchresultsgeomeans} 
+\end{table}
+
+\end{document}

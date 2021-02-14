@@ -1,0 +1,1 @@
+cmd_/home/victor/Master/PHDProjects/Roplets/lkm/vuprofiler-module.mod := { echo  /home/victor/Master/PHDProjects/Roplets/lkm/vuprofiler_module.o /home/victor/Master/PHDProjects/Roplets/lkm/lbr.o; echo; } > /home/victor/Master/PHDProjects/Roplets/lkm/vuprofiler-module.mod

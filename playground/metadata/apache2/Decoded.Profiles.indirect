@@ -1,0 +1,1420 @@
+read_tsc|ktime_get|0|150233947|0|%21 = call i64 %20(%struct.clocksource* %18) #64, !dbg !230546
+iptable_mangle_hook|nf_hook_slow|0|99410212|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+__bpf_prog_run32|packet_rcv|0|49782247|5|%104 = call i32 %100(i8* %101, %struct.bpf_insn* %103) #64, !dbg !2043939
+iptable_filter_hook|nf_hook_slow|0|49704896|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+selinux_inode_permission|security_inode_permission|0|45242042|0|%16 = call i32 %15(%struct.inode.266888* %0, i32 %1) #64, !dbg !760124
+pfifo_fast_dequeue|dequeue_skb|0|44920341|2|%204 = call %struct.sk_buff.691065* %203(%struct.Qdisc.691036* %0) #64, !dbg !1811702
+tlb_is_not_lazy|on_each_cpu_cond_mask|0|42122740|2|%22 = call zeroext i1 %0(i32 %21, i8* %2) #64, !dbg !247808
+chksum_update|crypto_shash_update|0|41277165|2|%52 = call i32 %51(%struct.shash_desc.279063* %0, i8* %1, i32 %2) #64, !dbg !793608
+tcp_release_cb|release_sock|0|37837409|2|call void %12(%struct.sock.268170* %0) #64, !dbg !1743787
+pick_next_task_fair|__schedule|0|37671381|9|%171 = call %struct.task_struct.60731* %170(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161005
+menu_select|cpuidle_select|0|33368964|0|%8 = call i32 %7(%struct.cpuidle_driver.62753* %0, %struct.cpuidle_device* %1, i8* %2) #64, !dbg !1652645
+menu_reflect|cpuidle_reflect|0|32412976|0|call void %6(%struct.cpuidle_device* %0, i32 %1) #64, !dbg !1652656
+acpi_idle_enter|cpuidle_enter_state|0|32375633|9|%101 = call i32 %100(%struct.cpuidle_device* %0, %struct.cpuidle_driver.62753* %1, i32 %65) #64, !dbg !1652535
+ep_poll_callback|__wake_up_common_lock|0|29772292|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+read_tsc|ktime_get_ts64|0|25136302|0|%24 = call i64 %23(%struct.clocksource* %21) #64, !dbg !229939
+passthru_features_check|netif_skb_features|0|24968284|0|%105 = call i64 %102(%struct.sk_buff.691065* %0, %struct.net_device.691052* %5, i64 %98) #64, !dbg !1761135
+packet_rcv|dev_queue_xmit_nit|0|24968016|8|%164 = call i32 %162(%struct.sk_buff.691065* %135, %struct.net_device.691052* %163, %struct.packet_type* nonnull %134, %struct.net_device.691052* %163) #64, !dbg !1766829
+pfifo_fast_dequeue|dequeue_skb|0|24967837|3|%226 = call %struct.sk_buff.691065* %225(%struct.Qdisc.691036* %0) #64, !dbg !1811727
+e1000_xmit_frame.15337483807734658839|xmit_one|0|24967712|2|%51 = call i32 %50(%struct.sk_buff.691065* %0, %struct.net_device.691052* %1) #64, !dbg !1766673
+tcp_poll|sock_poll|0|24940411|1|%45 = call i32 %43(%struct.file.268134* %0, %struct.socket.268166* %6, %struct.poll_table_struct.267815* %1) #64, !dbg !1736565
+ipv4_dst_check|__sk_dst_check|0|24896090|0|%18 = call %struct.dst_entry.268160* %17(%struct.dst_entry.268160* nonnull %7, i32 %1) #64, !dbg !1744519
+ipv4_mtu|ip_finish_output|0|24890797|1|%68 = call i32 %67(%struct.dst_entry.747083* %8) #64, !dbg !1865368
+selinux_ipv4_output|nf_hook_slow|0|24890604|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+pfifo_fast_enqueue|__dev_queue_xmit|0|24890366|7|%242 = call i32 %241(%struct.sk_buff.691065* %0, %struct.Qdisc.691036* %190, %struct.sk_buff.691065** nonnull %3) #64, !dbg !1766310
+selinux_ipv4_postroute|nf_hook_slow|0|24890293|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+ip_output|ip_local_out|0|24890291|1|%64 = call i32 %63(%struct.net.747144* %0, %struct.sock.747417* %1, %struct.sk_buff.747427* nonnull %2) #64, !dbg !1864124
+ip_local_deliver|ip_rcv|0|24814403|3|%43 = call i32 %42(%struct.sk_buff.744744* nonnull %9) #64, !dbg !1861377
+tcp_v4_rcv|ip_protocol_deliver_rcu|0|24814271|5|%68 = call i32 %67(%struct.sk_buff.744744* %1) #64, !dbg !1861185
+packet_rcv|__netif_receive_skb_core|0|24814261|24|%587 = call i32 %585(%struct.sk_buff.691065* %517, %struct.net_device.691052* %586, %struct.packet_type* nonnull %556, %struct.net_device.691052* %48) #64, !dbg !1765929
+ip_rcv|netif_receive_skb_internal|0|24814093|10|%93 = call i32 %91(%struct.sk_buff.691065* %0, %struct.net_device.691052* %92, %struct.packet_type* nonnull %87, %struct.net_device.691052* %84) #64, !dbg !1766918
+inet_gro_receive|dev_gro_receive|0|24814081|3|%387 = call %struct.sk_buff.691065* %386(%struct.list_head* %23, %struct.sk_buff.691065* %1) #64, !dbg !1768708
+tcp_v4_early_demux|ip_rcv_finish_core|0|24814056|0|%43 = call i32 %42(%struct.sk_buff.744744* %1) #64, !dbg !1861561
+tcp4_gro_receive|inet_gro_receive|0|24814018|1|%226 = call %struct.sk_buff.766004* %225(%struct.list_head* %0, %struct.sk_buff.766004* %1) #64, !dbg !1921025
+selinux_socket_sock_rcv_skb|security_sock_rcv_skb|0|24812693|0|%11 = call i32 %10(%struct.sock* %0, %struct.sk_buff* %1) #64, !dbg !759233
+tcp_mt|ipt_do_table|0|24811809|0|%221 = call zeroext i1 %220(%struct.sk_buff.782162* %0, %struct.xt_action_param.782690* nonnull %4) #64, !dbg !1950299
+selinux_file_permission|security_file_permission|0|20094352|0|%11 = call i32 %10(%struct.file.266704* %0, i32 %1) #64, !dbg !760216
+sock_poll|ep_send_events_proc|0|19938083|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+tcp_v4_send_check|__tcp_transmit_skb|0|19929437|9|call void %477(%struct.sock.268170* %0, %struct.sk_buff.267892* nonnull %76) #64, !dbg !1891164
+ip_queue_xmit.5827924556238003593|__tcp_transmit_skb|0|19926359|12|%636 = call i32 %633(%struct.sock.268170* %0, %struct.sk_buff.267892* nonnull %76, %struct.flowi* %635) #64, !dbg !1891294
+dequeue_task_fair|__schedule|0|18866719|5|call void %126(%struct.rq* %10, %struct.task_struct.60731* %12, i32 9) #64, !dbg !160967
+enqueue_task_fair|activate_task|0|18822438|1|call void %69(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !163642
+select_task_rq_fair|try_to_wake_up|0|18677613|6|%166 = call i32 %165(%struct.task_struct.60731* %0, i32 %161, i32 16, i32 %2) #64, !dbg !164687
+put_prev_task_idle|pick_next_task_fair|0|18624312|6|call void %94(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !171547
+pick_next_task_idle|__schedule|0|18619099|10|%176 = call %struct.task_struct.60731* %175(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161009
+put_prev_task_fair|pick_next_task_idle|0|18618869|0|call void %8(%struct.rq.62755* %0, %struct.task_struct.62540* %1) #64, !dbg !170251
+default_wake_function|__wake_up_common_lock|0|18350524|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+__x64_sys_epoll_wait|do_syscall_64|0|18150887|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ep_send_events_proc|ep_scan_ready_list|0|17929259|2|%31 = call i32 %1(%struct.eventpoll* %0, %struct.list_head* nonnull %5, i8* %2) #64, !dbg !509349, !callees !509350
+lapic_next_deadline|clockevents_program_event|0|16752353|4|%52 = call i32 %51(i64 %49, %struct.clock_event_device.33589* %0) #64, !dbg !240290
+read_tsc|ktime_get_update_offsets_now|0|16655618|0|%21 = call i64 %20(%struct.clocksource* %18) #64, !dbg !231668
+native_apic_mem_write|smp_apic_timer_interrupt|0|16640179|1|call void %6(i32 176, i32 0) #64, !dbg !88175
+hrtimer_interrupt|smp_apic_timer_interrupt|0|16640179|7|call void %55(%struct.clock_event_device.33589* %31) #64, !dbg !88235
+tick_sched_timer|__run_hrtimer|0|16586284|4|%81 = call i32 %56(%struct.hrtimer* %2) #64, !dbg !228929
+__x64_sys_futex|do_syscall_64|0|16151225|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+task_tick_idle|scheduler_tick|0|15414137|3|call void %43(%struct.rq* %7, %struct.task_struct.60731* %9, i32 0) #64, !dbg !166758
+run_timer_softirq|__do_softirq?__softirqentry_text_start|0|13873522|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+____fput|task_work_run|0|12881944|1|call void %30(%struct.callback_head* nonnull %26) #64, !dbg !154332
+selinux_file_alloc_security|security_file_alloc|0|12881864|1|%23 = call i32 %22(%struct.file.266704* %0) #64, !dbg !760268
+__x64_sys_read|do_syscall_64|0|10065773|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_close|do_syscall_64|0|10051285|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_recvmsg|security_socket_recvmsg|0|10034015|0|%13 = call i32 %12(%struct.socket* %0, %struct.msghdr.267024* %1, i32 %2, i32 %3) #64, !dbg !760765
+ipv4_mtu|tcp_current_mss|0|10013599|0|%16 = call i32 %15(%struct.dst_entry.268160* nonnull %7) #64, !dbg !1889336
+sock_read_iter|__vfs_read|0|10009656|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441557
+tcp_recvmsg|inet_recvmsg|0|10005899|0|%46 = call i32 %43(%struct.sock.766524* %8, %struct.msghdr.766501* %1, i64 %2, i32 %44, i32 %45, i32* nonnull %5) #64, !dbg !1921729
+inet_recvmsg|sock_read_iter|0|10005388|1|%46 = call i32 %44(%struct.socket.268166* %9, %struct.msghdr.268136* nonnull %3, i64 %45, i32 %26) #64, !dbg !1736473
+selinux_file_fcntl|security_file_fcntl|0|10004711|0|%12 = call i32 %11(%struct.file.266704* %0, i32 %1, i64 %2) #64, !dbg !760324
+__x64_sys_fcntl|do_syscall_64|0|10004565|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_epoll_ctl|do_syscall_64|0|10002442|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+sock_rfree|skb_release_head_state|0|10001906|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+tcp_wfree|skb_release_head_state|0|9977349|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+__sock_wfree|skb_release_head_state|0|9942346|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+ipv4_dst_check|tcp_v4_early_demux|0|9925497|2|%95 = call %struct.dst_entry.753786* %94(%struct.dst_entry.753786* nonnull %84, i32 0) #64, !dbg !1899535
+bictcp_acked|tcp_ack|0|9923663|21|call void %909(%struct.sock.751952* %0, %struct.exception_table_entry* nonnull %4) #64, !dbg !1881077
+bictcp_cong_avoid|tcp_ack|0|9923606|29|call void %1127(%struct.sock.751952* %0, i32 %26, i32 %1018) #64, !dbg !1881244
+sock_def_readable|tcp_data_queue|0|9921435|16|call void %476(%struct.sock.751952* %0) #64, !dbg !1882638
+selinux_req_classify_flow|security_req_classify_flow|0|9921338|0|call void %10(%struct.request_sock* %0, %struct.flowi* %1) #64, !dbg !759299
+file_free_rcu|rcu_do_batch|0|9685734|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+selinux_inode_free_security|security_inode_free|0|7838391|1|call void %9(%struct.inode.266888* %0) #64, !dbg !760040
+selinux_d_instantiate|security_d_instantiate|0|7838333|0|call void %17(%struct.dentry.266876* %0, %struct.inode.266888* %1) #64, !dbg !759431
+selinux_inode_alloc_security|security_inode_alloc|0|7838265|1|%23 = call i32 %22(%struct.inode.266888* %0) #64, !dbg !760021
+sock_destroy_inode|evict|0|7833484|13|call void %117(%struct.inode.147555* %0) #64, !dbg !468437
+sock_alloc_inode|new_inode_pseudo|0|7833479|0|%9 = call %struct.inode.147555* %6(%struct.super_block.147538* %0) #64, !dbg !467891
+sock_close|__fput|0|7833452|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+selinux_socket_accept|security_socket_accept|0|7829494|0|%11 = call i32 %10(%struct.socket* %0, %struct.socket* %1) #64, !dbg !760757
+__x64_sys_accept4|do_syscall_64|0|7829237|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+inet_csk_accept|inet_accept|0|7829208|0|%14 = call %struct.sock.766524* %13(%struct.sock.766524* %8, i32 %2, i32* nonnull %5, i1 zeroext %3) #64, !dbg !1921906
+inet_accept|__sys_accept4|0|7829176|13|%119 = call i32 %114(%struct.socket.268166* nonnull %24, %struct.socket.268166* nonnull %39, i32 %118, i1 zeroext false) #64, !dbg !1738028
+inet6_release|sock_close|0|7828920|1|%19 = call i32 %18(%struct.socket.268166* %5) #64, !dbg !1737269
+selinux_mmap_addr|security_mmap_addr|0|7758021|0|%10 = call i32 %9(i64 %0) #64, !dbg !760312
+cap_mmap_addr|security_mmap_addr|0|7758019|0|%10 = call i32 %9(i64 %0) #64, !dbg !760312
+arch_get_unmapped_area_topdown|get_unmapped_area|0|7756906|0|%42 = call i64 %41(%struct.file.130879* %0, i64 %1, i64 %2, i64 %40, i64 %4) #64, !dbg !395462
+selinux_mmap_file|security_mmap_file|0|7756576|1|%31 = call i32 %17(%struct.file.266704* %0, i64 %1, i64 %30, i64 %2) #64, !dbg !760296
+cap_mmap_file|security_mmap_file|0|7756564|1|%31 = call i32 %17(%struct.file.266704* %0, i64 %1, i64 %30, i64 %2) #64, !dbg !760296
+__x64_sys_mmap|do_syscall_64|0|7755057|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_munmap|do_syscall_64|0|7735227|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+flush_tlb_func_remote|on_each_cpu_cond_mask|0|7371471|5|call void %1(i8* %2) #64, !dbg !247836
+ext4_dirty_inode|__mark_inode_dirty|0|6873273|2|call void %58(%struct.inode.118561* %0, i32 %1) #64, !dbg !484789
+run_rebalance_domains|__do_softirq?__softirqentry_text_start|0|5820751|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+rcu_core|__do_softirq?__softirqentry_text_start|0|5727038|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+inode_free_by_rcu|rcu_do_batch|0|5556470|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+ext4_da_write_end|generic_perform_write|0|5118598|3|%56 = call i32 %52(%struct.file.118570* %0, %struct.address_space.118509* %8, i64 %21, i32 %43, i32 %53, %struct.page.118513* %54, i8* %55) #64, !dbg !343171
+ext4_da_write_begin|generic_perform_write|0|5118504|1|%44 = call i32 %42(%struct.file.118570* %0, %struct.address_space.118509* %8, i64 %21, i32 %43, i32 0, %struct.page.118513** nonnull %4, i8** nonnull %5) #64, !dbg !343161
+filemap_map_pages|handle_mm_fault|0|5056758|13|call void %489(%struct.vm_fault* nonnull %4, i64 %452, i64 %471) #64, !dbg !389607
+__x64_sys_write|do_syscall_64|0|5047905|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_openat|do_syscall_64|0|5046457|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_getattr|security_inode_getattr|0|5039339|0|%19 = call i32 %18(%struct.path.266634* %0) #64, !dbg !760132
+selinux_file_open|security_file_open|0|5039201|0|%10 = call i32 %9(%struct.file.266704* %0) #64, !dbg !760340
+simple_copy_to_iter|__skb_datagram_iter|0|5024173|0|%24 = call i64 %5(i8* %22, i64 %23, i8* %6, %struct.iov_iter* %2) #64, !dbg !1755280
+ext4_file_getattr|vfs_getattr|0|5023577|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+ext4_file_mmap|mmap_region|0|5022781|9|%298 = call i32 %297(%struct.file.130879* nonnull %0, %struct.vm_area_struct.130503* nonnull %234) #64, !dbg !395734
+ext4_release_file|__fput|0|5018928|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+ext4_file_open|do_dentry_open|0|5018681|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+selinux_socket_sendmsg|security_socket_sendmsg|0|5014250|0|%12 = call i32 %11(%struct.socket* %0, %struct.msghdr.267024* %1, i32 %2) #64, !dbg !760761
+__x64_sys_newstat|do_syscall_64|0|5004853|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_writev|do_syscall_64|0|5003962|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_getsockname|security_socket_getsockname|0|5002400|0|%10 = call i32 %9(%struct.socket* %0) #64, !dbg !760769
+__x64_sys_getsockname|do_syscall_64|0|5002238|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_file_write_iter|__vfs_write|0|5001455|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441023
+tcp_sendmsg|inet_sendmsg|0|5001273|4|%65 = call i32 %64(%struct.sock.766524* %6, %struct.msghdr.766501* %1, i64 %2) #64, !dbg !1921689
+inet_sendmsg|sock_write_iter|0|5001268|1|%47 = call i32 %45(%struct.socket.268166* %9, %struct.msghdr.268136* nonnull %3, i64 %46) #64, !dbg !1736513
+bictcp_cwnd_event|__tcp_transmit_skb|0|5001142|11|call void %547(%struct.sock.268170* %0, i32 0) #64, !dbg !1891225
+selinux_sock_graft|security_sock_graft|0|5000714|0|call void %10(%struct.sock* %0, %struct.socket* %1) #64, !dbg !759237
+sock_poll|__se_sys_epoll_ctl|0|5000459|13|%279 = call i32 %276(%struct.file.160560* %263, %struct.poll_table_struct.160360* nonnull %267) #64, !dbg !510291
+tcp_close|inet_release|0|5000440|1|call void %25(%struct.sock.766524* nonnull %4, i64 %21) #64, !dbg !1921451
+inet6_getname|__sys_getsockname|0|5000417|3|%36 = call i32 %34(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %35, i32 0) #64, !dbg !1738079
+tcp_v4_reqsk_destructor|inet_csk_accept|0|5000364|11|call void %117(%struct.request_sock.696323* nonnull %102) #64, !dbg !1873356
+tcp_v6_destroy_sock|inet_csk_destroy_sock|0|5000257|0|call void %34(%struct.sock.696348* %0) #64, !dbg !1872424
+selinux_socket_shutdown|security_socket_shutdown|0|5000239|0|%11 = call i32 %10(%struct.socket* %0, i32 %1) #64, !dbg !760785
+ep_ptable_queue_proc|tcp_poll|0|5000224|0|call void %13(%struct.file.751174* %0, %struct.wait_queue_head* nonnull %20, %struct.poll_table_struct.750952* nonnull %2) #64, !dbg !1876402
+tcp_shutdown|inet_shutdown|0|5000135|1|call void %33(%struct.sock.766524* %5, i32 %6) #64, !dbg !1921615
+inet_shutdown|__se_sys_shutdown|0|5000108|3|%34 = call i32 %33(%struct.socket.268166* nonnull %19, i32 %5) #64, !dbg !1738926
+update_curr_fair|task_sched_runtime|0|5000082|4|call void %90(%struct.rq* %44) #64, !dbg !166705
+__x64_sys_shutdown|do_syscall_64|0|5000070|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+sock_write_iter|do_iter_readv_writev|0|5000043|1|%111 = call i64 %110(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* %1) #64, !dbg !440855
+sock_def_wakeup|inet_shutdown|0|4999981|3|call void %51(%struct.sock.766524* %5) #64, !dbg !1921625
+inet6_getname|__sys_accept4|0|4999949|14|%128 = call i32 %126(%struct.socket.268166* nonnull %39, %struct.sys_desc_table* nonnull %127, i32 2) #64, !dbg !1738035
+tcp_stream_memory_free.11068920752088710291|tcp_sendmsg_locked|0|4999799|14|%379 = call zeroext i1 %376(%struct.sock.751093* %0, i32 0) #64, !dbg !1875360
+__x64_sys_times|do_syscall_64|0|4999767|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_sk_free_security|security_sk_free|0|4992423|0|call void %9(%struct.sock* %0) #64, !dbg !760797
+inet_sock_destruct|__sk_destruct|0|4987778|0|call void %7(%struct.sock.268170* %4) #64, !dbg !1740568
+read_tsc|ktime_get_with_offset|0|4974839|0|%26 = call i64 %25(%struct.clocksource* %23) #64, !dbg !229887
+sock_edemux|skb_release_head_state|0|4971316|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+selinux_sk_alloc_security|security_sk_alloc|0|4965266|0|%12 = call i32 %11(%struct.sock* %0, i32 %1, i32 %2) #64, !dbg !760793
+inet_unhash|tcp_done|0|4961037|0|call void %38(%struct.sock.751093* %0) #64, !dbg !1877865
+sock_def_wakeup|tcp_fin|0|4961022|8|call void %55(%struct.sock.751952* %0) #64, !dbg !1883924
+ipv4_default_advmss|tcp_make_synack|0|4960940|3|%39 = call i32 %38(%struct.dst_entry.268160* %1) #64, !dbg !1892734
+tcp_v4_md5_lookup|tcp_make_synack|0|4960915|6|%68 = call %struct.tcp_md5sig_key* %66(%struct.sock.268170* %0, %struct.sock.268170* %67) #64, !dbg !1892761
+tcp_v4_init_seq|tcp_conn_request|0|4960914|11|%246 = call i32 %245(%struct.sk_buff.751419* %3) #64, !dbg !1887728
+ipv4_default_advmss|tcp_openreq_init_rwin|0|4960912|0|%30 = call i32 %29(%struct.dst_entry.696022* %2) #64, !dbg !1901237
+selinux_inet_conn_request|security_inet_conn_request|0|4960911|0|%12 = call i32 %11(%struct.sock* %0, %struct.sk_buff* %1, %struct.request_sock* %2) #64, !dbg !759407
+tcp_v4_init_req|tcp_conn_request|0|4960907|5|call void %210(%struct.request_sock.751929* nonnull %95, %struct.sock.751952* %2, %struct.sk_buff.751419* %3) #64, !dbg !1887696
+tcp_v4_send_synack|tcp_conn_request|0|4960905|28|%453 = call i32 %452(%struct.sock.751952* %2, %struct.dst_entry.751692* nonnull %222, %struct.flowi* nonnull %7, %struct.request_sock.751929* nonnull %95, %struct.tcp_fastopen_cookie* nonnull %5, i32 0) #64, !dbg !1887961
+tcp_v4_init_ts_off|tcp_conn_request|0|4960899|7|%218 = call i32 %217(%struct.net.751717* %16, %struct.sk_buff.751419* %3) #64, !dbg !1887700
+tcp_v4_route_req|tcp_conn_request|0|4960865|8|%222 = call %struct.dst_entry.751692* %221(%struct.sock.751952* %2, %struct.flowi* nonnull %7, %struct.request_sock.751929* nonnull %95) #64, !dbg !1887704
+tcp_v6_conn_request|tcp_rcv_state_process|0|4960728|0|%34 = call i32 %33(%struct.sock.751952* %0, %struct.sk_buff.751419* %1) #64, !dbg !1879418
+sock_def_wakeup|tcp_rcv_state_process|0|4960588|47|call void %697(%struct.sock.751952* %0) #64, !dbg !1880006
+sock_def_wakeup|tcp_done|0|4960587|7|call void %83(%struct.sock.751093* %0) #64, !dbg !1877913
+inet_sk_rebuild_header|tcp_init_transfer|0|4960412|1|%9 = call i32 %8(%struct.sock.751093* %0) #64, !dbg !1878981
+bictcp_init|tcp_init_congestion_control|0|4960411|0|call void %9(%struct.sock.755731* %0) #64, !dbg !1902309
+ipv4_mtu|tcp_v4_syn_recv_sock|0|4960408|4|%132 = call i32 %131(%struct.dst_entry.753786* nonnull %127) #64, !dbg !1896338
+selinux_inet_csk_clone|security_inet_csk_clone|0|4960404|0|call void %10(%struct.sock* %0, %struct.request_sock* %1) #64, !dbg !760801
+sock_def_wakeup|tcp_rcv_state_process|0|4960403|42|call void %554(%struct.sock.751952* %0) #64, !dbg !1879894
+selinux_sk_clone_security|security_sk_clone|0|4960400|0|call void %10(%struct.sock* %0, %struct.sock* %1) #64, !dbg !759241
+ipv4_default_advmss|tcp_v4_syn_recv_sock|0|4960396|6|%145 = call i32 %144(%struct.dst_entry.753786* nonnull %127) #64, !dbg !1896350
+sock_def_readable|tcp_child_process|0|4960386|1|call void %64(%struct.sock.696348* %0) #64, !dbg !1901541
+bictcp_state|tcp_ca_openreq_child|0|4960377|4|call void %52(%struct.sock.696348* %0, i8 zeroext 0) #64, !dbg !1901850
+tcp_v6_syn_recv_sock|tcp_check_req|0|4960216|9|%228 = call %struct.sock.696348* %227(%struct.sock.696348* %0, %struct.sk_buff.695889* %1, %struct.request_sock.696323* %2, %struct.dst_entry.696022* null, %struct.request_sock.696323* %2, i8* nonnull %7) #64, !dbg !1901775
+tcp_v6_md5_lookup|tcp_create_openreq_child|0|4960194|4|%184 = call %struct.tcp_md5sig_key* %183(%struct.sock.696348* %0, %struct.sock.696348* nonnull %5) #64, !dbg !1901448
+tcp_twsk_destructor|inet_twsk_deschedule_put|0|4946587|2|call void %20(%struct.sock.696348* %23) #64, !dbg !1871374
+__pagevec_lru_add_fn|pagevec_lru_move_fn|0|4126956|2|call void %1(%struct.page.118513* %13, %struct.lruvec* %30, i8* %2) #64, !dbg !360594
+cmp_ex_search|bsearch|0|3946885|0|%14 = call i32 %4(i8* %0, i8* %13) #64, !dbg !852949
+epi_rcu_free|rcu_do_batch|0|3542579|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+vma_gap_callbacks_rotate|__rb_insert_augmented|0|2899852|1|call void %4(%struct.rb_node* %46, %struct.rb_node* %67) #64, !dbg !2225423
+cap_vm_enough_memory|security_vm_enough_memory_mm|0|2778399|0|%11 = call i32 %10(%struct.mm_struct.266915* %0, i64 %1) #64, !dbg !759946
+native_send_call_func_single_ipi|generic_exec_single|0|2085244|2|call void %44(i32 %0) #64, !dbg !247536
+default_send_IPI_single_phys|native_send_call_func_single_ipi|0|2085240|0|call void %5(i32 %0, i32 251) #64, !dbg !85482
+native_send_call_func_ipi|smp_call_function_many|0|1781341|9|call void %101(%struct.cpumask* %57) #64, !dbg !247692
+default_send_IPI_mask_sequence_phys|native_send_call_func_ipi|0|1780679|1|call void %24(%struct.cpumask* %0, i32 252) #64, !dbg !85478
+generic_update_time|file_update_time|0|1754706|2|%63 = call i32 %62(%struct.inode.147555* %5, %struct.anon.47* nonnull %2, i32 %53) #64, !dbg !469690
+flush_tlb_func_remote|flush_smp_call_function_queue|0|1672586|3|call void %42(i8* %44) #64, !dbg !247939
+__anon_vma_interval_tree_augment_rotate|__rb_insert_augmented|0|1618486|3|call void %4(%struct.rb_node* %113, %struct.rb_node* %135) #64, !dbg !2225497
+e1000_alloc_rx_buffers.3572064560608183406|e1000_clean_rx_irq.14848100876650384272|0|1548635|5|call void %190(%struct.e1000_ring.584041* %0, i32 %69, i32 2592) #64, !dbg !1441522
+vma_gap_callbacks_rotate|__rb_insert_augmented|0|1527533|0|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225385
+migrate_task_rq_fair|set_task_cpu|0|1490633|1|call void %34(%struct.task_struct.60731* %0, i32 %1) #64, !dbg !163473
+read_tsc|timekeeping_advance|0|1344752|1|%15 = call i64 %14(%struct.clocksource* %12) #64, !dbg !231387
+task_tick_fair|scheduler_tick|0|1172144|3|call void %43(%struct.rq* %7, %struct.task_struct.60731* %9, i32 0) #64, !dbg !166758
+native_apic_mem_write|smp_call_function_interrupt|0|1167074|1|call void %5(i32 176, i32 0) #64, !dbg !85127
+__anon_vma_interval_tree_augment_rotate|__rb_insert_augmented|0|1109586|0|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225385
+default_send_IPI_single_phys|native_smp_send_reschedule|0|720109|1|call void %11(i32 %0, i32 253) #64, !dbg !85441
+native_smp_send_reschedule|resched_curr|0|696938|0|call void %27(i32 %11) #64, !dbg !161515
+__bpf_prog_run32|seccomp_run_filters|0|694823|3|%47 = call i32 %44(i8* %12, %struct.bpf_insn* %46) #64, !dbg !288024
+native_apic_mem_write|smp_reschedule_interrupt|0|592563|0|call void %5(i32 176, i32 0) #64, !dbg !85316
+vma_gap_callbacks_rotate|__rb_insert_augmented|0|564806|2|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225459
+ksoftirqd_should_run|smpboot_thread_fn|0|564511|9|%84 = call i32 %82(i32 %83) #64, !dbg !159631
+native_apic_mem_write|smp_call_function_single_interrupt|0|510847|1|call void %5(i32 176, i32 0) #64, !dbg !85184
+run_ksoftirqd|smpboot_thread_fn|0|474967|11|call void %88(i32 %89) #64, !dbg !159642
+net_rx_action|__do_softirq?__softirqentry_text_start|0|409923|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+e1000e_poll|napi_poll|0|409675|0|%42 = call i32 %41(%struct.napi_struct.691070* %0, i32 %34) #64, !dbg !1770547
+e1000_clean_rx_irq.14848100876650384272|e1000e_poll|0|409673|2|%48 = call zeroext i1 %47(%struct.e1000_ring.584041* %44, i32* nonnull %3, i32 %1) #64, !dbg !1445472
+show_interrupts|seq_read|0|409451|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+int_seq_next|seq_read|0|408436|6|%100 = call i8* %99(%struct.seq_file* %8, i8* nonnull %84, i64* %74) #64, !dbg !479558
+autoremove_wake_function|__wake_up_common_lock|0|377494|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+__anon_vma_interval_tree_augment_rotate|__rb_erase_color|0|375884|2|call void %2(%struct.rb_node* %8, %struct.rb_node* %97) #64, !dbg !2225622
+process_timeout|call_timer_fn|0|343701|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+dyntick_save_progress_counter|force_qs_rnp|0|311486|4|%45 = call i32 %0(%struct.rcu_data* %44) #64, !dbg !219370, !callees !219371
+vma_gap_callbacks_rotate|__rb_erase_color|0|299900|5|call void %2(%struct.rb_node* %8, %struct.rb_node* %219) #64, !dbg !2225740
+vma_interval_tree_augment_rotate|__rb_insert_augmented|0|264053|1|call void %4(%struct.rb_node* %46, %struct.rb_node* %67) #64, !dbg !2225423
+check_preempt_wakeup|ttwu_do_wakeup|0|258833|0|call void %16(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !161406
+workingset_update_node|xas_store|0|254859|11|call void %225(%struct.xa_node* nonnull %26) #64, !dbg !2232804
+__anon_vma_interval_tree_augment_rotate|__rb_erase_color|0|202662|4|call void %2(%struct.rb_node* %163, %struct.rb_node* nonnull %174) #64, !dbg !2225700
+rcu_implicit_dynticks_qs|force_qs_rnp|0|186032|4|%45 = call i32 %0(%struct.rcu_data* %44) #64, !dbg !219370, !callees !219371
+acpi_ds_exec_begin_op|acpi_ps_create_op|0|185649|12|%138 = call i32 %137(%struct.acpi_walk_state.342928* %0, %union.acpi_parse_object.342923** nonnull %4) #74, !dbg !956882
+__anon_vma_interval_tree_augment_rotate|__rb_insert_augmented|0|185106|2|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225459
+acpi_ds_exec_end_op|acpi_ps_parse_loop|0|171825|28|%327 = call i32 %321(%struct.acpi_walk_state* %0) #74, !dbg !956708
+__anon_vma_interval_tree_augment_rotate|__rb_erase_color|0|148256|3|call void %2(%struct.rb_node* %8, %struct.rb_node* %131) #64, !dbg !2225657
+ext4_da_get_block_prep|__block_write_begin_int|0|127256|2|%146 = call i32 %3(%struct.inode.155651* %15, i64 %99, %struct.buffer_head.155663* %97, i32 1) #64, !dbg !497033
+ext4_get_reserved_space|__dquot_alloc_space|0|127022|4|%52 = call i64* %48(%struct.inode.168643* %0) #64, !dbg !542456
+ext4_da_invalidatepage|truncate_cleanup_page|0|126961|2|call void %22(%struct.page.122502* %1, i32 0, i32 4096) #64, !dbg !362412
+ext4_releasepage|try_to_release_page|0|126961|0|%39 = call i32 %36(%struct.page.118513* %0, i32 %1) #64, !dbg !342028
+vma_gap_callbacks_rotate|__rb_erase_color|0|117869|3|call void %2(%struct.rb_node* %8, %struct.rb_node* %131) #64, !dbg !2225657
+rcu_free_slab|rcu_do_batch|0|95583|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+vma_gap_callbacks_rotate|__rb_erase_color|0|85123|4|call void %2(%struct.rb_node* %163, %struct.rb_node* nonnull %174) #64, !dbg !2225700
+hrtimer_wakeup|__run_hrtimer|0|58950|4|%81 = call i32 %56(%struct.hrtimer* %2) #64, !dbg !228929
+selinux_vm_enough_memory|security_vm_enough_memory_mm|0|48761|0|%11 = call i32 %10(%struct.mm_struct.266915* %0, i64 %1) #64, !dbg !759946
+vma_interval_tree_augment_rotate|__rb_erase_color|0|48193|2|call void %2(%struct.rb_node* %8, %struct.rb_node* %97) #64, !dbg !2225622
+sock_poll|do_sys_poll|0|44838|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+delayed_work_timer_fn|call_timer_fn|0|39138|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+poll_idle|cpuidle_enter_state|0|37572|9|%101 = call i32 %100(%struct.cpuidle_device* %0, %struct.cpuidle_driver.62753* %1, i32 %65) #64, !dbg !1652535
+ext4_filemap_fault|__do_fault|0|35679|1|%26 = call i32 %25(%struct.vm_fault* %0) #64, !dbg !390035
+init_once.16311444480911244396|new_slab|0|35232|7|call void %288(i8* %220) #64, !dbg !431322
+vma_gap_callbacks_rotate|__rb_erase_color|0|34972|0|call void %2(%struct.rb_node* %8, %struct.rb_node* %10) #64, !dbg !2225541
+unix_poll|sock_poll|0|34212|1|%45 = call i32 %43(%struct.file.268134* %0, %struct.socket.268166* %6, %struct.poll_table_struct.267815* %1) #64, !dbg !1736565
+dequeue_task_fair|deactivate_task|0|32520|1|call void %78(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !165720
+__x64_sys_newfstat|do_syscall_64|0|31858|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+acpi_ex_opcode_2A_1T_1R|acpi_ds_exec_end_op|0|29625|4|%56 = call i32 %55(%struct.acpi_walk_state.342928* %0) #74, !dbg !943456
+int_seq_next|seq_read|0|28623|12|%138 = call i8* %137(%struct.seq_file* %8, i8* nonnull %133, i64* %74) #64, !dbg !479591
+native_apic_mem_write|apic_ack_edge|0|28607|2|call void %26(i32 176, i32 0) #64, !dbg !91889
+handle_edge_irq|handle_irq|0|28607|2|call void %58(%struct.irq_desc* nonnull %0) #64, !dbg !50494
+irq_chip_ack_parent|handle_edge_irq|0|28607|9|call void %114(%struct.irq_data.19958* %64) #64, !dbg !208956
+apic_ack_edge|irq_chip_ack_parent|0|28607|0|call void %8(%struct.irq_data.19958* %4) #64, !dbg !208439
+show_interrupts|seq_read|0|27608|13|%154 = call i32 %153(%struct.seq_file* %8, i8* nonnull %138) #64, !dbg !479606
+str2hashbuf_signed|ext4fs_dirhash|0|27161|0|call void %131(i8* %143, i32 %144, i32* nonnull %134, i32 8) #64, !dbg !580470, !callees !580471
+vma_gap_callbacks_rotate|__rb_erase_color|0|26476|1|call void %2(%struct.rb_node* %44, %struct.rb_node* nonnull %55) #64, !dbg !2225582
+e1000_intr_msi|__handle_irq_event_percpu|0|24691|1|%44 = call i32 %41(i32 %6, i8* %43) #64, !dbg !205060
+eventfd_poll|do_sys_poll|0|24471|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+check_preempt_wakeup|check_preempt_curr|0|24137|0|call void %16(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !165737
+vmstat_update|process_one_work|0|23158|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+native_smp_send_reschedule|kick_ilb|0|23148|2|call void %43(i32 %13) #64, !dbg !175883
+ext4_file_read_iter|__vfs_read|0|22981|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441557
+sock_recvmsg|___sys_recvmsg|0|22585|3|%95 = call i32 %94(%struct.socket.268166* %0, %struct.msghdr.268136* %2, i32 %92) #64, !dbg !1738618, !callees !1738619
+__x64_sys_recvmsg|do_syscall_64|0|22584|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+acpi_ex_opcode_1A_0T_1R|acpi_ds_exec_end_op|0|21725|4|%56 = call i32 %55(%struct.acpi_walk_state.342928* %0) #74, !dbg !943456
+__x64_sys_poll|do_syscall_64|0|21461|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+filldir|ext4_readdir|0|21218|12|%446 = call i32 %444(%struct.dir_context* %1, i8* %419, i32 %422, i64 %445, i64 %425, i32 %443) #64, !dbg !568807
+n_tty_write|tty_write|0|20087|9|%119 = call i64 %63(%struct.tty_struct.268470* nonnull %10, %struct.file.268134* %0, i8* %118, i64 %114) #64, !dbg !997338
+con_write_room|tty_write_room|0|19941|0|%10 = call i32 %7(%struct.tty_struct.363051* %0) #64, !dbg !1003665
+dummycon_cursor|do_con_write|0|19941|5|call void %61(%struct.vc_data.369234* nonnull %27, i32 2) #64, !dbg !1020776
+con_write|n_tty_write|0|19934|11|%162 = call i32 %161(%struct.tty_struct.362746* %0, i8* %87, i32 %158) #64, !dbg !1000946
+con_flush_chars|n_tty_write|0|19934|17|call void %188(%struct.tty_struct.362746* %0) #64, !dbg !1000973
+selinux_file_mprotect|security_file_mprotect|0|19711|0|%12 = call i32 %11(%struct.vm_area_struct.266901* %0, i64 %1, i64 %2) #64, !dbg !760316
+__x64_sys_mprotect|do_syscall_64|0|19700|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+unix_stream_recvmsg|sock_recvmsg|0|18085|1|%16 = call i32 %14(%struct.socket.268166* %0, %struct.msghdr.268136* %1, i64 %15, i32 %2) #64, !dbg !1738769
+selinux_task_to_inode|security_task_to_inode|0|16341|0|call void %10(%struct.task_struct.267009* %0, %struct.inode.266888* %1) #64, !dbg !760534
+redirected_tty_write|do_iter_write|0|15944|4|%79 = call i64 %78(%struct.file.48256* %0, i8* %71, i64 %76, i64* %2) #64, !dbg !440711
+ucs_cmp|bsearch|0|15924|0|%14 = call i32 %4(i8* %0, i8* %13) #64, !dbg !852949
+gc_worker|process_one_work|0|14962|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+mempool_alloc_slab|mempool_alloc|0|14629|1|%17 = call i8* %14(i32 %12, i8* %16) #64, !dbg !346762
+tcp_twsk_destructor|inet_twsk_kill|0|14068|3|call void %94(%struct.sock.696348* %18) #64, !dbg !1871207
+tw_timer_handler|call_timer_fn|0|14068|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+ext4_set_page_dirty|set_page_dirty|0|14029|1|%42 = call i32 %41(%struct.page.118513* %11) #64, !dbg !356549
+acpi_ds_exec_end_op|acpi_ps_complete_op|0|13825|3|%48 = call i32 %47(%struct.acpi_walk_state.342928* %0) #74, !dbg !956925
+acpi_ex_opcode_2A_0T_1R|acpi_ds_exec_end_op|0|13825|4|%56 = call i32 %55(%struct.acpi_walk_state.342928* %0) #74, !dbg !943456
+pci_read|pci_bus_read_config_word|0|13825|0|%15 = call i32 %14(%struct.pci_bus.312248* %0, i32 %1, i32 %2, i32 2, i32* nonnull %5) #64, !dbg !876117
+pci_conf1_read|pci_read|0|13825|0|%24 = call i32 %23(i32 0, i32 %14, i32 %1, i32 %2, i32 %3, i32* %4) #64, !dbg !1734373
+unix_stream_read_actor|unix_stream_read_generic|0|13563|18|%331 = call i32 %330(%struct.sk_buff.267892* nonnull %231, i32 %230, i32 %328, %struct.unix_stream_read_state* %0) #64, !dbg !1976517
+chrdev_open|do_dentry_open|0|13384|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+native_apic_mem_write|lapic_timer_set_oneshot|0|13275|0|call void %14(i32 800, i32 %11) #64, !dbg !89370
+lapic_timer_set_oneshot|__clockevents_switch_state|0|13275|2|%32 = call i32 %29(%struct.clock_event_device.33589* %0) #64, !dbg !240218
+native_apic_mem_write|lapic_timer_shutdown|0|13262|1|call void %15(i32 800, i32 %12) #64, !dbg !89324
+native_apic_mem_write|lapic_timer_shutdown|0|13262|2|call void %18(i32 896, i32 0) #64, !dbg !89327
+lapic_timer_shutdown|__clockevents_switch_state|0|13262|4|%46 = call i32 %43(%struct.clock_event_device.33589* %0) #64, !dbg !240227
+native_apic_mem_read|lapic_timer_shutdown|0|13262|0|%11 = call i32 %10(i32 800) #64, !dbg !89320
+eventfd_write|__vfs_write|0|13201|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+mempool_free_slab|mempool_free|0|13049|4|call void %27(i8* nonnull %0, i8* %29) #64, !dbg !346669
+__anon_vma_interval_tree_augment_rotate|__rb_erase_color|0|12961|1|call void %2(%struct.rb_node* %44, %struct.rb_node* nonnull %55) #64, !dbg !2225582
+selinux_socket_getpeersec_dgram|security_socket_getpeersec_dgram|0|12902|0|%12 = call i32 %11(%struct.socket* %0, %struct.sk_buff* %1, i32* %2) #64, !dbg !759229
+unix_write_space|sock_wfree|0|12486|0|call void %20(%struct.sock.268170* %4) #64, !dbg !1740503
+pick_next_task_stop|__schedule|0|12347|11|%181 = call %struct.task_struct.60731* %180(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161012
+__pollwait|eventfd_poll|0|12204|0|call void %11(%struct.file.140866* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.140802* nonnull %1) #64, !dbg !512810
+__pollwait|unix_poll|0|12138|0|call void %10(%struct.file.268134* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.267815* nonnull %2) #64, !dbg !1975369
+cpu_stop_should_run|smpboot_thread_fn|0|11684|9|%84 = call i32 %82(i32 %83) #64, !dbg !159631
+unix_destruct_scm|skb_release_head_state|0|11592|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+selinux_cred_prepare|security_prepare_creds|0|11332|1|%23 = call i32 %22(%struct.cred.266702* %0, %struct.cred.266702* %1, i32 %2) #64, !dbg !760442
+net_tx_action|__do_softirq?__softirqentry_text_start|0|11251|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+pollwake|__wake_up_common_lock|0|11045|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+sock_poll|do_select|0|10504|3|%261 = call i32 %258(%struct.file.146262* nonnull %244, %struct.poll_table_struct.146196* nonnull %112) #64, !dbg !461530
+inotify_poll|do_sys_poll|0|10463|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+vma_interval_tree_augment_rotate|__rb_erase_color|0|10023|0|call void %2(%struct.rb_node* %8, %struct.rb_node* %10) #64, !dbg !2225541
+udp_poll|sock_poll|0|9988|1|%45 = call i32 %43(%struct.file.268134* %0, %struct.socket.268166* %6, %struct.poll_table_struct.267815* %1) #64, !dbg !1736565
+selinux_inode_follow_link|security_inode_follow_link|0|9974|0|%17 = call i32 %16(%struct.dentry.266876* %0, %struct.inode.266888* %1, i1 zeroext %2) #64, !dbg !760118
+dd_has_work|blk_mq_run_hw_queue|0|9694|2|%43 = call zeroext i1 %40(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !827136
+cap_capable|security_capable|0|9670|0|%13 = call i32 %12(%struct.cred.266702* %0, %struct.user_namespace* %1, i32 %2, i32 %3) #64, !dbg !759923
+__x64_sys_ioctl|do_syscall_64|0|9540|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_file_ioctl|security_file_ioctl|0|9536|0|%12 = call i32 %11(%struct.file.266704* %0, i32 %1, i64 %2) #64, !dbg !760292
+sock_def_readable|unix_stream_sendmsg|0|9251|11|call void %164(%struct.sock.268170* nonnull %39) #64, !dbg !1975829
+memory_open|chrdev_open|0|9196|13|%100 = call i32 %97(%struct.inode.142896* %0, %struct.file.142905* %1) #64, !dbg !447192
+blk_mq_make_request|generic_make_request|0|9180|6|%115 = call i32 %114(%struct.request_queue.291182* %112, %struct.bio.291196* %73) #64, !dbg !819966
+put_cred_rcu|rcu_do_batch|0|9115|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__x64_sys_clock_gettime|do_syscall_64|0|9092|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+posix_get_boottime|__x64_sys_clock_gettime|0|9092|0|%36 = call i32 %35(i32 %9, %struct.anon.47* nonnull %2) #64, !dbg !236186
+selinux_capable|security_capable|0|8880|0|%13 = call i32 %12(%struct.cred.266702* %0, %struct.user_namespace* %1, i32 %2, i32 %3) #64, !dbg !759923
+urandom_read|__vfs_read|0|8804|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+timerfd_poll|ep_send_events_proc|0|8675|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+dd_has_work|blk_mq_sched_dispatch_requests|0|8611|8|%142 = call zeroext i1 %139(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834285
+__x64_sys_access|do_syscall_64|0|8607|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+tty_ioctl|do_vfs_ioctl|0|8117|32|%399 = call i64 %396(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460085
+scsi_queue_rq|blk_mq_dispatch_rq_list|0|7663|9|%164 = call zeroext i8 %163(%struct.blk_mq_hw_ctx.291137* %42, %struct.blk_mq_queue_data.291160* nonnull %4) #64, !dbg !831640
+ata_scsi_queuecmd|scsi_dispatch_cmd|0|7663|1|%74 = call i32 %73(%struct.Scsi_Host.555973* %6, %struct.scsi_cmnd.555963* %0) #64, !dbg !1322944
+ahci_pmp_qc_defer|__ata_scsi_queuecmd|0|7642|8|%115 = call i32 %112(%struct.ata_queued_cmd.563173* nonnull %57) #64, !dbg !1349997
+ahci_qc_prep|ata_qc_issue|0|7638|4|call void %148(%struct.ata_queued_cmd* %0) #64, !dbg !1347003
+ahci_qc_issue|ata_qc_issue|0|7638|6|%175 = call i32 %174(%struct.ata_queued_cmd* %0) #64, !dbg !1347023
+__anon_vma_interval_tree_augment_rotate|__rb_erase_color|0|7636|0|call void %2(%struct.rb_node* %8, %struct.rb_node* %10) #64, !dbg !2225541
+__d_free|rcu_do_batch|0|7634|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+sd_init_command|scsi_queue_rq|0|7593|14|%359 = call zeroext i8 %358(%struct.scsi_cmnd.555963* %15) #64, !dbg !1322294
+pipe_poll|do_sys_poll|0|7237|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+ata_scsi_rw_xlat|__ata_scsi_queuecmd|0|6773|7|%106 = call i32 %48(%struct.ata_queued_cmd.563173* nonnull %57) #64, !dbg !1349993
+scsi_softirq_done|blk_done_softirq|0|6734|0|call void %41(%struct.request.294530* %24) #64, !dbg !826401
+sd_done|scsi_finish_command|0|6682|1|%56 = call i32 %53(%struct.scsi_cmnd* %0) #64, !dbg !1317478
+sd_uninit_command|scsi_end_request|0|6682|4|call void %75(%struct.scsi_cmnd.555963* %7) #64, !dbg !1323395
+__x64_sys_sendmsg|do_syscall_64|0|6596|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+pid_delete_dentry|retain_dentry|0|6556|0|%24 = call i32 %23(%struct.dentry.147020* %0) #64, !dbg !463383
+pick_next_task_dl|__schedule|0|6505|11|%181 = call %struct.task_struct.60731* %180(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161012
+pick_next_task_rt|__schedule|0|6505|11|%181 = call %struct.task_struct.60731* %180(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161012
+datagram_poll|sock_poll|0|6486|1|%45 = call i32 %43(%struct.file.268134* %0, %struct.socket.268166* %6, %struct.poll_table_struct.267815* %1) #64, !dbg !1736565
+scsi_mq_get_budget|blk_mq_sched_dispatch_requests|0|6441|9|%151 = call zeroext i1 %148(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834291
+dd_prepare_request|blk_mq_get_request|0|6434|6|call void %220(%struct.request.291146* %105, %struct.bio.291196* %1) #64, !dbg !830357
+dd_dispatch_request|blk_mq_sched_dispatch_requests|0|6377|10|%156 = call %struct.request.291146* %155(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834295
+eventfd_read|__vfs_read|0|6362|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+tcp_write_timer|call_timer_fn|0|6343|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+__pollwait|datagram_poll|0|6291|0|call void %10(%struct.file.684907* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.684366* nonnull %2) #64, !dbg !1755436
+vma_interval_tree_augment_rotate|__rb_insert_augmented|0|6198|0|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225385
+read_tsc|ktime_get_mono_fast_ns|0|6157|0|%14 = call i64 %13(%struct.clocksource* %11) #64, !dbg !230373
+pick_next_task_fair|__schedule|0|6122|11|%181 = call %struct.task_struct.60731* %180(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161012
+kernfs_iop_permission|link_path_walk|0|6071|5|%89 = call i32 %86(%struct.inode.144815* %76, i32 1) #64, !dbg !453351
+invalid_mkclean_vma|rmap_walk_file|0|5993|6|%74 = call zeroext i1 %70(%struct.vm_area_struct.134009* nonnull %44, i8* %73) #64, !dbg !402195
+page_mkclean_one|rmap_walk_file|0|5993|7|%78 = call zeroext i1 %76(%struct.page.134082* %0, %struct.vm_area_struct.134009* nonnull %44, i64 %68, i8* %77) #64, !dbg !402198
+__x64_sys_select|do_syscall_64|0|5937|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+inet_sk_rebuild_header|__tcp_retransmit_skb|0|5928|1|%68 = call i32 %67(%struct.sock.268170* %0) #64, !dbg !1892159
+dd_bio_merge|__blk_mq_sched_bio_merge|0|5899|0|%36 = call zeroext i1 %35(%struct.blk_mq_hw_ctx.291137* %24, %struct.bio.291196* %1) #64, !dbg !834413
+dd_request_merge|elv_merge|0|5898|6|%73 = call i32 %70(%struct.request_queue.290728* %0, %struct.request.290690** %1, %struct.bio.290742* %2) #64, !dbg !818552
+cpu_stopper_thread|smpboot_thread_fn|0|5842|11|call void %88(i32 %89) #64, !dbg !159642
+dequeue_task_stop|__schedule|0|5842|5|call void %126(%struct.rq* %10, %struct.task_struct.60731* %12, i32 9) #64, !dbg !160967
+enqueue_task_stop|activate_task|0|5835|1|call void %69(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !163642
+active_load_balance_cpu_stop|cpu_stopper_thread|0|5778|1|%37 = call i32 %32(i8* %34) #64, !dbg !273093
+dd_finish_request|blk_mq_free_request|0|5776|0|call void %21(%struct.request.291146* %0) #64, !dbg !830632
+put_prev_task_fair|pick_next_task_stop|0|5763|0|call void %16(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !186448
+scsi_mq_done|ata_scsi_qc_complete|0|5754|27|call void %192(%struct.scsi_cmnd.563166* %190) #64, !dbg !1350277
+ata_scsi_qc_complete|__ata_qc_complete|0|5754|2|call void %102(%struct.ata_queued_cmd* %0) #64, !dbg !1343785
+pick_next_task_idle|__schedule|0|5694|11|%181 = call %struct.task_struct.60731* %180(%struct.rq* %10, %struct.task_struct.60731* %12, %struct.rq_flags* nonnull %2) #64, !dbg !161012
+put_prev_task_stop|pick_next_task_idle|0|5527|0|call void %8(%struct.rq.62755* %0, %struct.task_struct.62540* %1) #64, !dbg !170251
+kernfs_dop_revalidate|lookup_fast|0|5380|14|%165 = call i32 %164(%struct.dentry.144820* nonnull %152, i32 %160) #64, !dbg !454240
+unix_stream_sendmsg|___sys_sendmsg|0|5329|8|%120 = call i32 %118(%struct.socket.268166* %0, %struct.msghdr.268136* %2, i64 %119) #64, !dbg !1738450
+__ia32_sys_getpid?__x64_sys_getpid|do_syscall_64|0|5278|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_timerfd_settime|do_syscall_64|0|5225|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_pid_permission|link_path_walk|0|5218|5|%89 = call i32 %86(%struct.inode.144815* %76, i32 1) #64, !dbg !453351
+ktime_get|do_timerfd_settime|0|5110|14|%132 = call i64 %131() #64, !dbg !511885
+e1000_alloc_rx_buffers.3572064560608183406|e1000_clean_rx_irq.14848100876650384272|0|4925|6|call void %223(%struct.e1000_ring.584041* %0, i32 %219, i32 2592) #64, !dbg !1441545
+sock_write_iter|__vfs_write|0|4884|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441023
+pid_revalidate|lookup_fast|0|4857|2|%54 = call i32 %53(%struct.dentry.144820* nonnull %18, i32 %49) #64, !dbg !454163
+pid_revalidate|lookup_fast|0|4857|12|%145 = call i32 %144(%struct.dentry.144820* nonnull %18, i32 %140) #64, !dbg !454229
+ipv4_dst_check|tcp_v4_do_rcv|0|4790|0|%40 = call %struct.dst_entry.753786* %39(%struct.dst_entry.753786* nonnull %9, i32 0) #64, !dbg !1896829
+__pollwait|tcp_poll|0|4695|0|call void %13(%struct.file.751174* %0, %struct.wait_queue_head* nonnull %20, %struct.poll_table_struct.750952* nonnull %2) #64, !dbg !1876402
+single_start|seq_read|0|4525|4|%75 = call i8* %73(%struct.seq_file* %8, i64* %74) #64, !dbg !479538
+ext4_page_mkwrite|do_wp_page|0|4462|17|%279 = call i32 %278(%struct.vm_fault* %0) #64, !dbg !390890
+tcp_stream_memory_free.3922643809215356288|tcp_poll|0|4445|2|%111 = call zeroext i1 %108(%struct.sock.751093* %8, i32 0) #64, !dbg !1876485
+ext4_end_bio|bio_endio|0|4415|4|call void %89(%struct.bio.290414* %4) #64, !dbg !816741
+unix_dgram_poll|sock_poll|0|4388|1|%45 = call i32 %43(%struct.file.268134* %0, %struct.socket.268166* %6, %struct.poll_table_struct.267815* %1) #64, !dbg !1736565
+generic_delete_inode|iput|0|4367|4|%65 = call i32 %62(%struct.inode.147555* nonnull %0) #64, !dbg !468174
+timerfd_read|__vfs_read|0|4339|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+__x64_sys_rt_sigaction|do_syscall_64|0|4254|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+unix_stream_recvmsg|sock_read_iter|0|4249|1|%46 = call i32 %44(%struct.socket.268166* %9, %struct.msghdr.268136* nonnull %3, i64 %45, i32 %26) #64, !dbg !1736473
+proc_evict_inode|evict|0|4223|3|call void %48(%struct.inode.147555* %0) #64, !dbg !468334
+proc_destroy_inode|evict|0|4223|13|call void %117(%struct.inode.147555* %0) #64, !dbg !468437
+proc_alloc_inode|new_inode_pseudo|0|4183|0|%9 = call %struct.inode.147555* %6(%struct.super_block.147538* %0) #64, !dbg !467891
+tty_open|chrdev_open|0|4180|13|%100 = call i32 %97(%struct.inode.142896* %0, %struct.file.142905* %1) #64, !dbg !447192
+n_tty_ioctl|tty_ioctl|0|4095|48|%399 = call i32 %396(%struct.tty_struct.268470* nonnull %16, %struct.file.268134* %0, i32 %1, i64 %2) #64, !dbg !998780
+tty_release|__fput|0|3991|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+vt_console_device|console_device|0|3988|2|%15 = call %struct.tty_driver.78092* %12(%struct.console.78274* nonnull %10, i32* %0) #64, !dbg !203396
+con_open|tty_open|0|3988|27|%244 = call i32 %240(%struct.tty_struct.268470* %199, %struct.file.268134* %1) #64, !dbg !999202
+vt_ioctl|tty_ioctl|0|3988|46|%382 = call i32 %379(%struct.tty_struct.268470* nonnull %16, i32 %1, i64 %2) #64, !dbg !998765
+redirected_tty_write|do_iter_write|0|3988|2|%50 = call i64 %49(%struct.file.48256* %0, i8* %42, i64 %47, i64* %2) #64, !dbg !440711
+con_close|tty_release|0|3988|8|call void %107(%struct.tty_struct.268470* nonnull %8, %struct.file.268134* %1) #64, !dbg !997609
+selinux_socket_create|security_socket_create|0|3965|0|%13 = call i32 %12(i32 %0, i32 %1, i32 %2, i32 %3) #64, !dbg !760737
+selinux_socket_post_create|security_socket_post_create|0|3965|0|%14 = call i32 %13(%struct.socket* %0, i32 %1, i32 %2, i32 %3, i32 %4) #64, !dbg !760741
+acpi_ex_opcode_1A_1T_1R|acpi_ds_exec_end_op|0|3950|4|%56 = call i32 %55(%struct.acpi_walk_state.342928* %0) #74, !dbg !943456
+thermal_get_trip_type|handle_thermal_trip|0|3950|0|%16 = call i32 %15(%struct.thermal_zone_device.628184* %0, i32 %1, i32* nonnull %3) #64, !dbg !1604873
+thermal_get_trip_temp|handle_critical_trips|0|3950|0|%11 = call i32 %10(%struct.thermal_zone_device.628184* %0, i32 %1, i32* nonnull %4) #64, !dbg !1604906
+ahci_single_level_irq_intr|__handle_irq_event_percpu|0|3916|1|%44 = call i32 %41(i32 %6, i8* %43) #64, !dbg !205060
+always_delete_dentry|retain_dentry|0|3913|0|%24 = call i32 %23(%struct.dentry.147020* %0) #64, !dbg !463383
+select_collect|d_walk|0|3884|4|%63 = call i32 %2(i8* %1, %struct.dentry.147020* %60) #64, !dbg !463657
+__pollwait|pipe_poll|0|3868|0|call void %11(%struct.file.822* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.595* nonnull %1) #64, !dbg !451436
+vma_interval_tree_augment_rotate|__rb_erase_color|0|3859|4|call void %2(%struct.rb_node* %163, %struct.rb_node* nonnull %174) #64, !dbg !2225700
+__pollwait|inotify_poll|0|3848|0|call void %11(%struct.file.48256* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.48011* nonnull %1) #64, !dbg !508428
+ext4_getattr|vfs_getattr|0|3711|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+proc_i_callback|rcu_do_batch|0|3684|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+netlink_skb_destructor|skb_release_head_state|0|3674|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+unix_stream_sendmsg|sock_write_iter|0|3632|1|%47 = call i32 %45(%struct.socket.268166* %9, %struct.msghdr.268136* nonnull %3, i64 %46) #64, !dbg !1736513
+single_next|seq_read|0|3629|12|%138 = call i8* %137(%struct.seq_file* %8, i8* nonnull %133, i64* %74) #64, !dbg !479591
+single_stop|seq_read|0|3629|14|call void %168(%struct.seq_file* %8, i8* %138) #64, !dbg !479618
+read_tsc|clocksource_watchdog|0|3604|2|%25 = call i64 %24(%struct.clocksource.21470* %11) #64, !dbg !232696
+clocksource_watchdog|call_timer_fn|0|3604|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+read_hpet|clocksource_watchdog|0|3604|3|%29 = call i64 %28(%struct.clocksource.21470* %26) #64, !dbg !232697
+tsc_cs_tick_stable|clocksource_watchdog|0|3604|9|call void %139(%struct.clocksource.21470* %11) #64, !dbg !232795
+timerfd_tmrproc|__run_hrtimer|0|3564|4|%81 = call i32 %56(%struct.hrtimer* %2) #64, !dbg !228929
+ep_poll_callback|__wake_up_locked_key|0|3486|0|%25 = call i32 %24(%struct.wait_queue_entry* %21, i32 %1, i32 0, i8* %2) #64, !dbg !183274
+blk_done_softirq|__do_softirq?__softirqentry_text_start|0|3426|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+unix_sock_destructor|__sk_destruct|0|3364|0|call void %7(%struct.sock.268170* %4) #64, !dbg !1740568
+end_bio_bh_io_sync|bio_endio|0|3330|4|call void %89(%struct.bio.290414* %4) #64, !dbg !816741
+vma_interval_tree_augment_rotate|__rb_erase_color|0|3300|3|call void %2(%struct.rb_node* %8, %struct.rb_node* %131) #64, !dbg !2225657
+ahci_scr_read|sata_scr_read|0|3257|0|%25 = call i32 %22(%struct.ata_link* %0, i32 %1, i32* %2) #64, !dbg !1342401
+ahci_scr_write|sata_scr_write|0|3257|0|%27 = call i32 %26(%struct.ata_link* %0, i32 %1, i32 %2) #64, !dbg !1342373
+seq_read|__vfs_read|0|3253|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+__x64_sys_socket|do_syscall_64|0|3243|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_unix_may_send|security_unix_may_send|0|3123|0|%11 = call i32 %10(%struct.socket* %0, %struct.socket* %1) #64, !dbg !759192
+ip_queue_xmit.13379370546027015264|__tcp_transmit_skb|0|3113|12|%636 = call i32 %633(%struct.sock.268170* %0, %struct.sk_buff.267892* nonnull %76, %struct.flowi* %635) #64, !dbg !1891294
+proc_reg_read|__vfs_read|0|3112|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+seq_read|proc_reg_read|0|3109|0|%32 = call i64 %29(%struct.file.171133* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !548069
+pid_revalidate|lookup_fast|0|3076|14|%165 = call i32 %164(%struct.dentry.144820* nonnull %152, i32 %160) #64, !dbg !454240
+__x64_sys_lseek|do_syscall_64|0|3012|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+simple_lookup|__lookup_slow|0|2978|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+__cpa_flush_tlb|flush_smp_call_function_queue|0|2974|3|call void %42(i8* %44) #64, !dbg !247939
+__x64_sys_newfstatat|do_syscall_64|0|2897|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_bmap|bmap|0|2882|0|%12 = call i64 %9(%struct.address_space.147562* %5, i64 %1) #64, !dbg !469954
+ext4_get_block|generic_block_bmap|0|2882|0|%15 = call i32 %2(%struct.inode.155651* %7, i64 %1, %struct.buffer_head.155663* nonnull %4, i32 0) #64, !dbg !498029
+unix_release|sock_close|0|2758|1|%19 = call i32 %18(%struct.socket.268166* %5) #64, !dbg !1737269
+__x64_sys_sendto|do_syscall_64|0|2690|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_llseek|__x64_sys_lseek|0|2671|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+__x64_sys_wait4|do_syscall_64|0|2582|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_getsockopt|do_syscall_64|0|2547|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_getsockopt|security_socket_getsockopt|0|2547|0|%12 = call i32 %11(%struct.socket* %0, i32 %1, i32 %2) #64, !dbg !760777
+journal_end_buffer_io_sync|end_bio_bh_io_sync|0|2522|0|call void %15(%struct.buffer_head.155663* %5, i32 %19) #64, !dbg !494638
+__ia32_sys_getuid?__x64_sys_getuid|do_syscall_64|0|2507|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+unix_create|__sock_create|0|2466|8|%76 = call i32 %75(%struct.net.268257* %0, %struct.socket.268166* nonnull %33, i32 %3, i32 %5) #64, !dbg !1736351
+pipe_read|__vfs_read|0|2375|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441557
+single_release|__fput|0|2362|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+unix_dgram_recvmsg|sock_recvmsg|0|2353|1|%16 = call i32 %14(%struct.socket.268166* %0, %struct.msghdr.268136* %1, i64 %15, i32 %2) #64, !dbg !1738769
+sock_def_readable|unix_dgram_sendmsg|0|2341|30|call void %415(%struct.sock.268170* %373) #64, !dbg !1978163
+__x64_sys_connect|do_syscall_64|0|2299|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_connect|security_socket_connect|0|2299|0|%12 = call i32 %11(%struct.socket* %0, %struct.sys_desc_table* %1, i32 %2) #64, !dbg !760749
+kernfs_iop_permission|link_path_walk|0|2279|0|%55 = call i32 %52(%struct.inode.144815* %42, i32 129) #64, !dbg !453321
+__x64_sys_rt_sigprocmask|do_syscall_64|0|2257|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_secid_to_secctx|security_secid_to_secctx|0|2244|0|%12 = call i32 %11(i32 %0, i8** %1, i32* %2) #64, !dbg !759262
+selinux_release_secctx|security_release_secctx|0|2244|0|call void %10(i8* %0, i32 %1) #64, !dbg !759303
+generic_pipe_buf_confirm|pipe_read|0|2051|1|%53 = call i32 %52(%struct.pipe_inode_info* %11, %struct.pipe_buffer* %43) #64, !dbg !451134
+__x64_sys_inotify_add_watch|do_syscall_64|0|2039|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_misc_d_revalidate|lookup_fast|0|2030|14|%165 = call i32 %164(%struct.dentry.144820* nonnull %152, i32 %160) #64, !dbg !454240
+workingset_update_node|xas_create|0|2017|4|call void %261(%struct.xa_node* nonnull %229) #64, !dbg !2233204
+workingset_update_node|xas_store|0|2015|13|call void %256(%struct.xa_node* nonnull %238) #64, !dbg !2232835
+thermal_zone_device_check|process_one_work|0|1975|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+thermal_get_temp|thermal_zone_get_temp|0|1975|1|%18 = call i32 %17(%struct.thermal_zone_device.628634* nonnull %0, i32* %1) #64, !dbg !1607054
+pci_pme_list_scan|process_one_work|0|1975|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+vmstat_shepherd|process_one_work|0|1971|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+pipe_poll|do_select|0|1958|3|%261 = call i32 %258(%struct.file.146262* nonnull %244, %struct.poll_table_struct.146196* nonnull %112) #64, !dbg !461530
+inotify_free_event|fsnotify_destroy_event|0|1948|1|call void %28(%struct.fsnotify_event.157845* nonnull %1) #64, !dbg !505939
+inotify_handle_event|fsnotify|0|1932|7|%285 = call i32 %284(%struct.fsnotify_group.157506* %252, %struct.inode.157495* %0, i32 %1, i8* %2, i32 %3, i8* %4, i32 %5, %struct.fsnotify_iter_info.157501* nonnull %7) #64, !dbg !505622
+proc_tgid_base_lookup|path_openat|0|1927|44|%476 = call %struct.dentry.144820* %474(%struct.inode.144815* %254, %struct.dentry.144820* %275, i32 %475) #64, !dbg !458178
+vma_interval_tree_augment_rotate|__rb_insert_augmented|0|1915|2|call void %4(%struct.rb_node* nonnull %19, %struct.rb_node* %18) #64, !dbg !2225459
+proc_misc_d_revalidate|lookup_fast|0|1899|2|%54 = call i32 %53(%struct.dentry.144820* nonnull %18, i32 %49) #64, !dbg !454163
+proc_misc_d_revalidate|lookup_fast|0|1899|12|%145 = call i32 %144(%struct.dentry.144820* nonnull %18, i32 %140) #64, !dbg !454229
+dd_insert_requests|blk_mq_sched_insert_requests|0|1847|0|call void %15(%struct.blk_mq_hw_ctx.291137* %0, %struct.list_head* %2, i1 zeroext false) #64, !dbg !834546
+__ia32_sys_geteuid?__x64_sys_geteuid|do_syscall_64|0|1814|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_recvfrom|do_syscall_64|0|1745|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+vma_interval_tree_augment_rotate|__rb_erase_color|0|1732|1|call void %2(%struct.rb_node* %44, %struct.rb_node* nonnull %55) #64, !dbg !2225582
+pipe_write|__vfs_write|0|1718|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441023
+special_mapping_close|exit_mmap|0|1712|12|call void %76(%struct.vm_area_struct.130503* nonnull %53) #64, !dbg !398538
+ip6_datagram_release_cb|release_sock|0|1689|2|call void %12(%struct.sock.268170* %0) #64, !dbg !1743787
+filldir|proc_fill_cache|0|1666|7|%66 = call i32 %63(%struct.dir_context* %1, i8* %2, i32 %3, i64 %65, i64 %61, i32 %60) #64, !dbg !549112
+netlink_recvmsg|__sys_recvfrom|0|1658|4|%66 = call i32 %64(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %65, i32 %54) #64, !dbg !1738274
+proc_fd_instantiate|proc_fill_cache|0|1650|2|%34 = call %struct.dentry.172000* %4(%struct.dentry.172000* %26, %struct.task_struct.171875* %5, i8* %6) #64, !dbg !549075
+netlink_recvmsg|sock_recvmsg|0|1621|1|%16 = call i32 %14(%struct.socket.268166* %0, %struct.msghdr.268136* %1, i64 %15, i32 %2) #64, !dbg !1738769
+do_kernel_range_flush|flush_smp_call_function_queue|0|1584|3|call void %42(i8* %44) #64, !dbg !247939
+proc_single_open.10078374134824705433|do_dentry_open|0|1532|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+proc_single_show|seq_read|0|1532|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+inotify_read|__vfs_read|0|1526|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+shmem_file_read_iter|__vfs_read|0|1510|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441557
+__x64_sys_readlinkat|do_syscall_64|0|1503|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_dup2|do_syscall_64|0|1491|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_reg_open|do_dentry_open|0|1470|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+proc_reg_release|__fput|0|1470|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+proc_misc_d_delete|retain_dentry|0|1470|0|%24 = call i32 %23(%struct.dentry.147020* %0) #64, !dbg !463383
+init_once.16311444480911244396|new_slab|0|1468|6|call void %201(i8* %128) #64, !dbg !431252
+anon_pipe_buf_release|pipe_read|0|1465|3|call void %86(%struct.pipe_inode_info* %11, %struct.pipe_buffer* %43) #64, !dbg !451160
+__x64_sys_pselect6|do_syscall_64|0|1439|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+show_mountinfo|m_show.3343458774636775686|0|1430|0|%11 = call i32 %8(%struct.seq_file.149173* %0, %struct.vfsmount.149437* %10) #64, !dbg !479341
+sock_poll|__se_sys_epoll_ctl|0|1427|35|%587 = call i32 %584(%struct.file.160560* %578, %struct.poll_table_struct.160360* nonnull %9) #64, !dbg !510706
+__x64_sys_brk|do_syscall_64|0|1419|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+kernfs_iop_getattr|vfs_getattr|0|1412|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+pollwake|__wake_up_locked_key|0|1389|0|%25 = call i32 %24(%struct.wait_queue_entry* %21, i32 %1, i32 0, i8* %2) #64, !dbg !183274
+rtnl_dump_all|netlink_dump|0|1377|3|%91 = call i32 %90(%struct.sk_buff.262038* nonnull %39, %struct.netlink_callback.262068* %20) #64, !dbg !1825798
+m_next.243594760558001824|seq_read|0|1375|12|%138 = call i8* %137(%struct.seq_file* %8, i8* nonnull %133, i64* %74) #64, !dbg !479591
+selinux_sb_show_options|security_sb_show_options|0|1375|0|%11 = call i32 %10(%struct.seq_file.266658* %0, %struct.super_block.266871* %1) #64, !dbg !759992
+ktime_get|__hrtimer_get_remaining|0|1338|2|%24 = call i64 %23() #64, !dbg !228406
+__x64_sys_alarm|do_syscall_64|0|1338|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_netlink_send|security_netlink_send|0|1308|0|%11 = call i32 %10(%struct.sock* %0, %struct.sk_buff* %1) #64, !dbg !760733
+sock_def_wakeup|unix_release_sock|0|1299|6|call void %65(%struct.sock.268170* nonnull %42) #64, !dbg !1977050
+dd_has_work|blk_mq_sched_dispatch_requests|0|1299|2|%92 = call zeroext i1 %89(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834232
+generic_update_time|touch_atime|0|1290|4|%32 = call i32 %31(%struct.inode.147555* %9, %struct.anon.47* nonnull %2, i32 1) #64, !dbg !467627
+netlink_sendmsg|__sys_sendto|0|1284|6|%89 = call i32 %87(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %88) #64, !dbg !1738214
+tcp_stream_memory_free.3922643809215356288|tcp_sendmsg_locked|0|1271|14|%379 = call zeroext i1 %376(%struct.sock.751093* %0, i32 0) #64, !dbg !1875360
+single_release|close_pdeo|0|1267|1|%29 = call i32 %26(%struct.inode.171220* %28, %struct.file.171133* %22) #64, !dbg !547908
+netlink_release|sock_close|0|1258|1|%19 = call i32 %18(%struct.socket.268166* %5) #64, !dbg !1737269
+nl80211_netlink_notify|blocking_notifier_call_chain|0|1258|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+nfulnl_rcv_nl_event|blocking_notifier_call_chain|0|1258|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+netlink_create|__sock_create|0|1257|8|%76 = call i32 %75(%struct.net.268257* %0, %struct.socket.268166* nonnull %33, i32 %3, i32 %5) #64, !dbg !1736351
+selinux_inode_readlink|security_inode_readlink|0|1256|0|%17 = call i32 %16(%struct.dentry.266876* %0) #64, !dbg !760112
+pty_write_room|tty_write_room|0|1248|0|%10 = call i32 %7(%struct.tty_struct.363051* %0) #64, !dbg !1003665
+scsi_mq_get_budget|blk_mq_dispatch_rq_list|0|1239|0|%52 = call zeroext i1 %49(%struct.blk_mq_hw_ctx.291137* %42) #64, !dbg !831440
+m_show.3343458774636775686|seq_read|0|1234|13|%154 = call i32 %153(%struct.seq_file* %8, i8* nonnull %138) #64, !dbg !479606
+blk_mq_requeue_work|process_one_work|0|1231|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+unix_dgram_sendmsg|___sys_sendmsg|0|1210|8|%120 = call i32 %118(%struct.socket.268166* %0, %struct.msghdr.268136* %2, i64 %119) #64, !dbg !1738450
+proc_pid_cmdline_read|__vfs_read|0|1206|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+sock_def_readable|tcp_rcv_established|0|1185|16|call void %328(%struct.sock.751952* %0) #64, !dbg !1887305
+sock_ioctl|do_vfs_ioctl|0|1164|32|%399 = call i64 %396(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460085
+signalfd_poll|do_sys_poll|0|1133|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+__pollwait|unix_dgram_poll|0|1125|0|call void %10(%struct.file.268134* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.267815* nonnull %2) #64, !dbg !1977471
+unix_ioctl|sock_do_ioctl|0|1122|0|%14 = call i32 %13(%struct.socket.268166* %1, i32 %2, i64 %3) #64, !dbg !1737353
+__x64_sys_getpeername|do_syscall_64|0|1119|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_getpeername|security_socket_getpeername|0|1119|0|%10 = call i32 %9(%struct.socket* %0) #64, !dbg !760773
+__x64_sys_prlimit64|do_syscall_64|0|1115|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+arch_get_unmapped_area_topdown|do_brk_flags|0|1111|0|%35 = call i64 %34(%struct.file.130879* null, i64 %0, i64 %1, i64 0, i64 16) #64, !dbg !397449
+unix_dgram_sendmsg|__sys_sendto|0|1106|6|%89 = call i32 %87(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %88) #64, !dbg !1738214
+inet_getname|__sys_getpeername|0|1106|4|%41 = call i32 %39(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %40, i32 1) #64, !dbg !1738122
+bit_wait_io|__wait_on_bit|0|1094|1|%18 = call i32 %2(%struct.sigaltstack* %7, i32 %3) #64, !dbg !183420
+tty_poll|do_select|0|1074|3|%261 = call i32 %258(%struct.file.146262* nonnull %244, %struct.poll_table_struct.146196* nonnull %112) #64, !dbg !461530
+n_tty_poll|tty_poll|0|1074|3|%38 = call i32 %35(%struct.tty_struct.268470* nonnull %8, %struct.file.268134* %0, %struct.poll_table_struct.267815* %1) #64, !dbg !998407
+pty_chars_in_buffer|tty_chars_in_buffer|0|1074|0|%10 = call i32 %7(%struct.tty_struct.363051* %0) #64, !dbg !1004228
+deferred_put_nlk_sk|rcu_do_batch|0|1068|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+netlink_sock_destruct|__sk_destruct|0|1068|0|call void %7(%struct.sock.268170* %4) #64, !dbg !1740568
+pipe_release|__fput|0|1040|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+int_seq_start|seq_read|0|1015|4|%75 = call i8* %73(%struct.seq_file* %8, i64* %74) #64, !dbg !479538
+int_seq_stop|seq_read|0|1015|14|call void %168(%struct.seq_file* %8, i8* %138) #64, !dbg !479618
+irq_affinity_proc_open|proc_reg_open|0|1015|1|%44 = call i32 %41(%struct.inode.171220* %0, %struct.file.171133* %1) #64, !dbg !548279
+irq_affinity_proc_show|seq_read|0|1015|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+e1000_watchdog_task|process_one_work|0|1011|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+wake_bit_function|__wake_up_common_lock|0|984|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+__writepage|write_cache_pages|0|953|9|%179 = call i32 %2(%struct.page.118513* %65, %struct.writeback_control* %1, i8* %3) #64, !dbg !356734
+blkdev_writepage|__writepage|0|953|0|%10 = call i32 %9(%struct.page.118513* %0, %struct.writeback_control* %1) #64, !dbg !357216
+sock_def_readable|netlink_dump|0|944|9|call void %112(%struct.sock.262299* %0) #64, !dbg !1825827
+simple_lookup|path_openat|0|932|44|%476 = call %struct.dentry.144820* %474(%struct.inode.144815* %254, %struct.dentry.144820* %275, i32 %475) #64, !dbg !458178
+__x64_sys_setsockopt|do_syscall_64|0|928|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_setsockopt|security_socket_setsockopt|0|928|0|%12 = call i32 %11(%struct.socket* %0, i32 %1, i32 %2) #64, !dbg !760781
+sock_wfree|skb_release_head_state|0|927|1|call void %23(%struct.sk_buff.684466* %0) #64, !dbg !1745789
+proc_loginuid_read|__vfs_read|0|926|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+inotify_merge|fsnotify_add_event|0|924|1|%39 = call i32 %2(%struct.list_head* %5, %struct.fsnotify_event.157845* %1) #64, !dbg !505987
+proc_sessionid_read|__vfs_read|0|924|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+inet_dump_ifaddr|rtnl_dump_all|0|902|0|%43 = call i32 %37(%struct.sk_buff.694390* %0, %struct.netlink_callback.694284* %1) #64, !dbg !1787581
+inet6_dump_ifaddr|rtnl_dump_all|0|902|0|%43 = call i32 %37(%struct.sk_buff.694390* %0, %struct.netlink_callback.694284* %1) #64, !dbg !1787581
+e1000_watchdog.7165605963614376750|call_timer_fn|0|901|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+single_stop|seq_read|0|897|11|call void %131(%struct.seq_file* %8, i8* %127) #64, !dbg !479585
+unix_stream_connect|__sys_connect|0|894|5|%63 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2, i32 %62) #64, !dbg !1737882
+__x64_sys_ppoll|do_syscall_64|0|876|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_writepages|do_writepages|0|875|0|%19 = call i32 %16(%struct.address_space.118509* %0, %struct.writeback_control* %1) #64, !dbg !358744
+ext4_write_inode|write_inode|0|874|2|%42 = call i32 %41(%struct.inode.118561* %0, %struct.writeback_control* %1) #64, !dbg !484969
+radix_tree_node_ctor|new_slab|0|864|7|call void %288(i8* %220) #64, !dbg !431322
+select_collect|d_walk|0|859|2|%23 = call i32 %2(i8* %1, %struct.dentry.147020* %0) #64, !dbg !463624
+proc_cgroup_show|proc_single_show|0|838|1|%21 = call i32 %20(%struct.seq_file.171647* %0, %struct.pid_namespace.171683* %11, %struct.pid.171685* %14, %struct.task_struct.171875* nonnull %15) #64, !dbg !550751
+comm_open|do_dentry_open|0|830|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+comm_show|seq_read|0|830|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+__x64_sys_getdents|do_syscall_64|0|828|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ata_scsi_flush_xlat|__ata_scsi_queuecmd|0|824|7|%106 = call i32 %48(%struct.ata_queued_cmd.563173* nonnull %57) #64, !dbg !1349993
+sock_def_readable|netlink_unicast|0|817|15|call void %132(%struct.sock.262299* nonnull %31) #64, !dbg !1823216
+audit_receive|netlink_unicast|0|805|5|call void %103(%struct.sk_buff.262038* %12) #64, !dbg !1823181
+ep_eventpoll_poll|do_sys_poll|0|795|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+ep_read_events_proc|ep_scan_ready_list|0|795|2|%31 = call i32 %1(%struct.eventpoll* %0, %struct.list_head* nonnull %5, i8* %2) #64, !dbg !509349, !callees !509350
+unix_dgram_connect|__sys_connect|0|782|5|%63 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2, i32 %62) #64, !dbg !1737882
+shmem_getattr|vfs_getattr|0|780|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+end_buffer_async_write|end_bio_bh_io_sync|0|766|0|call void %15(%struct.buffer_head.155663* %5, i32 %19) #64, !dbg !494638
+anon_vma_ctor|new_slab|0|765|7|call void %288(i8* %220) #64, !dbg !431322
+inet_getname|__sys_getsockname|0|754|3|%36 = call i32 %34(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %35, i32 0) #64, !dbg !1738079
+special_mapping_fault|__do_fault|0|722|1|%26 = call i32 %25(%struct.vm_fault* %0) #64, !dbg !390035
+selinux_inode_setattr|security_inode_setattr|0|720|0|%18 = call i32 %17(%struct.dentry.266876* %0, %struct.iattr.266879* %1) #64, !dbg !759340
+ktime_get|__hrtimer_start_range_ns|0|716|3|%68 = call i64 %67() #64, !dbg !227983
+timerfd_poll|do_sys_poll|0|693|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+physflat_send_IPI_allbutself|native_send_call_func_ipi|0|661|0|call void %20(i32 252) #64, !dbg !85476
+lapic_next_deadline|clockevents_program_min_delta|0|657|1|%29 = call i32 %28(i64 %27, %struct.clock_event_device.33589* %0) #64, !dbg !240317
+flush_end_io|__blk_mq_end_request|0|655|6|call void %71(%struct.request.291146* %0, i8 zeroext %1) #64, !dbg !830615
+__x64_sys_set_robust_list|do_syscall_64|0|652|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_pid_readlink|vfs_readlink|0|643|0|%20 = call i32 %17(%struct.dentry.144820* %0, i8* %1, i32 %2) #64, !dbg !456656
+proc_exe_link|proc_pid_readlink|0|642|3|%26 = call i32 %25(%struct.dentry.172000* %0, %struct.path.171985* nonnull %4) #64, !dbg !550403
+task_dead_fair|finish_task_switch|0|637|4|call void %87(%struct.task_struct.60731* %0) #64, !dbg !160822
+inet_dgram_connect|__sys_connect|0|617|5|%63 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2, i32 %62) #64, !dbg !1737882
+kfree_link|step_into|0|609|0|call void %19(i8* %23) #64, !dbg !454457
+do_flush_tlb_all|flush_smp_call_function_queue|0|605|3|call void %42(i8* %44) #64, !dbg !247939
+selinux_task_setrlimit|security_task_setrlimit|0|604|0|%12 = call i32 %11(%struct.task_struct.267009* %0, i32 %1, %struct.anon.47* %2) #64, !dbg !760504
+selinux_sk_getsecid|security_sk_classify_flow|0|601|0|call void %12(%struct.sock* %0, i32* %7) #64, !dbg !759245
+filldir|kernfs_fop_readdir|0|600|7|%89 = call i32 %87(%struct.dir_context* %1, i8* %68, i32 %74, i64 %88, i64 %78, i32 %72) #64, !dbg !563167
+radix_tree_node_rcu_free|rcu_do_batch|0|597|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__ia32_sys_getgid?__x64_sys_getgid|do_syscall_64|0|589|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+enqueue_task_fair|wake_up_new_task|0|579|8|call void %161(%struct.rq* %103, %struct.task_struct.60731* %0, i32 8) #64, !dbg !166479
+select_task_rq_fair|wake_up_new_task|0|579|1|%18 = call i32 %17(%struct.task_struct.60731* %0, i32 %9, i32 8, i32 0) #64, !dbg !166341
+task_fork_fair|sched_fork|0|579|6|call void %109(%struct.task_struct.60731* %1) #64, !dbg !166281
+selinux_task_alloc|security_task_alloc|0|579|1|%22 = call i32 %21(%struct.task_struct.267009* %0, i64 %1) #64, !dbg !760382
+cpuset_fork|cgroup_post_fork|0|579|3|call void %86(%struct.task_struct.96561* %0) #64, !dbg !265799
+cpu_cgroup_fork|cgroup_post_fork|0|579|3|call void %86(%struct.task_struct.96561* %0) #64, !dbg !265799
+task_change_group_fair|cpu_cgroup_fork|0|579|4|call void %76(%struct.task_struct.60731* %0, i32 0) #64, !dbg !168591
+freezer_fork|cgroup_post_fork|0|579|3|call void %86(%struct.task_struct.96561* %0) #64, !dbg !265799
+cap_ptrace_access_check|security_ptrace_access_check|0|578|0|%11 = call i32 %10(%struct.task_struct.267009* %0, i32 %1) #64, !dbg !759907
+selinux_ptrace_access_check|security_ptrace_access_check|0|578|0|%11 = call i32 %10(%struct.task_struct.267009* %0, i32 %1) #64, !dbg !759907
+unix_getname|__sys_getsockname|0|577|3|%36 = call i32 %34(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %35, i32 0) #64, !dbg !1738079
+__x64_sys_getrandom|do_syscall_64|0|575|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+writeout_period|call_timer_fn|0|571|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+proc_pid_status|proc_single_show|0|570|1|%21 = call i32 %20(%struct.seq_file.171647* %0, %struct.pid_namespace.171683* %11, %struct.pid.171685* %14, %struct.task_struct.171875* nonnull %15) #64, !dbg !550751
+__x64_sys_setgroups|do_syscall_64|0|568|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_getpeersec_stream|security_socket_getpeersec_stream|0|564|0|%13 = call i32 %12(%struct.socket* %0, i8* %1, i32* %2, i32 %3) #64, !dbg !760789
+__pollwait|signalfd_poll|0|563|0|call void %14(%struct.file.48256* %0, %struct.wait_queue_head* nonnull %10, %struct.poll_table_struct.48011* nonnull %1) #64, !dbg !511520
+__x64_sys_clone|do_syscall_64|0|561|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_waitid|do_syscall_64|0|559|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_exit_group|do_syscall_64|0|546|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+delayed_put_task_struct|rcu_do_batch|0|538|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+delayed_put_pid|rcu_do_batch|0|531|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+selinux_sb_statfs|security_sb_statfs|0|527|0|%10 = call i32 %9(%struct.dentry.266876* %0) #64, !dbg !759996
+inet_recvmsg|sock_recvmsg|0|526|1|%16 = call i32 %14(%struct.socket.268166* %0, %struct.msghdr.268136* %1, i64 %15, i32 %2) #64, !dbg !1738769
+free_inode_nonrcu|evict|0|519|13|call void %117(%struct.inode.147555* %0) #64, !dbg !468437
+tcp_delack_timer|call_timer_fn|0|517|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+sg_pool_alloc|__sg_alloc_table|0|517|0|%26 = call %struct.scatterlist* %5(i32 %22, i32 %4) #64, !dbg !850064
+vdso_fault|special_mapping_fault|0|510|0|%20 = call i32 %15(%struct.vm_special_mapping.130926* %13, %struct.vm_area_struct.130503* %4, %struct.vm_fault.130496* %0) #64, !dbg !398703
+selinux_file_lock|security_file_lock|0|508|0|%11 = call i32 %10(%struct.file.266704* %0, i32 %1) #64, !dbg !760320
+ktime_get|sched_rt_period_timer|0|502|1|%12 = call i64 %11() #64, !dbg !177256
+ktime_get|sched_rt_period_timer|0|502|13|%190 = call i64 %189() #64, !dbg !177256
+sched_rt_period_timer|__run_hrtimer|0|502|4|%81 = call i32 %56(%struct.hrtimer* %2) #64, !dbg !228929
+proc_self_get_link|link_path_walk|0|495|17|%274 = call i8* %268(%struct.dentry.144820* null, %struct.inode.144815* %238, %struct.delayed_call* %272) #64, !dbg !453509
+rtnetlink_rcv|netlink_unicast|0|485|5|call void %103(%struct.sk_buff.262038* %12) #64, !dbg !1823181
+rtnetlink_rcv_msg|netlink_rcv_skb|0|485|0|%30 = call i32 %1(%struct.sk_buff.262038* %0, %struct.nlmsghdr* %14, %struct.netlink_ext_ack* nonnull %3) #64, !dbg !1823764
+__x64_sys_umask|do_syscall_64|0|484|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+sock_def_readable|netlink_dump|0|479|17|call void %191(%struct.sock.262299* %0) #64, !dbg !1825899
+__ia32_sys_sched_yield?__x64_sys_sched_yield|do_syscall_64|0|474|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+yield_task_fair|do_sched_yield|0|474|1|call void %14(%struct.rq* %3) #64, !dbg !162188
+__x64_sys_pipe|do_syscall_64|0|464|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+sg_pool_free|__sg_free_table|0|463|0|call void %3(%struct.scatterlist* %19, i32 %29) #64, !dbg !850048
+__x64_sys_bind|do_syscall_64|0|458|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_bind|security_socket_bind|0|458|0|%12 = call i32 %11(%struct.socket* %0, %struct.sys_desc_table* %1, i32 %2) #64, !dbg !760745
+netlink_bind|__sys_bind|0|457|5|%59 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2) #64, !dbg !1737819
+netlink_getname|__sys_getsockname|0|457|3|%36 = call i32 %34(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %35, i32 0) #64, !dbg !1738079
+__x64_sys_ftruncate|do_syscall_64|0|450|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_setattr|notify_change|0|450|7|%185 = call i32 %182(%struct.dentry.147788* %0, %struct.iattr.147912* %1) #64, !dbg !470785
+__x64_sys_setresuid|do_syscall_64|0|434|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_prctl|do_syscall_64|0|432|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cap_task_prctl|security_task_prctl|0|432|0|%15 = call i32 %14(i32 %0, i64 %1, i64 %2, i64 %3, i64 %4) #64, !dbg !760527
+__x64_sys_statfs|do_syscall_64|0|426|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+simple_statfs|user_statfs|0|426|3|%37 = call i32 %36(%struct.dentry.153992* %20, %struct.kstatfs* %1) #64, !dbg !492108
+ipv4_dst_destroy|dst_destroy|0|418|1|call void %25(%struct.dst_entry.693020* %0) #64, !dbg !1778156
+find_submount|d_walk|0|415|2|%23 = call i32 %2(i8* %1, %struct.dentry.147020* %0) #64, !dbg !463624
+kernfs_iop_lookup|__lookup_slow|0|415|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+wb_workfn|process_one_work|0|410|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+simple_copy_to_iter|__skb_datagram_iter|0|409|2|%80 = call i64 %5(i8* %78, i64 %79, i8* %6, %struct.iov_iter* %2) #64, !dbg !1755318
+ext4_journal_commit_callback|jbd2_journal_commit_transaction|0|409|96|call void %1203(%struct.journal_s.184914* %0, %struct.transaction_s.184918* %64) #64, !dbg !635518
+dst_destroy_rcu|rcu_do_batch|0|409|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+proc_root_lookup|__lookup_slow|0|408|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+__x64_sys_setresgid|do_syscall_64|0|407|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_lookup|__lookup_slow|0|406|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+__ia32_sys_getegid?__x64_sys_getegid|do_syscall_64|0|406|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+mounts_poll|do_sys_poll|0|402|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+proc_readfd|iterate_dir|0|402|3|%44 = call i32 %43(%struct.file.145824* %0, %struct.dir_context* %1) #64, !dbg !460564
+__pollwait|n_tty_poll|0|401|0|call void %9(%struct.file.362685* %1, %struct.wait_queue_head* nonnull %5, %struct.poll_table_struct.362662* nonnull %2) #64, !dbg !1001242
+__pollwait|n_tty_poll|0|401|1|call void %16(%struct.file.362685* %1, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.362662* nonnull %2) #64, !dbg !1001249
+blk_mq_run_work_fn|process_one_work|0|399|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+__x64_sys_newlstat|do_syscall_64|0|397|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+signalfd_poll|ep_send_events_proc|0|386|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+ext4_readdir|iterate_dir|0|386|3|%44 = call i32 %43(%struct.file.145824* %0, %struct.dir_context* %1) #64, !dbg !460564
+shmem_show_options|show_mountinfo|0|385|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+free_compound_page|__put_page|0|384|2|call void %23(%struct.page.118513* %0) #64, !dbg !360891
+udp_v6_get_port|inet_dgram_connect|0|376|2|%33 = call i32 %32(%struct.sock.766524* %7, i16 zeroext 0) #64, !dbg !1921491
+ip6_datagram_connect|inet_dgram_connect|0|376|5|%46 = call i32 %45(%struct.sock.766524* %7, %struct.sys_desc_table* %1, i32 %2) #64, !dbg !1921501
+__x64_sys_dup|do_syscall_64|0|376|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_chdir|do_syscall_64|0|372|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ip6_dst_check|ip6_datagram_release_cb|0|370|0|%41 = call %struct.dst_entry.802599* %26(%struct.dst_entry.802599* nonnull %16, i32 %40) #64, !dbg !2024410
+__cpa_flush_tlb|on_each_cpu|0|362|1|call void %0(i8* %1) #64, !dbg !247866
+kernfs_iop_permission|inode_permission|0|362|0|%43 = call i32 %40(%struct.inode.144815* %0, i32 %1) #64, !dbg !452931
+__x64_sys_socketpair|do_syscall_64|0|361|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_socket_socketpair|security_socket_socketpair|0|361|0|%11 = call i32 %10(%struct.socket* %0, %struct.socket* %1) #64, !dbg !759225
+unix_socketpair|__sys_socketpair|0|360|18|%136 = call i32 %135(%struct.socket.268166* %42, %struct.socket.268166* %72) #64, !dbg !1736185
+unix_write_space|sock_setsockopt|0|358|14|call void %154(%struct.sock.268170* %16) #64, !dbg !1740833
+ext4_xattr_security_get|__vfs_getxattr|0|354|1|%72 = call i32 %69(%struct.xattr_handler.149977* %24, %struct.dentry.150007* %0, %struct.inode.150019* %1, i8* %61, i8* %3, i64 %4) #64, !dbg !481096
+bictcp_cwnd_event|tcp_cwnd_restart|0|348|1|call void %16(%struct.sock.268170* %0, i32 1) #64, !dbg !1893687
+cap_bprm_set_creds|security_bprm_set_creds|0|346|0|%10 = call i32 %9(%struct.linux_binprm.47869* %0) #64, !dbg !759955
+selinux_bprm_set_creds|security_bprm_set_creds|0|346|0|%10 = call i32 %9(%struct.linux_binprm.47869* %0) #64, !dbg !759955
+load_misc_binary|search_binary_handler|0|346|3|%35 = call i32 %34(%struct.linux_binprm.47869* %0) #64, !dbg !449538
+load_script|search_binary_handler|0|346|3|%35 = call i32 %34(%struct.linux_binprm.47869* %0) #64, !dbg !449538
+dev_watchdog|call_timer_fn|0|332|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+__ia32_sys_rt_sigreturn?__x64_sys_rt_sigreturn|do_syscall_64|0|331|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+kernfs_sop_show_path|show_mountinfo|0|330|1|%37 = call i32 %33(%struct.seq_file.156916* %0, %struct.dentry.157147* %35) #64, !dbg !505336
+kernfs_sop_show_options|show_mountinfo|0|330|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+__x64_sys_execve|do_syscall_64|0|325|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+mq_flush_data_end_io|__blk_mq_end_request|0|323|6|call void %71(%struct.request.291146* %0, i8 zeroext %1) #64, !dbg !830615
+select_task_rq_fair|sched_exec|0|322|1|%12 = call i32 %9(%struct.task_struct.60731* %3, i32 %11, i32 4, i32 0) #64, !dbg !166594
+load_elf_binary.14405029837101898374|search_binary_handler|0|322|3|%35 = call i32 %34(%struct.linux_binprm.47869* %0) #64, !dbg !449538
+selinux_bprm_committing_creds|security_bprm_committing_creds|0|322|0|call void %9(%struct.linux_binprm.47869* %0) #64, !dbg !759964
+selinux_bprm_committed_creds|security_bprm_committed_creds|0|322|0|call void %9(%struct.linux_binprm.47869* %0) #64, !dbg !759968
+__x64_sys_arch_prctl|do_syscall_64|0|322|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__pollwait|ep_eventpoll_poll|0|321|0|call void %13(%struct.file.160560* %0, %struct.wait_queue_head* nonnull %9, %struct.poll_table_struct.160360* nonnull %1) #64, !dbg !509735
+put_prev_task_stop|pick_next_task_fair|0|315|6|call void %94(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !171547
+__bpf_prog_run32|sk_filter_trim_cap|0|312|4|%71 = call i32 %67(i8* %68, %struct.bpf_insn* %70) #64, !dbg !1791302
+init_once.17590276424171911136|new_slab|0|312|7|call void %288(i8* %220) #64, !dbg !431322
+free_work|process_one_work|0|295|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+unix_stream_sendmsg|__sys_sendto|0|292|6|%89 = call i32 %87(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %88) #64, !dbg !1738214
+ep_ptable_queue_proc|unix_poll|0|291|0|call void %10(%struct.file.268134* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.267815* nonnull %2) #64, !dbg !1975369
+ip_rcv|__netif_receive_skb|0|289|3|%42 = call i32 %40(%struct.sk_buff.691065* %0, %struct.net_device.691052* %41, %struct.packet_type* nonnull %36, %struct.net_device.691052* %33) #64, !dbg !1771027
+sock_def_readable|unix_stream_connect|0|288|23|call void %265(%struct.sock.268170* nonnull %86) #64, !dbg !1975100
+selinux_socket_unix_stream_connect|security_unix_stream_connect|0|288|0|%12 = call i32 %11(%struct.sock* %0, %struct.sock* %1, %struct.sock* %2) #64, !dbg !759188
+loopback_xmit|xmit_one|0|288|2|%51 = call i32 %50(%struct.sk_buff.691065* %0, %struct.net_device.691052* %1) #64, !dbg !1766673
+unix_accept|__sys_accept4|0|288|13|%119 = call i32 %114(%struct.socket.268166* nonnull %24, %struct.socket.268166* nonnull %39, i32 %118, i1 zeroext false) #64, !dbg !1738028
+ktime_get|enqueue_task_rt|0|280|3|%167 = call i64 %166() #64, !dbg !178230
+select_task_rq_rt|try_to_wake_up|0|280|6|%166 = call i32 %165(%struct.task_struct.60731* %0, i32 %161, i32 16, i32 %2) #64, !dbg !164687
+enqueue_task_rt|activate_task|0|280|1|call void %69(%struct.rq* %0, %struct.task_struct.60731* %1, i32 %2) #64, !dbg !163642
+task_woken_rt|ttwu_do_wakeup|0|280|3|call void %68(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !161455
+dequeue_task_rt|__schedule|0|280|5|call void %126(%struct.rq* %10, %struct.task_struct.60731* %12, i32 9) #64, !dbg !160967
+__pollwait|timerfd_poll|0|278|0|call void %11(%struct.file.48256* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.48011* nonnull %1) #64, !dbg !512116
+unix_getname|__sys_accept4|0|278|14|%128 = call i32 %126(%struct.socket.268166* nonnull %39, %struct.sys_desc_table* nonnull %127, i32 2) #64, !dbg !1738035
+__ia32_compat_sys_fanotify_mark?__ia32_compat_sys_io_pgetevents_time32?__ia32_compat_sys_s390_ipc?__ia32_sys_bpf?__ia32_sys_fanotify_init?__ia32_sys_fanotify_mark?__ia32_sys_io_pgetevents_time32?__ia32_sys_ipc?__ia32_sys_kcmp?__ia32_sys_kexec_file_load?__ia32_sys_old_msgctl?__ia32_sys_old_semctl?__ia32_sys_old_shmctl?__ia32_sys_pciconfig_iobase?__ia32_sys_pciconfig_read?__ia32_sys_pciconfig_write?__ia32_sys_rtas?__ia32_sys_s390_ipc?__ia32_sys_s390_pci_mmio_read?__ia32_sys_s390_pci_mmio_write?__ia32_sys_sgetmask?__ia32_sys_spu_create?__ia32_sys_spu_run?__ia32_sys_subpage_prot?__ia32_sys_userfaultfd?__ia32_sys_vm86?__ia32_sys_vm86old?__x32_compat_sys_epoll_pwait?__x32_compat_sys_fanotify_mark?__x32_compat_sys_get_mempolicy?__x32_compat_sys_get_robust_list?__x32_compat_sys_getsockopt?__x32_compat_sys_io_pgetevents?__x32_compat_sys_io_pgetevents_time32?__x32_compat_sys_io_setup?__x32_compat_sys_io_submit?__x32_compat_sys_ipc?__x32_compat_sys_kexec_load?__x32_compat_sys_keyctl?__x32_compat_sys_lookup_dcookie?__x32_compat_sys_mbind?__x32_compat_sys_migrate_pages?__x32_compat_sys_move_pages?__x32_compat_sys_mq_getsetattr?__x32_compat_sys_mq_notify?__x32_compat_sys_mq_open?__x32_compat_sys_msgctl?__x32_compat_sys_msgrcv?__x32_compat_sys_msgsnd?__x32_compat_sys_old_msgctl?__x32_compat_sys_old_semctl?__x32_compat_sys_old_shmctl?__x32_compat_sys_open_by_handle_at?__x32_compat_sys_process_vm_readv?__x32_compat_sys_process_vm_writev?__x32_compat_sys_quotactl32?__x32_compat_sys_recv?__x32_compat_sys_recvfrom?__x32_compat_sys_recvmmsg_time32?__x32_compat_sys_recvmmsg_time64?__x32_compat_sys_recvmsg?__x32_compat_sys_s390_ipc?__x32_compat_sys_semctl?__x32_compat_sys_sendmmsg?__x32_compat_sys_sendmsg?__x32_compat_sys_set_mempolicy?__x32_compat_sys_set_robust_list?__x32_compat_sys_setsockopt?__x32_compat_sys_shmat?__x32_compat_sys_shmctl?__x32_compat_sys_signalfd?__x32_compat_sys_signalfd4?__x32_compat_sys_socketcall?__x32_compat_sys_sysctl?__x64_sys_bpf?__x64_sys_fanotify_init?__x64_sys_fanotify_mark?__x64_sys_io_pgetevents_time32?__x64_sys_ipc?__x64_sys_kcmp?__x64_sys_kexec_file_load?__x64_sys_old_msgctl?__x64_sys_old_semctl?__x64_sys_old_shmctl?__x64_sys_pciconfig_iobase?__x64_sys_pciconfig_read?__x64_sys_pciconfig_write?__x64_sys_rtas?__x64_sys_s390_ipc?__x64_sys_s390_pci_mmio_read?__x64_sys_s390_pci_mmio_write?__x64_sys_spu_create?__x64_sys_spu_run?__x64_sys_subpage_prot?__x64_sys_userfaultfd?__x64_sys_vm86?__x64_sys_vm86old?sys_ni_syscall|do_syscall_64|0|276|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cgroup_show_path|kernfs_sop_show_path|0|275|0|%28 = call i32 %25(%struct.seq_file.179260* %0, %struct.kernfs_node.179453* %12, %struct.kernfs_root.179456* %19) #64, !dbg !560752
+reqsk_timer_handler|call_timer_fn|0|274|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+tcp_syn_ack_timeout|reqsk_timer_handler|0|274|0|call void %86(%struct.request_sock.696323* %6) #64, !dbg !1872096
+cap_task_fix_setuid|security_task_fix_setuid|0|269|0|%12 = call i32 %11(%struct.cred.266702* %0, %struct.cred.266702* %1, i32 %2) #64, !dbg !760472
+tcp_stream_memory_free.11068920752088710291|tcp_poll|0|268|2|%111 = call zeroext i1 %108(%struct.sock.751093* %8, i32 0) #64, !dbg !1876485
+neigh_periodic_work|process_one_work|0|264|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+__x64_sys_readlink|do_syscall_64|0|263|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+process_backlog|napi_poll|0|256|0|%42 = call i32 %41(%struct.napi_struct.691070* %0, i32 %34) #64, !dbg !1770547
+shmem_file_llseek|__x64_sys_lseek|0|254|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+blk_mq_timeout_work|process_one_work|0|251|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+neigh_resolve_output|ip_finish_output2|0|249|7|%232 = call i32 %231(%struct.neighbour.747041* %137, %struct.sk_buff.747427* %74) #64, !dbg !1865640
+eth_header|neigh_resolve_output|0|249|4|%92 = call i32 %89(%struct.sk_buff.691065* %1, %struct.net_device.691052* %19, i16 zeroext %83, i8* %54, i8* null, i32 %84) #64, !dbg !1781481
+__x64_sys_set_tid_address|do_syscall_64|0|239|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_page_mkwrite|handle_mm_fault|0|233|28|%691 = call i32 %690(%struct.vm_fault* nonnull %4) #64, !dbg !389833
+udp_lib_unhash|sk_common_release|0|232|1|call void %13(%struct.sock.268170* %0) #64, !dbg !1743345
+inet_release|sock_close|0|231|1|%19 = call i32 %18(%struct.socket.268166* %5) #64, !dbg !1737269
+drm_poll|do_sys_poll|0|231|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+put_prev_task_idle|pick_next_task_idle|0|230|0|call void %8(%struct.rq.62755* %0, %struct.task_struct.62540* %1) #64, !dbg !170251
+cap_inode_need_killpriv|security_inode_need_killpriv|0|228|0|%10 = call i32 %9(%struct.dentry.266876* %0) #64, !dbg !760180
+kernfs_fop_read|__vfs_read|0|227|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+kernfs_seq_start|seq_read|0|227|4|%75 = call i8* %73(%struct.seq_file* %8, i64* %74) #64, !dbg !479538
+blk_rq_timed_out_timer|call_timer_fn|0|225|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+selinux_inode_notifysecctx|security_inode_notifysecctx|0|225|0|%12 = call i32 %11(%struct.inode.266888* %0, i8* %1, i32 %2) #64, !dbg !759345
+ext4_get_reserved_space|dquot_claim_space_nodirty|0|223|1|%31 = call i64* %27(%struct.inode.168643* %0) #64, !dbg !542091
+wake_page_function|__wake_up_locked_key_bookmark|0|220|0|%47 = call i32 %46(%struct.wait_queue_entry* %43, i32 %1, i32 0, i8* %2) #64, !dbg !183233
+cgroup1_show_options|kernfs_sop_show_options|0|220|0|%28 = call i32 %25(%struct.seq_file.179260* %0, %struct.kernfs_root.179456* %19) #64, !dbg !560730
+do_sync_core|flush_smp_call_function_queue|0|218|3|call void %42(i8* %44) #64, !dbg !247939
+__ia32_sys_getppid?__x64_sys_getppid|do_syscall_64|0|215|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__sk_destruct|rcu_do_batch|0|214|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+udp_destruct_sock|__sk_destruct|0|213|0|call void %7(%struct.sock.268170* %4) #64, !dbg !1740568
+vvar_fault|special_mapping_fault|0|212|0|%20 = call i32 %15(%struct.vm_special_mapping.130926* %13, %struct.vm_area_struct.130503* %4, %struct.vm_fault.130496* %0) #64, !dbg !398703
+is_ISA_range|track_pfn_insert|0|212|0|%11 = call zeroext i1 %9(i64 %8, i64 %10) #64, !dbg !113687
+pagerange_is_ram_callback|walk_system_ram_range|0|212|1|%66 = call i32 %3(i64 %60, i64 %65, i8* %2) #64, !dbg !132191
+m_next.10189630626985570031|seq_read|0|206|12|%138 = call i8* %137(%struct.seq_file* %8, i8* nonnull %133, i64* %74) #64, !dbg !479591
+stat_open|proc_reg_open|0|205|1|%44 = call i32 %41(%struct.inode.171220* %0, %struct.file.171133* %1) #64, !dbg !548279
+show_stat|seq_read|0|205|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+woken_wake_function|__wake_up_common_lock|0|203|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+proc_seq_open|proc_reg_open|0|203|1|%44 = call i32 %41(%struct.inode.171220* %0, %struct.file.171133* %1) #64, !dbg !548279
+proc_seq_release|close_pdeo|0|203|1|%29 = call i32 %26(%struct.inode.171220* %28, %struct.file.171133* %22) #64, !dbg !547908
+show_map|seq_read|0|202|13|%154 = call i32 %153(%struct.seq_file* %8, i8* nonnull %138) #64, !dbg !479606
+filldir|proc_readfd_common|0|201|1|%26 = call i32 %19(%struct.dir_context* %1, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.2.16254, i64 0, i64 0), i32 1, i64 0, i64 %25, i32 4) #64, !dbg !554256
+filldir|proc_readfd_common|0|201|3|%43 = call i32 %31(%struct.dir_context* %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.3.16255, i64 0, i64 0), i32 2, i64 1, i64 %41, i32 4) #64, !dbg !554289
+proc_fd_permission|inode_permission|0|201|0|%43 = call i32 %40(%struct.inode.144815* %0, i32 %1) #64, !dbg !452931
+proc_tgid_base_lookup|__lookup_slow|0|200|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+selinux_task_kill|security_task_kill|0|199|0|%13 = call i32 %12(%struct.task_struct.267009* %0, %struct.kernel_siginfo* %1, i32 %2, %struct.cred.266702* %3) #64, !dbg !760520
+do_kernel_range_flush|on_each_cpu|0|197|1|call void %0(i8* %1) #64, !dbg !247866
+tty_port_default_receive_buf|flush_to_ldisc|0|197|3|%71 = call i32 %69(%struct.tty_port.363816* %4, i8* %55, i8* %66, i64 %70) #64, !dbg !1005751
+n_tty_receive_buf2|tty_ldisc_receive_buf|0|197|0|%14 = call i32 %9(%struct.tty_struct.363813* %12, i8* %1, i8* %2, i32 %3) #64, !dbg !1005389
+__x64_sys_kill|do_syscall_64|0|197|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+signalfd_read|__vfs_read|0|196|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+m_start.6276131715192164084|seq_read|0|196|4|%75 = call i8* %73(%struct.seq_file* %8, i64* %74) #64, !dbg !479538
+m_show.3343458774636775686|seq_read|0|196|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+inet6_create|__sock_create|0|193|8|%76 = call i32 %75(%struct.net.268257* %0, %struct.socket.268166* nonnull %33, i32 %3, i32 %5) #64, !dbg !1736351
+udp_disconnect|inet_dgram_connect|0|193|0|%18 = call i32 %17(%struct.sock.766524* %7, i32 %3) #64, !dbg !1921476
+udp_lib_unhash|udp_disconnect|0|193|1|call void %44(%struct.sock.762237* %0) #64, !dbg !1909717
+udp_init_sock|inet6_create|0|191|7|%192 = call i32 %189(%struct.sock.743168* nonnull %76) #64, !dbg !1979723
+udp_lib_close.11872800755667079303|inet_release|0|191|1|call void %25(%struct.sock.766524* nonnull %4, i64 %21) #64, !dbg !1921451
+udpv6_destroy_sock|sk_common_release|0|191|0|call void %6(%struct.sock.268170* %0) #64, !dbg !1743342
+__x64_sys_setgid|do_syscall_64|0|191|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_dir_open|do_dentry_open|0|189|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+ext4_release_dir|__fput|0|189|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+flush_to_ldisc|process_one_work|0|188|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+tcp_v4_destroy_sock|inet_csk_destroy_sock|0|187|0|call void %34(%struct.sock.696348* %0) #64, !dbg !1872424
+oom_score_adj_write|__vfs_write|0|187|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+ip6_pol_route_output|fib6_rule_lookup|0|187|0|%9 = call %struct.rt6_info.802601* %4(%struct.net.802791* %0, %struct.fib6_table.802558* %8, %struct.flowi6* %1, %struct.sk_buff.802482* %2, i32 %3) #64, !dbg !2001840
+__ia32_sys_setsid?__x64_sys_setsid|do_syscall_64|0|186|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_setuid|do_syscall_64|0|186|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+udp_v6_rehash|ip6_datagram_dst_update|0|185|4|call void %137(%struct.sock.802957* %0) #64, !dbg !2024531
+udp_v6_rehash|__ip4_datagram_connect|0|185|6|call void %145(%struct.sock.760746* %0) #64, !dbg !1906912
+udp_v6_rehash|__ip6_datagram_connect|0|185|3|call void %144(%struct.sock.802957* %0) #64, !dbg !2024735
+proc_setattr|notify_change|0|183|7|%185 = call i32 %182(%struct.dentry.147788* %0, %struct.iattr.147912* %1) #64, !dbg !470785
+tcp_release_cb|sock_setsockopt|0|182|51|call void %601(%struct.sock.268170* %16) #64, !dbg !1741331
+__d_free_external|rcu_do_batch|0|182|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+sock_common_getsockopt|__sys_getsockopt|0|182|4|%39 = call i32 %38(%struct.socket.268166* nonnull %20, i32 %1, i32 %2, i8* %3, i32* %4) #64, !dbg !1738353
+tcp_getsockopt|sock_common_getsockopt|0|182|0|%13 = call i32 %12(%struct.sock.268170* %8, i32 %1, i32 %2, i8* %3, i32* %4) #64, !dbg !1742626
+tcp_v4_conn_request|tcp_rcv_state_process|0|182|0|%34 = call i32 %33(%struct.sock.751952* %0, %struct.sk_buff.751419* %1) #64, !dbg !1879418
+inet_getname|__sys_accept4|0|181|14|%128 = call i32 %126(%struct.socket.268166* nonnull %39, %struct.sys_desc_table* nonnull %127, i32 2) #64, !dbg !1738035
+ip_getsockopt|tcp_getsockopt|0|181|0|%14 = call i32 %13(%struct.sock.751093* %0, i32 %1, i32 %2, i8* %3, i32* %4) #64, !dbg !1876929
+tcp_set_keepalive|sock_setsockopt|0|181|17|call void %184(%struct.sock.268170* %16, i32 %105) #64, !dbg !1740853
+__x64_sys_accept|do_syscall_64|0|181|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+bpf_prog_free_deferred|process_one_work|0|180|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+__x64_sys_chroot|do_syscall_64|0|179|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+seccomp_check_filter|bpf_prepare_filter|0|179|6|%161 = call i32 %1(%struct.trace_entry* %11, i32 %160) #64, !dbg !1791675
+tcp_v4_md5_lookup|tcp_create_openreq_child|0|178|4|%184 = call %struct.tcp_md5sig_key* %183(%struct.sock.696348* %0, %struct.sock.696348* nonnull %5) #64, !dbg !1901448
+tcp_v4_syn_recv_sock|tcp_check_req|0|178|9|%228 = call %struct.sock.696348* %227(%struct.sock.696348* %0, %struct.sk_buff.695889* %1, %struct.request_sock.696323* %2, %struct.dst_entry.696022* null, %struct.request_sock.696323* %2, i8* nonnull %7) #64, !dbg !1901775
+arp_rcv|netif_receive_skb_internal|0|178|10|%93 = call i32 %91(%struct.sk_buff.691065* %0, %struct.net_device.691052* %92, %struct.packet_type* nonnull %87, %struct.net_device.691052* %84) #64, !dbg !1766918
+arp_hash|neigh_lookup|0|178|0|%17 = call i32 %11(i8* %1, %struct.net_device.691052* %2, i32* %16) #64, !dbg !1781915
+arp_key_eq|neigh_lookup|0|178|1|%37 = call zeroext i1 %9(%struct.neighbour.690815* nonnull %31, i8* %1) #64, !dbg !1781928
+tty_read|__vfs_read|0|177|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+n_tty_read|tty_read|0|177|4|%46 = call i64 %42(%struct.tty_struct.268470* nonnull %12, %struct.file.268134* %0, i8* %1, i64 %2) #64, !dbg !998363
+ip4_datagram_release_cb|release_sock|0|173|2|call void %12(%struct.sock.268170* %0) #64, !dbg !1743787
+put_prev_task_idle|pick_next_task_rt|0|172|2|call void %34(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !178537
+put_prev_task_rt|pick_next_task_idle|0|167|0|call void %8(%struct.rq.62755* %0, %struct.task_struct.62540* %1) #64, !dbg !170251
+__pollwait|mounts_poll|0|166|0|call void %16(%struct.file.157152* %0, %struct.wait_queue_head* nonnull %12, %struct.poll_table_struct.157128* nonnull %1) #64, !dbg !505090
+ext4_show_options|show_mountinfo|0|165|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+tcp_wfree|loopback_xmit|0|156|1|call void %18(%struct.sk_buff* %0) #64, !dbg !1368420
+neigh_timer_handler|call_timer_fn|0|156|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+tcp_release_cb|sk_wait_data|0|153|3|call void %38(%struct.sock.268170* %0) #64, !dbg !1743050
+tty_write|__vfs_write|0|153|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+kernfs_fop_open|do_dentry_open|0|150|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+kernfs_fop_release|__fput|0|150|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+__ia32_sys_gettid?__x64_sys_gettid|do_syscall_64|0|146|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+tcp_v4_do_rcv|__release_sock|0|143|2|%48 = call i32 %47(%struct.sock.268170* %0, %struct.sk_buff.267892* nonnull %14) #64, !dbg !1741460
+__x64_sys_madvise|do_syscall_64|0|143|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+m_stop.14903790650739292891|seq_read|0|141|14|call void %168(%struct.seq_file* %8, i8* %138) #64, !dbg !479618
+default_wake_function|__wake_up_locked|0|137|0|%26 = call i32 %25(%struct.wait_queue_entry* %22, i32 %1, i32 0, i8* null) #64, !dbg !183294
+sock_def_readable|netlink_broadcast_filtered|0|134|15|call void %188(%struct.sock.262299* nonnull %35) #64, !dbg !1823003
+child_wait_callback|__wake_up_common_lock|0|134|1|%57 = call i32 %56(%struct.wait_queue_entry* %53, i32 %1, i32 %3, i8* %4) #64, !dbg !183106
+kfree_link|vfs_readlink|0|131|5|call void %65(i8* %69) #64, !dbg !456712
+__set_page_dirty_no_writeback|set_page_dirty|0|125|1|%42 = call i32 %41(%struct.page.118513* %11) #64, !dbg !356549
+udp_recvmsg|inet_recvmsg|0|124|0|%46 = call i32 %43(%struct.sock.766524* %8, %struct.msghdr.766501* %1, i64 %2, i32 %44, i32 %45, i32* nonnull %5) #64, !dbg !1921729
+kernfs_seq_next|seq_read|0|122|12|%138 = call i8* %137(%struct.seq_file* %8, i8* nonnull %133, i64* %74) #64, !dbg !479591
+proc_tgid_stat|proc_single_show|0|121|1|%21 = call i32 %20(%struct.seq_file.171647* %0, %struct.pid_namespace.171683* %11, %struct.pid.171685* %14, %struct.task_struct.171875* nonnull %15) #64, !dbg !550751
+kernfs_seq_show|seq_read|0|120|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+kernfs_seq_stop|seq_read|0|120|14|call void %168(%struct.seq_file* %8, i8* %138) #64, !dbg !479618
+udp_rcv|ip_protocol_deliver_rcu|0|114|5|%68 = call i32 %67(%struct.sk_buff.744744* %1) #64, !dbg !1861185
+status_reg|machine_check_poll|0|114|6|%90 = call i32 %89(i32 %83) #64, !dbg !73260
+put_prev_task_rt|pick_next_task_fair|0|113|6|call void %94(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !171547
+pty_write|n_tty_write|0|111|11|%162 = call i32 %161(%struct.tty_struct.362746* %0, i8* %87, i32 %158) #64, !dbg !1000946
+put_prev_task_fair|pick_next_task_rt|0|108|2|call void %34(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !178537
+kernfs_seq_stop|seq_read|0|107|11|call void %131(%struct.seq_file* %8, i8* %127) #64, !dbg !479585
+sysfs_kf_seq_show|kernfs_seq_show|0|107|0|%18 = call i32 %17(%struct.seq_file.180352* %0, i8* %1) #64, !dbg !564096
+dev_attr_show|sysfs_kf_seq_show|0|107|0|%48 = call i64 %41(%struct.kobject.49117* %13, %struct.attribute* %47, i8* %35) #64, !dbg !564622
+put_prev_task_rt|pick_next_task_rt|0|103|2|call void %34(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !178537
+__x64_sys_fstatfs|do_syscall_64|0|101|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_statfs|vfs_statfs|0|101|1|%23 = call i32 %22(%struct.dentry.153992* %5, %struct.kstatfs* %1) #64, !dbg !492228
+read_tsc|ktime_get_real_ts64|0|99|0|%24 = call i64 %23(%struct.clocksource* %21) #64, !dbg !230120
+check_preempt_wakeup|wake_up_new_task|0|99|10|call void %195(%struct.rq* %103, %struct.task_struct.60731* %0, i32 2) #64, !dbg !166507
+__x64_sys_timerfd_create|do_syscall_64|0|99|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ktime_get_real.7227358679011810064|do_timerfd_settime|0|99|14|%132 = call i64 %131() #64, !dbg !511885
+timerfd_release|__fput|0|99|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+__pollwait|drm_poll|0|93|0|call void %11(%struct.file.391036* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.390997* nonnull %1) #64, !dbg !1089848
+ipv4_mtu|ip_setup_cork|0|91|1|%60 = call i32 %59(%struct.dst_entry.747083* %54) #64, !dbg !1865812
+proc_reg_poll|do_sys_poll|0|90|5|%195 = call i32 %192(%struct.file.146262* nonnull %178, %struct.poll_table_struct.146196* nonnull %68) #64, !dbg !462015
+swaps_poll|proc_reg_poll|0|90|0|%30 = call i32 %27(%struct.file.171133* %0, %struct.poll_table_struct.170946* %1) #64, !dbg !548137
+block_ioctl|do_vfs_ioctl|0|90|32|%399 = call i64 %396(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460085
+kernfs_iop_get_link|vfs_readlink|0|88|2|%42 = call i8* %41(%struct.dentry.144820* %0, %struct.inode.144815* %7, %struct.delayed_call* nonnull %4) #64, !dbg !456682
+sock_def_readable|__udp_enqueue_schedule_skb|0|84|4|call void %136(%struct.sock.762237* %0) #64, !dbg !1912119
+kernfs_fop_readdir|iterate_dir|0|84|3|%44 = call i32 %43(%struct.file.145824* %0, %struct.dir_context* %1) #64, !dbg !460564
+udp_skb_destructor|__skb_try_recv_from_queue|0|84|2|call void %3(%struct.sock.684935* %0, %struct.sk_buff.684466* %24) #64, !dbg !1755167
+filldir64|ext4_readdir|0|84|12|%446 = call i32 %444(%struct.dir_context* %1, i8* %419, i32 %422, i64 %445, i64 %425, i32 %443) #64, !dbg !568807
+__x64_sys_epoll_pwait|do_syscall_64|0|82|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+kernfs_evict_inode|evict|0|82|3|call void %48(%struct.inode.147555* %0) #64, !dbg !468334
+i_callback|rcu_do_batch|0|82|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+put_prev_task_idle|pick_next_task_stop|0|79|0|call void %16(%struct.rq* %0, %struct.task_struct.60731* %1) #64, !dbg !186448
+__x64_sys_eventfd2|do_syscall_64|0|77|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+eventfd_release|__fput|0|77|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+inet_recvmsg|__sys_recvfrom|0|75|4|%66 = call i32 %64(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %65, i32 %54) #64, !dbg !1738274
+shmem_setattr|notify_change|0|75|7|%185 = call i32 %182(%struct.dentry.147788* %0, %struct.iattr.147912* %1) #64, !dbg !470785
+selinux_inode_init_security|security_inode_init_security|0|75|1|%42 = call i32 %41(%struct.inode.266888* %0, %struct.inode.266888* %1, %struct.qstr* %2, i8** nonnull %34, i8** %35, i64* %36) #64, !dbg !759372
+do_cache_clean|process_one_work|0|75|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+sock_def_write_space|sock_wfree|0|74|0|call void %20(%struct.sock.268170* %4) #64, !dbg !1740503
+ipv4_mtu|__ip_make_skb|0|73|0|%136 = call i32 %135(%struct.dst_entry.747083* %131) #64, !dbg !1866706
+__sock_wfree|loopback_xmit|0|73|1|call void %18(%struct.sk_buff* %0) #64, !dbg !1368420
+__x64_sys_exit|do_syscall_64|0|73|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+udp_sendmsg|inet_sendmsg|0|73|4|%65 = call i32 %64(%struct.sock.766524* %6, %struct.msghdr.766501* %1, i64 %2) #64, !dbg !1921689
+ip_generic_getfrag|__ip_append_data|0|73|7|%396 = call i32 %5(i8* %6, i8* %395, i32 %254, i32 %391, i32 %261, %struct.sk_buff.747427* nonnull %319) #64, !dbg !1866131
+__activate_page|pagevec_lru_move_fn|0|73|2|call void %1(%struct.page.118513* %13, %struct.lruvec* %30, i8* %2) #64, !dbg !360594
+do_flush_tlb_all|on_each_cpu|0|72|1|call void %0(i8* %1) #64, !dbg !247866
+kernfs_dir_fop_release|__fput|0|72|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+has_bh_in_lru|on_each_cpu_cond_mask|0|72|2|%22 = call zeroext i1 %0(i32 %21, i8* %2) #64, !dbg !247808
+__x64_sys_getrusage|do_syscall_64|0|72|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_syslog|security_syslog|0|69|0|%10 = call i32 %9(i32 %0) #64, !dbg !759935
+bpf_skb_load_helper_16|___bpf_prog_run|0|68|0|%775 = call i64 %769(i64 %770, i64 %771, i64 %772, i64 %773, i64 %774) #64, !dbg !320538
+dd_insert_requests|blk_mq_sched_insert_request|0|66|2|call void %68(%struct.blk_mq_hw_ctx.291137* %14, %struct.list_head* nonnull %5, i1 zeroext %1) #64, !dbg !834522
+scsi_mq_get_budget|blk_mq_sched_dispatch_requests|0|66|3|%101 = call zeroext i1 %98(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834239
+blkdev_writepages|do_writepages|0|66|0|%19 = call i32 %16(%struct.address_space.118509* %0, %struct.writeback_control* %1) #64, !dbg !358744
+scsi_initialize_rq|blk_get_request|0|66|1|call void %19(%struct.request.291146* %13) #64, !dbg !821193
+__x64_sys_syslog|do_syscall_64|0|66|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_sys_permission|link_path_walk|0|65|5|%89 = call i32 %86(%struct.inode.144815* %76, i32 1) #64, !dbg !453351
+proc_sys_revalidate|lookup_fast|0|65|14|%165 = call i32 %164(%struct.dentry.144820* nonnull %152, i32 %160) #64, !dbg !454240
+dequeue_task_fair|move_queued_task|0|64|0|call void %26(%struct.rq* %0, %struct.task_struct.60731* %2, i32 8) #64, !dbg !163352
+enqueue_task_fair|move_queued_task|0|64|4|call void %77(%struct.rq* %32, %struct.task_struct.60731* %2, i32 0) #64, !dbg !163410
+dd_dispatch_request|blk_mq_sched_dispatch_requests|0|64|4|%106 = call %struct.request.291146* %105(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834243
+migration_cpu_stop|cpu_stopper_thread|0|64|1|%37 = call i32 %32(i8* %34) #64, !dbg !273093
+pty_write|do_output_char|0|63|0|%31 = call i32 %30(%struct.tty_struct.362746* %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.10.29851, i64 0, i64 0), i32 2) #64, !dbg !1003541
+shmem_evict_inode|evict|0|62|3|call void %48(%struct.inode.147555* %0) #64, !dbg !468334
+shmem_destroy_inode|evict|0|62|13|call void %117(%struct.inode.147555* %0) #64, !dbg !468437
+inet_sendmsg|___sys_sendmsg|0|61|8|%120 = call i32 %118(%struct.socket.268166* %0, %struct.msghdr.268136* %2, i64 %119) #64, !dbg !1738450
+kernfs_iop_get_link|link_path_walk|0|60|19|%280 = call i8* %268(%struct.dentry.144820* %237, %struct.inode.144815* %238, %struct.delayed_call* %272) #64, !dbg !453304
+sock_wfree|loopback_xmit|0|59|1|call void %18(%struct.sk_buff* %0) #64, !dbg !1368420
+shmem_alloc_inode|new_inode_pseudo|0|59|0|%9 = call %struct.inode.147555* %6(%struct.super_block.147538* %0) #64, !dbg !467891
+pipe_ioctl|do_vfs_ioctl|0|59|32|%399 = call i64 %396(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460085
+pty_write|n_tty_write|0|57|19|%202 = call i32 %200(%struct.tty_struct.362746* %0, i8* %197, i32 %201) #64, !dbg !1000980
+mce_timer_fn|call_timer_fn|0|57|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+ipv4_dst_check|ip4_datagram_release_cb|0|56|0|%22 = call %struct.dst_entry.760483* %21(%struct.dst_entry.760483* nonnull %11, i32 0) #64, !dbg !1906639
+ext4_ioctl|do_vfs_ioctl|0|56|31|%387 = call i64 %384(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460077
+mounts_release|__fput|0|56|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+mountinfo_open|do_dentry_open|0|56|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+drop_mountpoint|pin_kill|0|56|1|call void %25(%struct.fs_pin.154245* nonnull %0) #64, !dbg !493070
+__cleanup_mnt|task_work_run|0|56|1|call void %30(%struct.callback_head* nonnull %26) #64, !dbg !154332
+__x64_sys_getdents64|do_syscall_64|0|56|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+m_stop.14903790650739292891|seq_read|0|55|11|call void %131(%struct.seq_file* %8, i8* %127) #64, !dbg !479585
+m_next.243594760558001824|seq_read|0|55|6|%100 = call i8* %99(%struct.seq_file* %8, i8* nonnull %84, i64* %74) #64, !dbg !479558
+proc_show_options|show_mountinfo|0|55|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+devpts_show_options|show_mountinfo|0|55|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+cgroup_show_options|kernfs_sop_show_options|0|55|0|%28 = call i32 %25(%struct.seq_file.179260* %0, %struct.kernfs_root.179456* %19) #64, !dbg !560730
+autofs_show_options|show_mountinfo|0|55|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+hugetlbfs_show_options|show_mountinfo|0|55|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+debugfs_show_options|show_mountinfo|0|55|21|%119 = call i32 %115(%struct.seq_file.156916* %0, %struct.dentry.157147* %118) #64, !dbg !505400
+kernfs_iop_get_link|trailing_symlink|0|54|10|%110 = call i8* %98(%struct.dentry.144820* %65, %struct.inode.144815* %67, %struct.delayed_call* %102) #64, !dbg !456409
+shmem_destroy_callback|rcu_do_batch|0|54|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+sd_ioctl|blkdev_ioctl|0|54|92|%697 = call i32 %694(%struct.block_device.297748* %0, i32 %1, i32 %2, i64 %3) #64, !dbg !835358
+udp4_gro_receive|inet_gro_receive|0|54|1|%226 = call %struct.sk_buff.766004* %225(%struct.list_head* %0, %struct.sk_buff.766004* %1) #64, !dbg !1921025
+udp_v4_early_demux|ip_rcv_finish_core|0|54|0|%43 = call i32 %42(%struct.sk_buff.744744* %1) #64, !dbg !1861561
+generic_file_write_iter|__vfs_write|0|53|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441023
+shmem_write_begin|generic_perform_write|0|53|1|%44 = call i32 %42(%struct.file.118570* %0, %struct.address_space.118509* %8, i64 %21, i32 %43, i32 0, %struct.page.118513** nonnull %4, i8** nonnull %5) #64, !dbg !343161
+shmem_write_end|generic_perform_write|0|53|3|%56 = call i32 %52(%struct.file.118570* %0, %struct.address_space.118509* %8, i64 %21, i32 %43, i32 %53, %struct.page.118513* %54, i8* %55) #64, !dbg !343171
+pty_unix98_ioctl|tty_ioctl|0|52|46|%382 = call i32 %379(%struct.tty_struct.268470* nonnull %16, i32 %1, i64 %2) #64, !dbg !998765
+blk_end_sync_rq|__blk_mq_end_request|0|52|6|call void %71(%struct.request.291146* %0, i8 zeroext %1) #64, !dbg !830615
+inotify_poll|ep_send_events_proc|0|51|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+blkdev_open|do_dentry_open|0|51|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+exact_lock.545115674938666783|kobj_lookup|0|51|2|%50 = call i32 %47(i32 %1, i8* %39) #64, !dbg !1286442
+exact_match.7992874640940268368|kobj_lookup|0|51|5|%55 = call %struct.kobject.142914* %41(i32 %1, i32* %2, i8* %39) #64, !dbg !1286448
+blkdev_close|__fput|0|51|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+selinux_inode_create|security_inode_create|0|51|0|%17 = call i32 %16(%struct.inode.266888* %0, %struct.dentry.266876* %1, i16 zeroext %2) #64, !dbg !759394
+__x64_sys_pipe2|do_syscall_64|0|49|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+eth_header|arp_create|0|48|2|%73 = call i32 %70(%struct.sk_buff.764261* nonnull %29, %struct.net_device.764360* %3, i16 zeroext %62, i8* %61, i8* %58, i32 %64) #64, !dbg !1915347
+inet_create|__sock_create|0|48|8|%76 = call i32 %75(%struct.net.268257* %0, %struct.socket.268166* nonnull %33, i32 %3, i32 %5) #64, !dbg !1736351
+udp_v4_get_port|inet_dgram_connect|0|48|2|%33 = call i32 %32(%struct.sock.766524* %7, i16 zeroext 0) #64, !dbg !1921491
+ip4_datagram_connect|inet_dgram_connect|0|48|5|%46 = call i32 %45(%struct.sock.766524* %7, %struct.sys_desc_table* %1, i32 %2) #64, !dbg !1921501
+udp_v4_rehash|__ip4_datagram_connect|0|48|6|call void %145(%struct.sock.760746* %0) #64, !dbg !1906912
+bictcp_state|tcp_enter_loss|0|47|6|call void %172(%struct.sock.751952* %0, i8 zeroext 4) #64, !dbg !1888493
+proc_single_open.2874486356761745873|proc_reg_open|0|47|1|%44 = call i32 %41(%struct.inode.171220* %0, %struct.file.171133* %1) #64, !dbg !548279
+invalidate_bh_lru|flush_smp_call_function_queue|0|47|3|call void %42(i8* %44) #64, !dbg !247939
+__x64_sys_unlink|do_syscall_64|0|46|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cmdline_proc_show|seq_read|0|46|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+keyring_gc_check_iterator|assoc_array_iterate|0|46|0|%36 = call i32 %1(i8* %35, i8* %2) #64, !dbg !859255
+tcp_leave_memory_pressure|__sk_mem_raise_allocated|0|45|0|call void %21(%struct.sock.268170* %0) #64, !dbg !1741908
+ata_scsi_pass_thru|__ata_scsi_queuecmd|0|45|7|%106 = call i32 %48(%struct.ata_queued_cmd.563173* nonnull %57) #64, !dbg !1349993
+proc_self_get_link|vfs_readlink|0|43|2|%42 = call i8* %41(%struct.dentry.144820* %0, %struct.inode.144815* %7, %struct.delayed_call* nonnull %4) #64, !dbg !456682
+filldir|dcache_readdir|0|43|3|%111 = call i32 %109(%struct.dir_context* %1, i8* %96, i32 %100, i64 %110, i64 %104, i32 %108) #64, !dbg !482731
+cgroup_file_open|kernfs_fop_open|0|43|16|%173 = call i32 %170(%struct.kernfs_open_file.180419* nonnull %70) #64, !dbg !563917
+cgroup_file_release|kernfs_fop_release|0|43|1|call void %26(%struct.kernfs_open_file.180419* %12) #64, !dbg !563969
+__x64_sys_utimensat|do_syscall_64|0|43|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+shmem_create|path_openat|0|43|49|%519 = call i32 %514(%struct.inode.144815* %254, %struct.dentry.144820* %493, i16 zeroext %466, i1 zeroext %518) #64, !dbg !458227
+ext4_mb_pa_callback|rcu_do_batch|0|43|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+proc_root_getattr|vfs_getattr|0|43|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+pid_getattr|vfs_getattr|0|43|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+filldir|kernfs_fop_readdir|0|42|0|%25 = call i32 %22(%struct.dir_context* %1, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.14.16560, i64 0, i64 0), i32 1, i64 0, i64 %24, i32 4) #64, !dbg !563095
+filldir|kernfs_fop_readdir|0|42|2|%42 = call i32 %32(%struct.dir_context* %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.15.16561, i64 0, i64 0), i32 2, i64 1, i64 %40, i32 4) #64, !dbg !563120
+proc_sys_compare|__d_lookup|0|42|1|%84 = call i32 %77(%struct.dentry.147020* %25, i32 %80, i8* %83, %struct.qstr* %1) #64, !dbg !465721
+ipv4_dst_check|sk_dst_check|0|41|0|%32 = call %struct.dst_entry.268160* %31(%struct.dst_entry.268160* nonnull %7, i32 %1) #64, !dbg !1743322
+udp_init_sock|inet_create|0|41|7|%161 = call i32 %158(%struct.sock.766524* nonnull %77) #64, !dbg !1922250
+udp_lib_close.17979120873396134390|inet_release|0|41|1|call void %25(%struct.sock.766524* nonnull %4, i64 %21) #64, !dbg !1921451
+udp_destroy_sock|sk_common_release|0|41|0|call void %6(%struct.sock.268170* %0) #64, !dbg !1743342
+inet_ioctl|sock_do_ioctl|0|41|0|%14 = call i32 %13(%struct.socket.268166* %1, i32 %2, i64 %3) #64, !dbg !1737353
+udp_ioctl|inet_ioctl|0|41|10|%49 = call i32 %46(%struct.sock.766524* %8, i32 %1, i64 %2) #64, !dbg !1921580
+no_llseek|__x64_sys_lseek|0|41|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+simple_lookup|__lookup_hash|0|40|6|%40 = call %struct.dentry.144820* %39(%struct.inode.144815* %27, %struct.dentry.144820* nonnull %33, i32 %2) #64, !dbg !452716
+ext4_get_dquots|dquot_drop|0|40|0|%14 = call %struct.dquot.168656** %13(%struct.inode.168643* %0) #64, !dbg !542046
+fib6_dump_node|fib6_walk_continue|0|40|0|%62 = call i32 %61(%struct.fib6_walker* %0) #64, !dbg !2002035
+__x64_sys_rename|do_syscall_64|0|39|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_rename|security_inode_rename|0|39|1|%50 = call i32 %49(%struct.inode.266888* %0, %struct.dentry.266876* %1, %struct.inode.266888* %2, %struct.dentry.266876* %3) #64, !dbg !760104
+shmem_rename2|vfs_rename|0|39|18|%192 = call i32 %191(%struct.inode.144815* %0, %struct.dentry.144820* %1, %struct.inode.144815* %2, %struct.dentry.144820* %3, i32 %5) #64, !dbg !455425
+block_devnode|device_get_devnode|0|38|0|%15 = call i8* %12(%struct.device.539237* %0, i16* %1, %struct.kuid_t* %2, %struct.kuid_t* %3) #64, !dbg !1280924
+selinux_inode_unlink|security_inode_unlink|0|37|0|%18 = call i32 %17(%struct.inode.266888* %0, %struct.dentry.266876* %1) #64, !dbg !760059
+blkdev_read_iter|__vfs_read|0|37|2|%93 = call i64 %92(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* nonnull %7) #64, !dbg !441557
+shmem_xattr_handler_get|__vfs_getxattr|0|37|1|%72 = call i32 %69(%struct.xattr_handler.149977* %24, %struct.dentry.150007* %0, %struct.inode.150019* %1, i8* %61, i8* %3, i64 %4) #64, !dbg !481096
+__x64_sys_fadvise64|do_syscall_64|0|36|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_pid_get_link|trailing_symlink|0|36|10|%110 = call i8* %98(%struct.dentry.144820* %65, %struct.inode.144815* %67, %struct.delayed_call* %102) #64, !dbg !456409
+ext4_end_bitmap_read|end_bio_bh_io_sync|0|36|0|call void %15(%struct.buffer_head.155663* %5, i32 %19) #64, !dbg !494638
+__x64_sys_nanosleep|do_syscall_64|0|35|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_newuname|do_syscall_64|0|35|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_setitimer|do_syscall_64|0|34|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__pollwait|swaps_poll|0|33|0|call void %10(%struct.file.118570* %0, %struct.wait_queue_head* nonnull @proc_poll_wait, %struct.poll_table_struct.118323* nonnull %1) #64, !dbg !413512
+bictcp_state|tcp_try_undo_recovery|0|33|2|call void %111(%struct.sock.751952* %0, i8 zeroext 0) #64, !dbg !1886131
+check_corruption|process_one_work|0|33|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+pipe_poll|ep_send_events_proc|0|32|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+proc_fd_permission|link_path_walk|0|32|5|%89 = call i32 %86(%struct.inode.144815* %76, i32 1) #64, !dbg !453351
+__x64_sys_fchmod|do_syscall_64|0|32|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+process_srcu|process_one_work|0|32|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+srcu_invoke_callbacks|process_one_work|0|32|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+wakeme_after_rcu|srcu_invoke_callbacks|0|32|6|call void %29(%struct.callback_head* nonnull %27) #64, !dbg !215531
+radix_tree_node_ctor|new_slab|0|32|6|call void %201(i8* %128) #64, !dbg !431252
+ext4_lookup|__lookup_slow|0|32|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+proc_fd_link|proc_pid_get_link|0|31|3|%26 = call i32 %25(%struct.dentry.172000* nonnull %0, %struct.path.171985* nonnull %4) #64, !dbg !550371
+bictcp_cwnd_event|tcp_enter_loss|0|30|5|call void %124(%struct.sock.751952* %0, i32 3) #64, !dbg !1888453
+bictcp_cwnd_event|tcp_process_tlp_ack|0|30|2|call void %69(%struct.sock.751952* %0, i32 2) #64, !dbg !1885159
+bictcp_recalc_ssthresh|tcp_enter_loss|0|30|4|%121 = call i32 %120(%struct.sock.751952* %0) #64, !dbg !1888447
+bictcp_recalc_ssthresh|tcp_process_tlp_ack|0|30|0|%34 = call i32 %33(%struct.sock.751952* %0) #64, !dbg !1885126
+bictcp_state|tcp_process_tlp_ack|0|30|1|call void %45(%struct.sock.751952* %0, i8 zeroext 2) #64, !dbg !1885140
+bictcp_state|tcp_process_tlp_ack|0|30|4|call void %104(%struct.sock.751952* %0, i8 zeroext %101) #64, !dbg !1885184
+lo_release|__blkdev_put|0|30|10|call void %79(%struct.gendisk.155920* %7, i32 %1) #64, !dbg !501400
+do_sync_core|on_each_cpu|0|30|1|call void %0(i8* %1) #64, !dbg !247866
+proc_sys_read|__vfs_read|0|30|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+ahci_qc_fill_rtf|ata_qc_complete|0|30|6|%113 = call zeroext i1 %112(%struct.ata_queued_cmd* %0) #64, !dbg !1343640
+__prandom_timer|call_timer_fn|0|29|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+shmem_unlink|vfs_unlink|0|29|6|%51 = call i32 %50(%struct.inode.144815* %0, %struct.dentry.144820* %1) #64, !dbg !452770
+__x64_sys_getcwd|do_syscall_64|0|29|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+delayed_free_vfsmnt|rcu_do_batch|0|28|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__x64_sys_fsync|do_syscall_64|0|26|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+uevent_show|dev_attr_show|0|26|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+dev_uevent_filter|uevent_show|0|26|0|%28 = call i32 %25(%struct.kset.538684* nonnull %9, %struct.kobject.539194* %5) #64, !dbg !1278579
+dev_uevent|uevent_show|0|26|2|%42 = call i32 %41(%struct.kset.538684* nonnull %9, %struct.kobject.539194* %5, %struct.kobj_uevent_env* nonnull %38) #64, !dbg !1278592
+bit_wait_io|__wait_on_bit_lock|0|25|1|%18 = call i32 %2(%struct.sigaltstack* %7, i32 %3) #64, !dbg !183456
+unix_dgram_sendmsg|sock_write_iter|0|25|1|%47 = call i32 %45(%struct.socket.268166* %9, %struct.msghdr.268136* nonnull %3, i64 %46) #64, !dbg !1736513
+tid_fd_revalidate|lookup_fast|0|25|14|%165 = call i32 %164(%struct.dentry.144820* nonnull %152, i32 %160) #64, !dbg !454240
+ext4_get_acl|get_acl|0|25|1|%99 = call %struct.posix_acl* %75(%struct.inode.166321* %0, i32 %1) #64, !dbg !532835
+tcp_v4_send_synack|tcp_rtx_synack|0|25|1|%16 = call i32 %15(%struct.sock.268170* %0, %struct.dst_entry.268160* null, %struct.flowi* nonnull %3, %struct.request_sock.268138* %1, %struct.tcp_fastopen_cookie* null, i32 0) #64, !dbg !1888932
+netlink_sendmsg|___sys_sendmsg|0|24|8|%120 = call i32 %118(%struct.socket.268166* %0, %struct.msghdr.268136* %2, i64 %119) #64, !dbg !1738450
+cgroup_seqfile_start|kernfs_seq_start|0|24|2|%20 = call i8* %17(%struct.seq_file.180352* %0, i64* %1) #64, !dbg !564021
+cgroup_procs_start|cgroup_seqfile_start|0|24|0|%14 = call i8* %13(%struct.seq_file.96165* %0, i64* %1) #64, !dbg !265026
+cgroup_seqfile_stop|kernfs_seq_stop|0|24|0|call void %14(%struct.seq_file.180352* %0, i8* %1) #64, !dbg !564052
+ext4_sync_file|__x64_sys_fsync|0|24|2|%31 = call i32 %30(%struct.file.152142* nonnull %8, i64 0, i64 9223372036854775807, i32 0) #64, !dbg !490344
+sys_dmi_field_show|dev_attr_show|0|24|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+block_llseek|__x64_sys_lseek|0|24|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+inet_fill_link_af|rtnl_fill_ifinfo|0|24|86|%798 = call i32 %797(%struct.sk_buff.694390* %0, %struct.net_device.694377* %1, i32 %8) #64, !dbg !1786099
+inet6_fill_link_af|rtnl_fill_ifinfo|0|24|86|%798 = call i32 %797(%struct.sk_buff.694390* %0, %struct.net_device.694377* %1, i32 %8) #64, !dbg !1786099
+is_seen|proc_sys_compare|0|24|2|%40 = call i32 %37(%struct.ctl_table_set* %31) #64, !dbg !557745
+net_ctl_permissions|proc_sys_permission|0|24|1|%45 = call i32 %42(%struct.ctl_table_header* %26, %struct.ctl_table* nonnull %34) #64, !dbg !558053
+sync_hw_clock|process_one_work|0|24|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+cgroup_procs_release|cgroup_file_release|0|23|0|call void %9(%struct.kernfs_open_file.96166* %0) #64, !dbg !264983
+ext4_alloc_inode|iget_locked|0|23|6|%47 = call %struct.inode.147555* %44(%struct.super_block.147538* %0) #64, !dbg !469414
+proc_sys_permission|inode_permission|0|23|0|%43 = call i32 %40(%struct.inode.144815* %0, i32 %1) #64, !dbg !452931
+proc_sys_open|do_dentry_open|0|23|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+proc_sys_delete|retain_dentry|0|23|0|%24 = call i32 %23(%struct.dentry.147020* %0) #64, !dbg !463383
+__x64_sys_mkdir|do_syscall_64|0|22|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+kernfs_fop_write|__vfs_write|0|22|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+cgroup_file_write|kernfs_fop_write|0|22|6|%55 = call i64 %51(%struct.kernfs_open_file.180419* %11, i8* nonnull %35, i64 %21, i64 %54) #64, !dbg !563638
+__x64_sys_unlinkat|do_syscall_64|0|22|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+native_smp_send_reschedule|kick_process|0|21|0|call void %18(i32 %4) #64, !dbg !165174
+__x64_sys_inotify_rm_watch|do_syscall_64|0|21|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+disk_events_workfn|process_one_work|0|21|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+sd_check_events|disk_check_events|0|21|0|%13 = call i32 %12(%struct.gendisk.298064* %6, i32 %8) #64, !dbg !836759
+scsi_mq_done|ata_scsi_simulate|0|21|74|call void %655(%struct.scsi_cmnd.563166* %1) #64, !dbg !1351036
+ext4_drop_inode|iput|0|20|4|%65 = call i32 %62(%struct.inode.147555* nonnull %0) #64, !dbg !468174
+ext4_evict_inode|evict|0|20|3|call void %48(%struct.inode.147555* %0) #64, !dbg !468334
+ext4_destroy_inode|evict|0|20|13|call void %117(%struct.inode.147555* %0) #64, !dbg !468437
+selinux_key_permission|security_key_permission|0|20|0|%12 = call i32 %11(%struct.__key_reference_with_attributes* %0, %struct.cred.266702* %1, i32 %2) #64, !dbg !760813
+sock_common_setsockopt|__sys_setsockopt|0|20|4|%41 = call i32 %40(%struct.socket.268166* nonnull %22, i32 %1, i32 %2, i8* %3, i32 %4) #64, !dbg !1738318
+tasklet_action|__do_softirq?__softirqentry_text_start|0|19|1|call void %56(%struct.softirq_action* %23) #64, !dbg !129766
+tcp_tasklet_func|tasklet_action_common|0|19|0|call void %31(i64 %33) #64, !dbg !130621
+tcp_rtx_synack|inet_rtx_syn_ack|0|19|0|%8 = call i32 %7(%struct.sock.696348* %0, %struct.request_sock.696323* %1) #64, !dbg !1871558
+ip_output|ip_send_unicast_reply|0|18|9|%287 = call i32 %286(%struct.net.747144* %228, %struct.sock.747417* %230, %struct.sk_buff.747427* nonnull %225) #64, !dbg !1867250
+ep_ptable_queue_proc|datagram_poll|0|18|0|call void %10(%struct.file.684907* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.684366* nonnull %2) #64, !dbg !1755436
+check_lifetime|process_one_work|0|18|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+lo_open|__blkdev_get|0|18|20|%214 = call i32 %211(%struct.block_device.155898* %0, i32 %1) #64, !dbg !501839
+disk_ro_show|dev_attr_show|0|18|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+do_proc_dointvec_conv|__do_proc_dointvec|0|18|5|%95 = call i32 %35(i8* nonnull %13, i64* nonnull %12, i32* %74, i32 0, i8* %7) #64, !dbg !133104
+__x64_sys_getgroups|do_syscall_64|0|18|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+rtnl_dump_ifinfo|netlink_dump|0|18|3|%91 = call i32 %90(%struct.sk_buff.262038* nonnull %39, %struct.netlink_callback.262068* %20) #64, !dbg !1825798
+selinux_inode_rmdir|security_inode_rmdir|0|18|0|%18 = call i32 %17(%struct.inode.266888* %0, %struct.dentry.266876* %1) #64, !dbg !760073
+sd_open|__blkdev_get|0|18|20|%214 = call i32 %211(%struct.block_device.155898* %0, i32 %1) #64, !dbg !501839
+sd_release|__blkdev_put|0|18|10|call void %79(%struct.gendisk.155920* %7, i32 %1) #64, !dbg !501400
+ip_reply_glue_bits|__ip_append_data|0|18|7|%396 = call i32 %5(i8* %6, i8* %395, i32 %254, i32 %391, i32 %261, %struct.sk_buff.747427* nonnull %319) #64, !dbg !1866131
+pid_revalidate|__lookup_slow|0|17|1|%38 = call i32 %37(%struct.dentry.144820* %24, i32 %2) #64, !dbg !454288
+percpu_ref_switch_to_atomic_rcu|rcu_do_batch|0|17|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+percpu_ref_noop_confirm_switch|percpu_ref_switch_to_atomic_rcu|0|17|3|call void %43(%struct.percpu_ref* %4) #64, !dbg !854050
+anon_vma_ctor|new_slab|0|17|6|call void %201(i8* %128) #64, !dbg !431252
+addrconf_verify_work|process_one_work|0|17|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+ep_ptable_queue_proc|unix_dgram_poll|0|16|0|call void %10(%struct.file.268134* %0, %struct.wait_queue_head* nonnull %17, %struct.poll_table_struct.267815* nonnull %2) #64, !dbg !1977471
+ext4_i_callback|rcu_do_batch|0|16|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+inotify_freeing_mark|fsnotify_destroy_mark|0|16|5|call void %47(%struct.fsnotify_mark.158551* %0, %struct.fsnotify_group.158550* %35) #64, !dbg !507041
+ktime_get_boottime.12755490239435431949|do_timerfd_settime|0|16|14|%132 = call i64 %131() #64, !dbg !511885
+inotify_free_mark|fsnotify_mark_destroy_workfn|0|16|2|call void %41(%struct.fsnotify_mark.158551* %36) #64, !dbg !506718
+fsnotify_connector_destroy_workfn|process_one_work|0|16|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+fsnotify_mark_destroy_workfn|process_one_work|0|16|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+null_lseek|__x64_sys_lseek|0|16|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+ext4_alloc_inode|new_inode_pseudo|0|16|0|%9 = call %struct.inode.147555* %6(%struct.super_block.147538* %0) #64, !dbg !467891
+inet_dump_fib|rtnl_dump_all|0|16|0|%43 = call i32 %37(%struct.sk_buff.694390* %0, %struct.netlink_callback.694284* %1) #64, !dbg !1787581
+inet6_dump_fib|rtnl_dump_all|0|16|0|%43 = call i32 %37(%struct.sk_buff.694390* %0, %struct.netlink_callback.694284* %1) #64, !dbg !1787581
+proc_sys_getattr|vfs_getattr|0|16|1|%38 = call i32 %35(%struct.path.48253* %0, %struct.kstat* %1, i32 %15, i32 %16) #64, !dbg !447362
+igmp_rcv|ip_protocol_deliver_rcu|0|16|5|%68 = call i32 %67(%struct.sk_buff.744744* %1) #64, !dbg !1861185
+csum_partial_ext|__skb_checksum|0|16|0|%23 = call i32 %18(i8* %22, i32 %16, i32 %3) #64, !dbg !1750587
+igmp_gq_timer_expire|call_timer_fn|0|16|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+inet_gso_segment|__skb_gso_segment|0|15|2|%135 = call %struct.sk_buff.691065* %132(%struct.sk_buff.691065* %0, i64 %84) #64, !dbg !1761377
+tcp4_gso_segment|inet_gso_segment|0|15|2|%138 = call %struct.sk_buff.766004* %135(%struct.sk_buff.766004* %0, i64 %88) #64, !dbg !1920761
+cgroup_seqfile_show|kernfs_seq_show|0|15|0|%18 = call i32 %17(%struct.seq_file.180352* %0, i8* %1) #64, !dbg !564096
+__x64_sys_symlink|do_syscall_64|0|15|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_symlink|security_inode_symlink|0|15|0|%17 = call i32 %16(%struct.inode.266888* %0, %struct.dentry.266876* %1, i8* %2) #64, !dbg !760065
+shmem_symlink|vfs_symlink|0|15|3|%49 = call i32 %48(%struct.inode.144815* %0, %struct.dentry.144820* %1, i8* %2) #64, !dbg !455003
+cpuset_post_attach|cgroup_procs_write_finish|0|15|2|call void %11() #64, !dbg !264672
+cgroup1_procs_write|cgroup_file_write|0|15|0|%47 = call i64 %44(%struct.kernfs_open_file.96166* %0, i8* %1, i64 %2, i64 %3) #64, !dbg !265070
+__x64_sys_capget|do_syscall_64|0|15|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_pread64|do_syscall_64|0|15|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+check_preempt_wakeup|move_queued_task|0|14|5|call void %88(%struct.rq* %32, %struct.task_struct.60731* %2, i32 0) #64, !dbg !163421
+inet_dump_ifaddr|netlink_dump|0|14|3|%91 = call i32 %90(%struct.sk_buff.262038* nonnull %39, %struct.netlink_callback.262068* %20) #64, !dbg !1825798
+kernfs_iop_lookup|path_openat|0|14|44|%476 = call %struct.dentry.144820* %474(%struct.inode.144815* %254, %struct.dentry.144820* %275, i32 %475) #64, !dbg !458178
+__x64_sys_sendmmsg|do_syscall_64|0|14|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+key_garbage_collector|process_one_work|0|14|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+ep_ptable_queue_proc|pipe_poll|0|13|0|call void %11(%struct.file.822* %0, %struct.wait_queue_head* nonnull %7, %struct.poll_table_struct.595* nonnull %1) #64, !dbg !451436
+pipe_poll|__se_sys_epoll_ctl|0|13|13|%279 = call i32 %276(%struct.file.160560* %263, %struct.poll_table_struct.160360* nonnull %267) #64, !dbg !510291
+unix_getname|__sys_getpeername|0|13|4|%41 = call i32 %39(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %40, i32 1) #64, !dbg !1738122
+init_once.17590276424171911136|new_slab|0|13|6|call void %201(i8* %128) #64, !dbg !431252
+__x64_sys_sigaltstack|do_syscall_64|0|13|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_mkdir|security_inode_mkdir|0|13|0|%17 = call i32 %16(%struct.inode.266888* %0, %struct.dentry.266876* %1, i16 zeroext %2) #64, !dbg !759350
+ipv4_default_advmss|tcp_syn_options|0|13|1|%51 = call i32 %50(%struct.dst_entry.268160* nonnull %32) #64, !dbg !1891740
+mounts_poll|ep_send_events_proc|0|12|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+mounts_poll|__se_sys_epoll_ctl|0|12|13|%279 = call i32 %276(%struct.file.160560* %263, %struct.poll_table_struct.160360* nonnull %267) #64, !dbg !510291
+unix_stream_recvmsg|__sys_recvfrom|0|12|4|%66 = call i32 %64(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %65, i32 %54) #64, !dbg !1738274
+ep_ptable_queue_proc|mounts_poll|0|12|0|call void %16(%struct.file.157152* %0, %struct.wait_queue_head* nonnull %12, %struct.poll_table_struct.157128* nonnull %1) #64, !dbg !505090
+pty_chars_in_buffer|tty_wait_until_sent|0|12|1|%15 = call i32 %12(%struct.tty_struct.363051* %0) #64, !dbg !1003678
+inet6_dump_ifaddr|netlink_dump|0|12|3|%91 = call i32 %90(%struct.sk_buff.262038* nonnull %39, %struct.netlink_callback.262068* %20) #64, !dbg !1825798
+lo_open|__blkdev_get|0|12|5|%51 = call i32 %48(%struct.block_device.155898* %0, i32 %1) #64, !dbg !501671
+__x64_sys_flock|do_syscall_64|0|12|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+dev_uevent_filter|kobject_uevent_env|0|12|0|%31 = call i32 %28(%struct.kset.261951* nonnull %11, %struct.kobject.261970* %0) #64, !dbg !2221400
+dev_uevent|kobject_uevent_env|0|12|8|%87 = call i32 %84(%struct.kset.261951* nonnull %11, %struct.kobject.261970* %0, %struct.kobj_uevent_env* nonnull %51) #64, !dbg !2221440
+__x64_sys_chmod|do_syscall_64|0|12|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+dev_uevent_name|kobject_uevent_env|0|12|1|%38 = call i8* %35(%struct.kset.261951* nonnull %11, %struct.kobject.261970* %0) #64, !dbg !2221405
+class_dir_child_ns_type|kobj_ns_ops|0|12|0|%15 = call %struct.kobj_ns_type_operations.700861* %12(%struct.kobject.910992* nonnull %4) #64, !dbg !2221061
+uevent_net_rcv|netlink_unicast|0|12|5|call void %103(%struct.sk_buff.262038* %12) #64, !dbg !1823181
+evdev_flush|filp_close|0|12|1|%16 = call i32 %13(%struct.file.140866* %0, i8* %1) #64, !dbg !440381
+udp_setsockopt|sock_common_setsockopt|0|12|0|%13 = call i32 %12(%struct.sock.268170* %8, i32 %1, i32 %2, i8* %3, i32 %4) #64, !dbg !1742603
+disk_removable_show|dev_attr_show|0|12|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+part_size_show|dev_attr_show|0|12|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+sel_read_enforce|__vfs_read|0|12|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+lo_ioctl|blkdev_ioctl|0|12|92|%697 = call i32 %694(%struct.block_device.297748* %0, i32 %1, i32 %2, i64 %3) #64, !dbg !835358
+proc_dointvec|proc_sys_call_handler|0|12|3|%71 = call i32 %68(%struct.ctl_table* %27, i32 %4, i8* %1, i64* nonnull %6, i64* %3) #64, !dbg !557986
+ip_tunnel_get_iflink|dev_get_iflink|0|12|0|%11 = call i32 %8(%struct.net_device.691052* %0) #64, !dbg !1771967
+ip_tunnel_get_stats64|dev_get_stats|0|12|0|call void %11(%struct.net_device.691052* %0, %struct.rtnl_link_stats64* %1) #64, !dbg !1771877
+ipip6_fill_info|rtnl_fill_ifinfo|0|12|70|%626 = call i32 %625(%struct.sk_buff.694390* %0, %struct.net_device.694377* %1) #64, !dbg !1785941
+ip_tunnel_get_link_net|rtnl_fill_ifinfo|0|12|79|%740 = call %struct.net.694275* %737(%struct.net_device.694377* %1) #64, !dbg !1786037
+pty_set_termios|tty_set_termios|0|12|1|call void %204(%struct.tty_struct.363051* %0, %struct.ktermios* nonnull %3) #64, !dbg !1003784
+n_tty_set_termios|tty_set_termios|0|12|3|call void %225(%struct.tty_struct.363051* %0, %struct.ktermios* nonnull %3) #64, !dbg !1003801
+net_ctl_permissions|proc_sys_call_handler|0|12|1|%41 = call i32 %38(%struct.ctl_table_header* %24, %struct.ctl_table* %27) #64, !dbg !557958
+devinet_conf_proc|proc_sys_call_handler|0|12|3|%71 = call i32 %68(%struct.ctl_table* %27, i32 %4, i8* %1, i64* nonnull %6, i64* %3) #64, !dbg !557986
+__x64_sys_setfsgid|do_syscall_64|0|12|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_setfsuid|do_syscall_64|0|12|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+dcache_readdir|iterate_dir|0|12|3|%44 = call i32 %43(%struct.file.145824* %0, %struct.dir_context* %1) #64, !dbg !460564
+call_rcu|__wait_rcu_gp|0|11|2|call void %42(%struct.callback_head* %21, void (%struct.callback_head*)* nonnull @wakeme_after_rcu) #64, !dbg !214471
+ipv4_dst_check|udp_v4_early_demux|0|11|3|%286 = call %struct.dst_entry.761869* %285(%struct.dst_entry.761869* nonnull %275, i32 0) #64, !dbg !1913433
+__x64_sys_faccessat|do_syscall_64|0|11|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__ia32_sys_getpgrp?__x64_sys_getpgrp|do_syscall_64|0|11|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+commit_timeout|call_timer_fn|0|10|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+filldir|ext4_readdir|0|10|4|%266 = call i32 %264(%struct.dir_context* %1, i8* %239, i32 %242, i64 %265, i64 %245, i32 %263) #64, !dbg !568637
+kernfs_dop_revalidate|__lookup_hash|0|10|1|%17 = call i32 %16(%struct.dentry.144820* nonnull %5, i32 %2) #64, !dbg !452701
+cgroup_procs_show|cgroup_seqfile_show|0|10|0|%36 = call i32 %33(%struct.seq_file.96165* %0, i8* %1) #64, !dbg !265007
+cgroup_seqfile_next|kernfs_seq_next|0|10|0|%16 = call i8* %13(%struct.seq_file.180352* %0, i8* %1, i64* %2) #64, !dbg !564066
+cgroup_procs_next|cgroup_seqfile_next|0|10|0|%15 = call i8* %14(%struct.seq_file.96165* %0, i8* %1, i64* %2) #64, !dbg !265035
+wakeme_after_rcu|rcu_do_batch|0|10|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__x64_sys_mount|do_syscall_64|0|10|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_mount|security_sb_mount|0|10|0|%14 = call i32 %13(i8* %0, %struct.path.266634* %1, i8* %2, i64 %3, i8* %4) #64, !dbg !760000
+__x64_sys_getresuid|do_syscall_64|0|10|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_getresgid|do_syscall_64|0|10|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+u32_swap|sort|0|10|3|call void %16(i8* %0, i8* %76, i32 %71) #64, !dbg !847619
+ext4_rmdir|vfs_rmdir|0|10|5|%33 = call i32 %32(%struct.inode.144815* %0, %struct.dentry.144820* %1) #64, !dbg !454765
+__x64_sys_rmdir|do_syscall_64|0|10|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+m_start.2868603066967664684|seq_read|0|10|4|%75 = call i8* %73(%struct.seq_file* %8, i64* %74) #64, !dbg !479538
+inet_sk_rx_dst_set|tcp_rcv_established|0|10|2|call void %42(%struct.sock.751952* %0, %struct.sk_buff.751419* %1) #64, !dbg !1887054
+blk_queue_usage_counter_release|percpu_ref_switch_to_atomic_rcu|0|9|5|call void %56(%struct.percpu_ref* %4) #64, !dbg !854076
+__x64_sys_keyctl|do_syscall_64|0|9|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_lookup|path_openat|0|9|44|%476 = call %struct.dentry.144820* %474(%struct.inode.144815* %254, %struct.dentry.144820* %275, i32 %475) #64, !dbg !458178
+selinux_key_free|security_key_free|0|9|0|call void %9(%struct.key.266698* %0) #64, !dbg !760809
+devkmsg_poll|ep_send_events_proc|0|9|2|%72 = call i32 %69(%struct.file.160560* %63, %struct.poll_table_struct.160360* nonnull %5) #64, !dbg !509213
+part_stat_show|dev_attr_show|0|9|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+inet_sendmsg|__sys_sendto|0|8|6|%89 = call i32 %87(%struct.socket.268166* nonnull %31, %struct.msghdr.268136* nonnull %8, i64 %88) #64, !dbg !1738214
+ep_eventpoll_release|__fput|0|8|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+tcp_setsockopt|sock_common_setsockopt|0|8|0|%13 = call i32 %12(%struct.sock.268170* %8, i32 %1, i32 %2, i8* %3, i32 %4) #64, !dbg !1742603
+misc_open|chrdev_open|0|8|13|%100 = call i32 %97(%struct.inode.142896* %0, %struct.file.142905* %1) #64, !dbg !447192
+ipmr_rtm_dumproute|rtnl_dump_all|0|8|0|%43 = call i32 %37(%struct.sk_buff.694390* %0, %struct.netlink_callback.694284* %1) #64, !dbg !1787581
+ipmr_mr_table_iter|mr_rtm_dumproute|0|8|0|%30 = call %struct.mr_table* %2(%struct.net.742880* %14, %struct.mr_table* null) #64, !dbg !1945341
+ipmr_mr_table_iter|mr_rtm_dumproute|0|8|2|%41 = call %struct.mr_table* %2(%struct.net.742880* %14, %struct.mr_table* nonnull %33) #64, !dbg !1945349
+ext4_create|path_openat|0|8|49|%519 = call i32 %514(%struct.inode.144815* %254, %struct.dentry.144820* %493, i16 zeroext %466, i1 zeroext %518) #64, !dbg !458227
+__x64_sys_setpgid|do_syscall_64|0|8|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_task_setpgid|security_task_setpgid|0|8|0|%11 = call i32 %10(%struct.task_struct.267009* %0, i32 %1) #64, !dbg !760476
+ext4_unlink|vfs_unlink|0|8|6|%51 = call i32 %50(%struct.inode.144815* %0, %struct.dentry.144820* %1) #64, !dbg !452770
+kernfs_iop_rmdir|vfs_rmdir|0|8|5|%33 = call i32 %32(%struct.inode.144815* %0, %struct.dentry.144820* %1) #64, !dbg !454765
+cgroup_rmdir|kernfs_iop_rmdir|0|8|0|%45 = call i32 %44(%struct.kernfs_node.179595* nonnull %12) #64, !dbg !562971
+css_release_work_fn|process_one_work|0|8|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+css_free_rwork_fn|process_one_work|0|8|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+scsi_mq_put_budget|blk_mq_sched_dispatch_requests|0|8|11|call void %163(%struct.blk_mq_hw_ctx.291137* %0) #64, !dbg !834303
+environ_read|__vfs_read|0|8|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+show_map|seq_read|0|8|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+m_stop.12623435478460310304|seq_read|0|8|14|call void %168(%struct.seq_file* %8, i8* %138) #64, !dbg !479618
+tcp_v4_reqsk_destructor|sock_gen_put|0|7|1|call void %26(%struct.request_sock.696323* %17) #64, !dbg !1869000
+con_write|do_output_char|0|7|0|%31 = call i32 %30(%struct.tty_struct.362746* %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.10.29851, i64 0, i64 0), i32 2) #64, !dbg !1003541
+bictcp_state|tcp_fastretrans_alert|0|7|29|call void %979(%struct.sock.751952* %0, i8 zeroext %974) #64, !dbg !1885993
+proc_lookupfd|__lookup_slow|0|7|6|%54 = call %struct.dentry.144820* %53(%struct.inode.144815* %7, %struct.dentry.144820* %24, i32 %2) #64, !dbg !454300
+cgroup_procs_write|cgroup_file_write|0|7|0|%47 = call i64 %44(%struct.kernfs_open_file.96166* %0, i8* %1, i64 %2, i64 %3) #64, !dbg !265070
+cpuset_post_attach|cgroup_procs_write|0|7|7|call void %50() #64, !dbg !257811
+selinux_key_alloc|security_key_alloc|0|7|0|%12 = call i32 %11(%struct.key.266698* %0, %struct.cred.266702* %1, i64 %2) #64, !dbg !760805
+__x64_sys_sysinfo|do_syscall_64|0|7|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_mkdir|vfs_mkdir|0|7|3|%60 = call i32 %59(%struct.inode.144815* %0, %struct.dentry.144820* %1, i16 zeroext %47) #64, !dbg !455830
+set_cpus_allowed_common|do_set_cpus_allowed|0|7|2|call void %32(%struct.task_struct.60731* %0, %struct.cpumask* %1) #64, !dbg !165811
+tcp_v4_init_sock|inet_create|0|7|7|%161 = call i32 %158(%struct.sock.766524* nonnull %77) #64, !dbg !1922250
+kernfs_notify_workfn|process_one_work|0|7|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+dummycon_scroll|con_scroll|0|7|1|%98 = call zeroext i1 %97(%struct.vc_data.369234* %0, i32 %1, i32 %2, i32 %3, i32 %11) #64, !dbg !1019145
+worker_thread|kthread|0|7|10|%51 = call i32 %4(i8* %7) #64, !dbg !156686
+blk_mq_check_expired|bt_for_each|0|7|2|%74 = call zeroext i1 %2(%struct.blk_mq_hw_ctx.291137* %0, %struct.request.291146* nonnull %66, i8* %3, i1 zeroext %4) #64, !dbg !833077
+signalfd_poll|__se_sys_epoll_ctl|0|6|13|%279 = call i32 %276(%struct.file.160560* %263, %struct.poll_table_struct.160360* nonnull %267) #64, !dbg !510291
+dequeue_task_fair|set_user_nice|0|6|4|call void %90(%struct.rq* %44, %struct.task_struct.60731* %0, i32 10) #64, !dbg !164063
+enqueue_task_fair|set_user_nice|0|6|7|call void %155(%struct.rq* %44, %struct.task_struct.60731* %0, i32 10) #64, !dbg !164131
+tcp_release_cb|sock_setsockopt|0|6|8|call void %71(%struct.sock.268170* %16) #64, !dbg !1740734
+ipv4_mtu|tcp_connect|0|6|2|%111 = call i32 %110(%struct.dst_entry.268160* %19) #64, !dbg !1892991
+sock_def_wakeup|unix_shutdown|0|6|1|call void %23(%struct.sock.268170* %5) #64, !dbg !1975601
+sock_def_wakeup|unix_shutdown|0|6|3|call void %41(%struct.sock.268170* nonnull %17) #64, !dbg !1975620
+sock_def_wakeup|tcp_rcv_state_process|0|6|17|call void %297(%struct.sock.751952* %0) #64, !dbg !1879647
+ep_ptable_queue_proc|signalfd_poll|0|6|0|call void %14(%struct.file.48256* %0, %struct.wait_queue_head* nonnull %10, %struct.poll_table_struct.48011* nonnull %1) #64, !dbg !511520
+bictcp_cwnd_event|tcp_fastretrans_alert|0|6|5|call void %188(%struct.sock.751952* %0, i32 2) #64, !dbg !1885344
+inet_sk_rebuild_header|tcp_connect|0|6|0|%13 = call i32 %12(%struct.sock.268170* %0) #64, !dbg !1892904
+ext4_file_read_iter|do_iter_readv_writev|0|6|0|%107 = call i64 %106(%struct.kiocb.48061* nonnull %6, %struct.iov_iter* %1) #64, !dbg !440850
+nonseekable_open|misc_open|0|6|7|%72 = call i32 %69(%struct.inode* %0, %struct.file* %1) #64, !dbg !1040867
+__x64_sys_ioprio_get|do_syscall_64|0|6|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_task_getioprio|security_task_getioprio|0|6|0|%9 = call i32 %8(%struct.task_struct.267009* %0) #64, !dbg !760496
+selinux_task_getscheduler|security_task_getscheduler|0|6|0|%9 = call i32 %8(%struct.task_struct.267009* %0) #64, !dbg !760512
+filldir|dcache_readdir|0|6|0|%18 = call i32 %13(%struct.dir_context* %1, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3.14715, i64 0, i64 0), i32 1, i64 0, i64 %17, i32 4) #64, !dbg !482655
+filldir|dcache_readdir|0|6|2|%35 = call i32 %25(%struct.dir_context* %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.4.14716, i64 0, i64 0), i32 2, i64 1, i64 %33, i32 4) #64, !dbg !482680
+bictcp_recalc_ssthresh|tcp_enter_recovery|0|6|0|%64 = call i32 %63(%struct.sock.751952* %0) #64, !dbg !1886323
+bictcp_state|tcp_enter_recovery|0|6|1|call void %77(%struct.sock.751952* %0, i8 zeroext 3) #64, !dbg !1886336
+bictcp_state|tcp_try_undo_loss|0|6|6|call void %148(%struct.sock.751952* %0, i8 zeroext 0) #64, !dbg !1886262
+__x64_sys_signalfd4|do_syscall_64|0|6|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_epoll_create1|do_syscall_64|0|6|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+kernfs_iop_lookup|__lookup_hash|0|6|6|%40 = call %struct.dentry.144820* %39(%struct.inode.144815* %27, %struct.dentry.144820* nonnull %33, i32 %2) #64, !dbg !452716
+blkdev_readpages|read_pages|0|6|1|%20 = call i32 %12(%struct.file.118570* %1, %struct.address_space.118509* %0, %struct.list_head* %2, i32 %3) #64, !dbg !359468
+blkdev_get_block|do_mpage_readpage|0|6|0|%122 = call i32 %121(%struct.inode.118561* %9, i64 %114, %struct.buffer_head.156879* %16, i32 0) #64, !dbg !504729
+loop_queue_rq|blk_mq_dispatch_rq_list|0|6|9|%164 = call zeroext i8 %163(%struct.blk_mq_hw_ctx.291137* %42, %struct.blk_mq_queue_data.291160* nonnull %4) #64, !dbg !831640
+invalidate_bh_lru|on_each_cpu_cond_mask|0|6|5|call void %1(i8* %2) #64, !dbg !247836
+signalfd_release|__fput|0|6|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+ext4_readpages|read_pages|0|6|1|%20 = call i32 %12(%struct.file.118570* %1, %struct.address_space.118509* %0, %struct.list_head* %2, i32 %3) #64, !dbg !359468
+call_usermodehelper_exec_work|process_one_work|0|6|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+unix_shutdown|__se_sys_shutdown|0|6|3|%34 = call i32 %33(%struct.socket.268166* nonnull %19, i32 %5) #64, !dbg !1738926
+__x64_sys_dup3|do_syscall_64|0|6|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cap_capget|security_capget|0|6|0|%13 = call i32 %12(%struct.task_struct.267009* %0, %struct.kernel_cap_struct* %1, %struct.kernel_cap_struct* %2, %struct.kernel_cap_struct* %3) #64, !dbg !759915
+selinux_capget|security_capget|0|6|0|%13 = call i32 %12(%struct.task_struct.267009* %0, %struct.kernel_cap_struct* %1, %struct.kernel_cap_struct* %2, %struct.kernel_cap_struct* %3) #64, !dbg !759915
+loop_kthread_worker_fn|kthread|0|6|10|%51 = call i32 %4(i8* %7) #64, !dbg !156686
+loop_queue_work|kthread_worker_fn|0|6|3|call void %68(%struct.kthread_work* nonnull %64) #64, !dbg !155457
+lo_complete_rq|blk_done_softirq|0|6|0|call void %41(%struct.request.294530* %24) #64, !dbg !826401
+mpage_end_io.15312940875130728180|bio_endio|0|6|4|call void %89(%struct.bio.290414* %4) #64, !dbg !816741
+inet_stream_connect|__sys_connect|0|6|5|%63 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2, i32 %62) #64, !dbg !1737882
+tcp_v4_connect|__inet_stream_connect|0|6|1|%48 = call i32 %47(%struct.sock.766524* %9, %struct.sys_desc_table* %1, i32 %2) #64, !dbg !1922042
+tcp_v4_md5_lookup|tcp_connect|0|6|1|%33 = call %struct.tcp_md5sig_key* %32(%struct.sock.268170* %0, %struct.sock.268170* %0) #64, !dbg !1892922
+ipv4_default_advmss|tcp_connect|0|6|7|%167 = call i32 %166(%struct.dst_entry.268160* %19) #64, !dbg !1893035
+kthread_flush_work_fn|kthread_worker_fn|0|6|3|call void %68(%struct.kthread_work* nonnull %64) #64, !dbg !155457
+sock_def_error_report|tcp_reset|0|6|3|call void %39(%struct.sock.751952* %0) #64, !dbg !1880356
+loop_control_ioctl|do_vfs_ioctl|0|6|32|%399 = call i64 %396(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460085
+find_free_cb|idr_for_each|0|6|1|%36 = call i32 %1(i32 %32, i8* %35, i8* %2) #64, !dbg !2218589
+device_get_ownership|kobject_get_ownership|0|6|0|call void %10(%struct.kobject.910992* %0, %struct.kuid_t* %1, %struct.kuid_t* %2) #64, !dbg !2221070
+loop_attr_do_show_autoclear|dev_attr_show|0|6|0|%13 = call i64 %7(%struct.device.539237* %11, %struct.device_attribute.539238* %12, i8* %2) #64, !dbg !1279549
+selinux_kernel_module_request|security_kernel_module_request|0|6|0|%10 = call i32 %9(i8* %0) #64, !dbg !760467
+ext4_lookup|__lookup_hash|0|6|6|%40 = call %struct.dentry.144820* %39(%struct.inode.144815* %27, %struct.dentry.144820* nonnull %33, i32 %2) #64, !dbg !452716
+__x64_sys_mkdirat|do_syscall_64|0|6|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+loopback_get_stats64|dev_get_stats|0|6|0|call void %11(%struct.net_device.691052* %0, %struct.rtnl_link_stats64* %1) #64, !dbg !1771877
+e1000e_get_stats64|dev_get_stats|0|6|0|call void %11(%struct.net_device.691052* %0, %struct.rtnl_link_stats64* %1) #64, !dbg !1771877
+kernfs_iop_mkdir|vfs_mkdir|0|6|3|%60 = call i32 %59(%struct.inode.144815* %0, %struct.dentry.144820* %1, i16 zeroext %47) #64, !dbg !455830
+cgroup_mkdir|kernfs_iop_mkdir|0|6|0|%42 = call i32 %39(%struct.kernfs_node.179595* nonnull %7, i8* %41, i16 zeroext %2) #64, !dbg !562923
+css_release|put_css_set_locked|0|6|1|call void %121(%struct.percpu_ref* %107) #64, !dbg !260603
+rcu_work_rcufn|rcu_do_batch|0|6|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+free_modprobe_argv|call_usermodehelper_exec|0|6|5|call void %52(%struct.subprocess_info* %0) #64, !dbg !146221
+devkmsg_read|__vfs_read|0|6|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+tcp_rtx_synack|reqsk_timer_handler|0|6|1|%94 = call i32 %93(%struct.sock.696348* %9, %struct.request_sock.696323* %6) #64, !dbg !1872104
+tcp_reno_undo_cwnd|tcp_try_undo_loss|0|6|2|%57 = call i32 %56(%struct.sock.751952* %0) #64, !dbg !1886181
+inet_sk_rx_dst_set|tcp_finish_connect|0|6|1|call void %15(%struct.sock.751952* %0, %struct.sk_buff.751419* nonnull %1) #64, !dbg !1881406
+selinux_inet_conn_established|security_inet_conn_established|0|6|0|call void %10(%struct.sock* %0, %struct.sk_buff* %1) #64, !dbg !759411
+dcache_dir_open|do_dentry_open|0|6|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+dcache_dir_close|__fput|0|6|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+end_buffer_write_sync|end_bio_bh_io_sync|0|6|0|call void %15(%struct.buffer_head.155663* %5, i32 %19) #64, !dbg !494638
+__x64_sys_getpriority|do_syscall_64|0|5|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ip6table_mangle_hook|nf_hook_slow|0|5|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+idle_worker_timeout|call_timer_fn|0|5|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+__x64_sys_getpgid|do_syscall_64|0|5|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_getsid|do_syscall_64|0|5|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+gid_cmp|sort|0|5|0|%41 = call i32 %3(i8* %39, i8* %40) #64, !dbg !847601
+gid_cmp|sort|0|5|1|%52 = call i32 %3(i8* %49, i8* %51) #64, !dbg !847607
+gid_cmp|sort|0|5|5|%100 = call i32 %3(i8* %97, i8* %99) #64, !dbg !847634
+cgroup_events_show|cgroup_seqfile_show|0|5|0|%36 = call i32 %33(%struct.seq_file.96165* %0, i8* %1) #64, !dbg !265007
+keyring_destroy|key_gc_unused_keys|0|5|0|call void %27(%struct.key.263298* %9) #64, !dbg !751404
+proc_root_link|proc_pid_get_link|0|5|3|%26 = call i32 %25(%struct.dentry.172000* nonnull %0, %struct.path.171985* nonnull %4) #64, !dbg !550371
+selinux_file_receive|security_file_receive|0|5|0|%10 = call i32 %9(%struct.file.266704* %0) #64, !dbg !760336
+keyring_preparse|key_instantiate_and_link|0|4|0|%24 = call i32 %21(%struct.key_preparsed_payload* nonnull %6) #64, !dbg !751831
+keyring_instantiate|__key_instantiate_and_link|0|4|1|%15 = call i32 %14(%struct.key.232574* %0, %struct.key_preparsed_payload* %1) #64, !dbg !751867
+keyring_free_preparse|key_instantiate_and_link|0|4|6|call void %62(%struct.key_preparsed_payload* nonnull %6) #64, !dbg !751858
+lookup_user_key_possessed|keyring_search_iterator|0|4|0|%42 = call zeroext i1 %41(%struct.key.263832* %6, %struct.key_match_data.263823* %39) #64, !dbg !752835
+__x64_sys_name_to_handle_at|do_syscall_64|0|4|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+keyring_free_object|assoc_array_destroy_subtree|0|4|0|call void %76(i8* %78) #64, !dbg !859477
+user_destroy|key_gc_unused_keys|0|4|0|call void %27(%struct.key.263298* %9) #64, !dbg !751404
+__x64_sys_setregid|do_syscall_64|0|4|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_do_uts_string|proc_sys_call_handler|0|4|3|%71 = call i32 %68(%struct.ctl_table* %27, i32 %4, i8* %1, i64* nonnull %6, i64* %3) #64, !dbg !557986
+environ_open|do_dentry_open|0|4|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+mem_release|__fput|0|4|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+pid_maps_open|do_dentry_open|0|4|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+proc_map_release|__fput|0|4|6|%63 = call i32 %60(%struct.inode.142066* %8, %struct.file.142056* %0) #64, !dbg !444211
+seq_lseek|__x64_sys_lseek|0|4|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+special_mapping_name|show_map_vma|0|4|3|%42 = call i8* %39(%struct.vm_area_struct.170609* %1) #64, !dbg !546115
+__x64_sys_mremap|do_syscall_64|0|4|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+workingset_update_node|xas_create|0|3|2|call void %175(%struct.xa_node* nonnull %98) #64, !dbg !2233135
+oom_score_adj_read|__vfs_read|0|3|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+__x64_sys_sched_getscheduler|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_sched_getparam|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+proc_pid_attr_read|__vfs_read|0|3|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !441508
+selinux_getprocattr|security_getprocattr|0|3|1|%22 = call i32 %21(%struct.task_struct.267009* %0, i8* %2, i8** %3) #64, !dbg !760713
+__x64_sys_add_key|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+user_preparse|key_create_or_update|0|3|3|%77 = call i32 %74(%struct.key_preparsed_payload* nonnull %9) #64, !dbg !751990
+generic_key_instantiate|__key_instantiate_and_link|0|3|1|%15 = call i32 %14(%struct.key.232574* %0, %struct.key_preparsed_payload* %1) #64, !dbg !751867
+user_free_preparse|key_create_or_update|0|3|13|call void %188(%struct.key_preparsed_payload* nonnull %9) #64, !dbg !752088
+keyring_get_key_chunk|assoc_array_walk|0|3|0|%16 = call i64 %15(i8* %2, i32 %13) #64, !dbg !859337
+keyring_compare_object|assoc_array_find|0|3|1|%26 = call zeroext i1 %25(i8* %24, i8* %2) #64, !dbg !859322
+keyring_search_iterator|search_nested_keyrings|0|3|3|%72 = call i32 %71(i8* nonnull %68, i8* %52) #64, !dbg !752923
+ipv4_negative_advice|tcp_retransmit_timer|0|3|14|%179 = call %struct.dst_entry.750764* %176(%struct.dst_entry.750764* nonnull %162) #64, !dbg !1895293
+ipv4_negative_advice|tcp_retransmit_timer|0|3|21|%289 = call %struct.dst_entry.750764* %286(%struct.dst_entry.750764* nonnull %272) #64, !dbg !1895391
+__x64_sys_capset|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cap_capset|security_capset|0|3|0|%14 = call i32 %13(%struct.cred.266702* %0, %struct.cred.266702* %1, %struct.kernel_cap_struct* %2, %struct.kernel_cap_struct* %3, %struct.kernel_cap_struct* %4) #64, !dbg !759919
+selinux_capset|security_capset|0|3|0|%14 = call i32 %13(%struct.cred.266702* %0, %struct.cred.266702* %1, %struct.kernel_cap_struct* %2, %struct.kernel_cap_struct* %3, %struct.kernel_cap_struct* %4) #64, !dbg !759919
+wq_barrier_func|process_one_work|0|3|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+__x64_sys_setxattr|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_setxattr|security_inode_setxattr|0|3|0|%21 = call i32 %20(%struct.dentry.266876* %0, i8* %1, i8* %2, i64 %3, i32 %4) #64, !dbg !760140
+kernfs_xattr_set|__vfs_setxattr|0|3|1|%76 = call i32 %71(%struct.xattr_handler.149977* %25, %struct.dentry.150007* %0, %struct.inode.150019* %1, i8* %62, i8* %75, i64 %4, i32 %5) #64, !dbg !480705
+selinux_inode_post_setxattr|security_inode_post_setxattr|0|3|0|call void %20(%struct.dentry.266876* %0, i8* %1, i8* %2, i64 %3, i32 %4) #64, !dbg !760150
+scsi_mq_put_budget|blk_mq_dispatch_rq_list|0|3|7|call void %129(%struct.blk_mq_hw_ctx.291137* %42) #64, !dbg !831606
+__x64_sys_setreuid|do_syscall_64|0|3|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+pty_close|tty_release|0|3|8|call void %107(%struct.tty_struct.268470* nonnull %8, %struct.file.268134* %1) #64, !dbg !997609
+inet_get_link_af_size|if_nlmsg_size|0|3|8|%128 = call i64 %125(%struct.net_device.694377* %0, i32 %1) #64, !dbg !1785313
+inet6_get_link_af_size|if_nlmsg_size|0|3|8|%128 = call i64 %125(%struct.net_device.694377* %0, i32 %1) #64, !dbg !1785313
+mach_set_rtc_mmss|update_persistent_clock64|0|3|0|%8 = call i32 %7(%struct.anon.47* nonnull %3) #64, !dbg !58336
+write_null|__vfs_write|0|3|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+kmsg_read|proc_reg_read|0|3|0|%32 = call i64 %29(%struct.file.171133* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !548069
+pty_open|tty_open|0|3|27|%244 = call i32 %240(%struct.tty_struct.268470* %199, %struct.file.268134* %1) #64, !dbg !999202
+submit_bio_wait_endio|bio_endio|0|3|4|call void %89(%struct.bio.290414* %4) #64, !dbg !816741
+enqueue_task_fair|try_to_wake_up_local|0|2|5|call void %105(%struct.rq* %9, %struct.task_struct.60731* %0, i32 9) #64, !dbg !161245
+native_smp_send_reschedule|wake_up_nohz_cpu|0|2|0|call void %29(i32 %0) #64, !dbg !165635
+netlink_skb_destructor|netlink_broadcast_filtered|0|2|6|call void %104(%struct.sk_buff.262038* %11) #64, !dbg !1822902
+kernfs_seq_show|seq_read|0|2|13|%154 = call i32 %153(%struct.seq_file* %8, i8* nonnull %138) #64, !dbg !479606
+udpv6_sendmsg|inet_sendmsg|0|2|4|%65 = call i32 %64(%struct.sock.766524* %6, %struct.msghdr.766501* %1, i64 %2) #64, !dbg !1921689
+ip6table_filter_hook|nf_hook_slow|0|2|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+selinux_ipv6_postroute|nf_hook_slow|0|2|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+assoc_array_rcu_cleanup|rcu_do_batch|0|2|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__x64_sys_tgkill|do_syscall_64|0|2|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+generic_file_llseek|__x64_sys_lseek|0|2|1|%32 = call i64 %31(%struct.file.48256* nonnull %13, i64 %6, i32 %10) #64, !dbg !441808
+proc_loginuid_write|__vfs_write|0|2|0|%15 = call i64 %12(%struct.file.48256* %0, i8* %1, i64 %2, i64* %3) #64, !dbg !440974
+proc_pid_limits|proc_single_show|0|2|1|%21 = call i32 %20(%struct.seq_file.171647* %0, %struct.pid_namespace.171683* %11, %struct.pid.171685* %14, %struct.task_struct.171875* nonnull %15) #64, !dbg !550751
+__x64_sys_setpriority|do_syscall_64|0|2|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+cap_task_setnice|security_task_setnice|0|2|0|%11 = call i32 %10(%struct.task_struct.267009* %0, i32 %1) #64, !dbg !760488
+selinux_task_setnice|security_task_setnice|0|2|0|%11 = call i32 %10(%struct.task_struct.267009* %0, i32 %1) #64, !dbg !760488
+inet_dump_fib|netlink_dump|0|2|3|%91 = call i32 %90(%struct.sk_buff.262038* nonnull %39, %struct.netlink_callback.262068* %20) #64, !dbg !1825798
+__x64_sys_rt_sigpending|do_syscall_64|0|2|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_clock_getres|do_syscall_64|0|2|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+posix_get_hrtimer_res|__x64_sys_clock_getres|0|2|0|%36 = call i32 %35(i32 %8, %struct.anon.47* nonnull %2) #64, !dbg !236252
+__x64_sys_pwrite64|do_syscall_64|0|2|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+wait_rcu_exp_gp|process_one_work|0|2|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+fifo_open|do_dentry_open|0|2|6|%115 = call i32 %114(%struct.inode.141097* %1, %struct.file.140866* %0) #64, !dbg !440228
+netstamp_clear|process_one_work|0|2|3|call void %209(%struct.work_struct* %1) #64, !dbg !149834
+inet_rtm_newaddr|rtnetlink_rcv_msg|0|2|10|%226 = call i32 %223(%struct.sk_buff.694390* %0, %struct.nlmsghdr* %1, %struct.netlink_ext_ack* %2) #64, !dbg !1790053
+inet_rtm_newroute|rtnetlink_rcv_msg|0|2|10|%226 = call i32 %223(%struct.sk_buff.694390* %0, %struct.nlmsghdr* %1, %struct.netlink_ext_ack* %2) #64, !dbg !1790053
+inet_rtm_delroute|rtnetlink_rcv_msg|0|2|10|%226 = call i32 %223(%struct.sk_buff.694390* %0, %struct.nlmsghdr* %1, %struct.netlink_ext_ack* %2) #64, !dbg !1790053
+m_stop.12623435478460310304|seq_read|0|2|11|call void %131(%struct.seq_file* %8, i8* %127) #64, !dbg !479585
+gate_vma_name|show_map_vma|0|2|3|%42 = call i8* %39(%struct.vm_area_struct.170609* %1) #64, !dbg !546115
+tcp_v6_init_sock|inet6_create|0|2|7|%192 = call i32 %189(%struct.sock.743168* nonnull %76) #64, !dbg !1979723
+task_tick_stop|scheduler_tick|0|2|3|call void %43(%struct.rq* %7, %struct.task_struct.60731* %9, i32 0) #64, !dbg !166758
+proc_do_uuid|proc_sys_call_handler|0|2|3|%71 = call i32 %68(%struct.ctl_table* %27, i32 %4, i8* %1, i64* nonnull %6, i64* %3) #64, !dbg !557986
+ktime_get|do_nanosleep|0|1|7|%66 = call i64 %65() #64, !dbg !227592
+tcp_v4_reqsk_destructor|tcp_v4_rcv|0|1|18|call void %419(%struct.request_sock.754201* %232) #64, !dbg !1899930
+anon_pipe_buf_release|free_pipe_info|0|1|1|call void %27(%struct.pipe_inode_info* %0, %struct.pipe_buffer* %25) #64, !dbg !451087
+ip_generic_getfrag|__ip6_append_data|0|1|8|%546 = call i32 %6(i8* %7, i8* %545, i32 %384, i32 %444, i32 %378, %struct.sk_buff.800067* nonnull %471) #64, !dbg !1982507
+sock_def_write_space|sock_setsockopt|0|1|14|call void %154(%struct.sock.268170* %16) #64, !dbg !1740833
+proc_fd_link|proc_pid_readlink|0|1|3|%26 = call i32 %25(%struct.dentry.172000* %0, %struct.path.171985* nonnull %4) #64, !dbg !550403
+shmem_mknod|vfs_mknod|0|1|4|%54 = call i32 %53(%struct.inode.144815* %0, %struct.dentry.144820* %1, i16 zeroext %2, i32 %3) #64, !dbg !455709
+inet_unhash|tcp_close|0|1|1|call void %38(%struct.sock.751093* %0) #64, !dbg !1878378
+udp_ioctl|inet6_ioctl|0|1|6|%34 = call i32 %31(%struct.sock.743168* %6, i32 %1, i64 %2) #64, !dbg !1979997
+ip6_mtu|ip6_setup_cork|0|1|6|%227 = call i32 %226(%struct.dst_entry.799723* %222) #64, !dbg !1982080
+ip6_mtu|ip6_finish_output|0|1|1|%64 = call i32 %63(%struct.dst_entry.799723* %59) #64, !dbg !1982903
+selinux_ipv6_output|nf_hook_slow|0|1|0|%18 = call i32 %15(i8* %17, %struct.sk_buff.715752* %0, %struct.nf_hook_state.715613* %1) #64, !dbg !1828990
+ip6_output|ip6_local_out|0|1|1|%59 = call i32 %58(%struct.net.690951* %0, %struct.sock.690852* %1, %struct.sk_buff.691065* nonnull %2) #64, !dbg !2041231
+ipv6_rcv|__netif_receive_skb|0|1|3|%42 = call i32 %40(%struct.sk_buff.691065* %0, %struct.net_device.691052* %41, %struct.packet_type* nonnull %36, %struct.net_device.691052* %33) #64, !dbg !1771027
+ip6_mc_input|ipv6_rcv|0|1|4|%85 = call i32 %84(%struct.sk_buff.800067* nonnull %11) #64, !dbg !1984972
+udpv6_rcv|ip6_protocol_deliver_rcu|0|1|7|%221 = call i32 %220(%struct.sk_buff.800067* %1) #64, !dbg !1984788
+inet6_ioctl|sock_do_ioctl|0|1|0|%14 = call i32 %13(%struct.socket.268166* %1, i32 %2, i64 %3) #64, !dbg !1737353
+udpv6_recvmsg|inet_recvmsg|0|1|0|%46 = call i32 %43(%struct.sock.766524* %8, %struct.msghdr.766501* %1, i64 %2, i32 %44, i32 %45, i32* nonnull %5) #64, !dbg !1921729
+ip_mc_output|ip_local_out|0|1|1|%64 = call i32 %63(%struct.net.747144* %0, %struct.sock.747417* %1, %struct.sk_buff.747427* nonnull %2) #64, !dbg !1864124
+elv_rb_latter_request|elv_latter_request|0|1|0|%12 = call %struct.request.290690* %9(%struct.request_queue.290728* %0, %struct.request.290690* %1) #64, !dbg !818711
+dd_request_merged|elv_merged_request|0|1|0|call void %10(%struct.request_queue.290728* %0, %struct.request.290690* %1, i32 %2) #64, !dbg !818588
+keyring_search_iterator|search_nested_keyrings|0|1|1|%48 = call i32 %39(i8* %46, i8* %47) #64, !dbg !752906
+ip_setsockopt|tcp_setsockopt|0|1|0|%14 = call i32 %13(%struct.sock.751093* %0, i32 %1, i32 %2, i8* %3, i32 %4) #64, !dbg !1873876
+ip4_datagram_release_cb|sock_setsockopt|0|1|51|call void %601(%struct.sock.268170* %16) #64, !dbg !1741331
+udp_v4_get_port|__inet_bind|0|1|3|%83 = call i32 %82(%struct.sock.766524* %0, i16 zeroext %41) #64, !dbg !1921855
+ext4_tmpfile|vfs_tmpfile|0|1|2|%22 = call i32 %21(%struct.inode.144815* %6, %struct.dentry.144820* nonnull %16, i16 zeroext %1) #64, !dbg !456624
+__x64_sys_unshare|do_syscall_64|0|1|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+__x64_sys_mknod|do_syscall_64|0|1|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+selinux_inode_mknod|security_inode_mknod|0|1|0|%18 = call i32 %17(%struct.inode.266888* %0, %struct.dentry.266876* %1, i16 zeroext %2, i32 %3) #64, !dbg !760079
+keyring_revoke|key_revoke|0|1|1|call void %12(%struct.key.232574* %0) #64, !dbg !751633
+key_gc_timer_func|call_timer_fn|0|1|1|call void %1(%struct.timer_list* %0) #64, !dbg !227317
+inet_bind|__sys_bind|0|1|5|%59 = call i32 %58(%struct.socket.268166* nonnull %20, %struct.sys_desc_table* nonnull %51, i32 %2) #64, !dbg !1737819
+__x64_sys_clock_adjtime|do_syscall_64|0|1|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+posix_clock_realtime_adj|__x64_sys_clock_adjtime|0|1|1|%37 = call i32 %34(i32 %9, %struct.__kernel_timex* nonnull %2) #64, !dbg !236327
+arp_solicit|neigh_timer_handler|0|1|4|call void %186(%struct.neighbour.690815* %4, %struct.sk_buff.691065* %180) #64, !dbg !1779275
+inet_rcu_free_ifa|rcu_do_batch|0|1|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+free_fib_info_rcu|rcu_do_batch|0|1|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__alias_free_mem|rcu_do_batch|0|1|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+exact_lock.10529929442046223439|kobj_lookup|0|1|2|%50 = call i32 %47(i32 %1, i8* %39) #64, !dbg !1286442
+exact_match.17265613303824123141|kobj_lookup|0|1|5|%55 = call %struct.kobject.142914* %41(i32 %1, i32* %2, i8* %39) #64, !dbg !1286448
+n_tty_flush_buffer|set_termios|0|1|9|call void %124(%struct.tty_struct.363051* %0) #64, !dbg !1004154
+netlink_setsockopt|__sys_setsockopt|0|1|4|%41 = call i32 %40(%struct.socket.268166* nonnull %22, i32 %1, i32 %2, i8* %3, i32 %4) #64, !dbg !1738318
+pci_bus_num_vf|if_nlmsg_size|0|1|0|%24 = call i32 %21(%struct.device.693942* nonnull %10) #64, !dbg !1785240
+pci_bus_num_vf|rtnl_fill_vf|0|1|0|%21 = call i32 %18(%struct.device.693942* nonnull %7) #64, !dbg !1786290
+ipip6_get_size|if_nlmsg_size|0|1|4|%81 = call i64 %78(%struct.net_device.694377* %0) #64, !dbg !1785279
+task_tick_rt|scheduler_tick|0|1|3|call void %43(%struct.rq* %7, %struct.task_struct.60731* %9, i32 0) #64, !dbg !166758
+proc_reg_unlocked_ioctl|do_vfs_ioctl|0|1|31|%387 = call i64 %384(%struct.file.145387* %0, i32 %2, i64 %3) #64, !dbg !460077
+uptime_proc_show|seq_read|0|1|5|%88 = call i32 %87(%struct.seq_file* %8, i8* nonnull %84) #64, !dbg !479550
+__x64_sys_fchdir|do_syscall_64|0|1|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+ext4_readpage|generic_file_read_iter|0|1|24|%428 = call i32 %427(%struct.file.118570* %91, %struct.page.118513* nonnull %422) #64, !dbg !344670
+proc_attr_dir_lookup|path_openat|0|1|44|%476 = call %struct.dentry.144820* %474(%struct.inode.144815* %254, %struct.dentry.144820* %275, i32 %475) #64, !dbg !458178
+jump_label_module_notify|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+trace_module_notify.14674097123455047241|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+trace_kprobe_module_callback|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+module_trace_bprintk_format_notify|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+trace_module_notify.12798396996636875154|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+kprobes_module_callback|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+tracepoint_module_notify|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+ei_module_callback|blocking_notifier_call_chain|0|1|1|%26 = call i32 %25(%struct.notifier_block* nonnull %20, i64 %1, i8* %2) #64, !dbg !157511
+do_free_init|rcu_do_batch|0|1|8|call void %177(%struct.callback_head* nonnull %124) #64, !dbg !221337
+__x64_sys_fchmodat|do_syscall_64|0|1|1|%19 = call i64 %18(%struct.pt_regs* %1) #64, !dbg !25856
+wake_up_klogd_work_func|irq_work_tick|0|1|1|call void %76(%struct.irq_work* %65) #64, !dbg !320012

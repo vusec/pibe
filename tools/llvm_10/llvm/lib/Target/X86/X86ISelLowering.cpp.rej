@@ -1,0 +1,14 @@
+--- llvm/lib/Target/X86/X86ISelLowering.cpp
++++ llvm/lib/Target/X86/X86ISelLowering.cpp
+@@ -31972,11 +31972,6 @@
+     }
+     llvm_unreachable("unexpected reg for retpoline");
+   }
+-
+-  if (Subtarget.useLVIControlFlowIntegrity()) {
+-    assert(Subtarget.is64Bit() && "Should not be using a 64-bit thunk!");
+-    return "__llvm_lvi_thunk_r11";
+-  }
+   llvm_unreachable("getIndirectThunkSymbol() invoked without thunk feature");
+ }
+ 
